@@ -24,7 +24,7 @@ Included is a full-suite of sensors that allow your Go2 to understand and react 
 
 - [Bill of Materials](./Docs/BoM.xlsx)
 - [CAD Files](./CAD/)
-- [Assembly Instructions](./Docs/assembly.md)
+- [Assembly Instructions](./Docs/Assembly.md)
 
 ## Repository Structure
 
