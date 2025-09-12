@@ -6,7 +6,7 @@ Please refer to this document for hardware specifications, parts requirements an
 
 Additionally, you may refer to these links for additional required information:
 
-- [Bill of Materials](./BOM.xlsx)
+- [Bill of Materials](./BoM.xlsx)
 - [CAD Drawings](../cad/)
 
 ## Parts and Components
