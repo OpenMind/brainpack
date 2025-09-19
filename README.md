@@ -1,6 +1,7 @@
-# PRISM Backpack for Unitree Go2
+![Dog Backpack](https://github.com/user-attachments/assets/f3defe3e-7c6b-4db6-a260-7e872cf4ac9a)
 
-![Dog Backpack](path/to/splash-image.jpg)
+
+# PRISM Backpack for Unitree Go2
 
 ## Introduction
 
