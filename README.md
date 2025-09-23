@@ -11,9 +11,9 @@ Included is a full-suite of sensors that allow your Go2 to understand and react 
 
 ## Features
 
-- **No Setup Required** - Simply turn on the Unitree Go2 for immediate use
-- **Powered by OM1** - Full suite of OM1 functionalities built-in
-- **Developer Friendly** - Highly modular design with multiple connections and ports for easy hardware integration
+- **Powered by OM1** - Full suite of OM1 functionalities built-in.
+- **Human in the Loop** - Connect and control your robot remotely, or request help from a professional whenever you need.
+- **Developer Friendly** - Highly modular design with multiple connections and ports for easy hardware integration.
 
 ## Quick Start Guide
 
