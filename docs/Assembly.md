@@ -11,7 +11,7 @@ Included in this document is a detailed set of instructions to fabricate and ass
 Please refer below for hardware specifications, parts requirements and guidelines on 3D printing and custom fabrication.
 Additionally, you may refer here for additional information:
 
-[Bill of Materials](./Bill_of_Materials.md)
+[Bill of Materials](../docs/Bill_of_Materials.md)
 
 [CAD Drawings](../cad/)
 
