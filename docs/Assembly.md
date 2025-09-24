@@ -15,7 +15,7 @@ Additionally, you may refer here for additional information:
 
 [CAD Drawings](../CAD/)
 
-[Cable Fabrication]
+[Cable Fabrication](#cable-fabrication-instructions)
 
 [FAQ](../docs/FAQ.md)
 
@@ -26,7 +26,7 @@ Additionally, you may refer here for additional information:
     
     2. A complete PRISM kit
     
-    3. Screwdriver and Allen Key Set [List of Tools]
+    3. Screwdriver and Allen Key Set [List of Tools](#tools-overview)
 
 ### Installation Steps:
     1. First, unplug the power and Ethernet cables that plug into the Unitree Go2 proprietary compute unit. 
@@ -86,7 +86,6 @@ Additionally, you may refer here for additional information:
 | USB C Male PCB Adapter | 2 | [Link](https://www.amazon.com/ANMBEST-Connector-Receptacle-Adapter-Support/dp/B091CRLJM2/) |
 | USB A Make PCB Adapter | 2 | [Link](https://www.amazon.com/uxcell-Socket-Connector-Replacement-Adapter/dp/B07R2KNXTS/) |
 | Male 4 pin JST Connector cable| 1 | Link |
-| | | | 
 
     
 ### Tools Overview
