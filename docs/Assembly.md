@@ -13,7 +13,7 @@ Additionally, you may refer here for additional information:
 
 [Bill of Materials](../docs/Bill_of_Materials.md)
 
-[CAD Drawings](../cad/)
+[CAD Drawings](../CAD/)
 
 [Cable Fabrication]
 
