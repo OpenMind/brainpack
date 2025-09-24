@@ -54,10 +54,11 @@ Included is a full-suite of sensors that allow your Go2 to understand and react 
 PRISM/
 ├── README.md
 ├── docs/
-│   ├── BoM.xlsx              # Bill of Materials
-│   └── Assembly.md           # Assembly Instructions
+│   ├── Bill_of_Materials.md       # Bill of Materials
+│   ├── FAQ.md                     # Frequently Asked Questions
+│   └── Assembly.md                # Assembly Instructions
 ├── cad/
-    └── stl/                  # STL files for 3D printing
+    └──                            # STL files for 3D printing
 ```
 
 ## License
