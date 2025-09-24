@@ -174,7 +174,7 @@ We recommned using a standard **PETG-CF** reel. Carbon Fibre offers minimal inte
 
     3. Remove the Ethernet hub from its enclosure, then slot it into the front slot of the Backpack Shell. You may use Glue to secure it in place.
 
-    4. **(Recommended)** Route the speaker wires so that they are placed behind and under the Ethernet hub to minimize cable congestion.
+    4. Recommended: Route the speaker wires so that they are placed behind and under the Ethernet hub to minimize cable congestion.
 
     5. Prepare the power delivery wires:
         - Split Power cable
@@ -185,7 +185,7 @@ We recommned using a standard **PETG-CF** reel. Carbon Fibre offers minimal inte
 
     7. Connect all power cabling into the Powerboard (x2) using the screw terminals. Remember to verify polarity.
 
-    8. **(Recommended)** Use a multimeter to verify connections before usage.
+    8. Recommended: Use a multimeter to verify connections before usage.
 
 
 ### Display Unit
