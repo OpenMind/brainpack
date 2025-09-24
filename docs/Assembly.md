@@ -113,7 +113,7 @@ The tools provided in the table below are some examples of tested equipment that
 
 ### Custom Fabrication Guide
 
-This project requires several 3D printed housing parts which can be found in the [CAD directory](../cad/), as well as custom cabling. Provided in this document are reference images for cabling connections as well as basic instructions on how to do so. 
+This project requires several 3D printed housing parts which can be found in the [CAD directory](../CAD/), as well as custom cabling. Provided in this document are reference images for cabling connections as well as basic instructions on how to do so. 
 
 **⚠️ Safety Notice:** Please exercise caution when fabricating wire connections and always remember to do a safety power check before plugging power electronics.
 
