@@ -1,5 +1,5 @@
 
-# PRISM
+# PRISM Build Guide
 
 ## Introduction: 
 
