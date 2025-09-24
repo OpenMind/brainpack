@@ -133,13 +133,13 @@ We recommned using a standard **PETG-CF** reel. Carbon Fibre offers minimal inte
 
 | Name | Quantity | 3D Model  |
 |------|----------|----------------|
-| Backpack Shell | 1 | [Link](../cad/Backpack.stl) |
-| Backpack Mount Bracket | 1 | [Link](../cad/MountBracket.stl) |
-| Jetson AGX Push Fit Bracket | 1 | [Link](../cad/PushFitBracket.stl) |
-| Backpack Lid | 1 | [Link](../cad/BackpackLid.stl) |
-| Display Bezel | 1 | [Link](../cad/Bezel.stl) |
-| Display Bezel Backplate | 1 | [Link](../cad/Backplate.stl) |
-| Front Housing | 1 | [Link](../cad/FrontHousing.stl) |
+| Backpack Shell | 1 | [Link](../cad/PRISM-Backpack.stl) |
+| Backpack Mount Bracket | 1 | [Link](../cad/PRISM-BaseMountBracket.stl) |
+| Jetson AGX Push Fit Bracket | 1 | [Link](../cad/PRISM-PushFitBracket.stl) |
+| Backpack Lid | 1 | [Link](../cad/PRISM-BackpackLid.stl) |
+| Display Bezel | 1 | [Link](../cad/PRISM-Bezel.stl) |
+| Display Bezel Backplate | 1 | [Link](../cad/PRISM-BezelBackplate.stl) |
+| Front Housing | 1 | [Link](../cad/PRISM-FrontHousing.stl) |
 
 ## Main Assembly
     
