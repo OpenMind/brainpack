@@ -22,11 +22,13 @@ Additionally, you may refer here for additional information:
 ## Quick Start Guide:
 
 ### Prerequisites:
+See also  [List of Tools](#tools-overview)
+
     1. A Unitree Go2 Edu
     
     2. A complete PRISM kit
     
-    3. Screwdriver and Allen Key Set [List of Tools](#tools-overview)
+    3. Screwdriver and Allen Key Set
 
 ### Installation Steps:
     1. First, unplug the power and Ethernet cables that plug into the Unitree Go2 proprietary compute unit. 
@@ -71,7 +73,7 @@ Additionally, you may refer here for additional information:
 ### Parts Overview
 
 | Name | Quantity | URL |
-|------|----------|-------|
+|:------:|:----------:|:-------:|
 | Elecrow 5" Display | 1 | [Link](https://www.amazon.com/ELECROW-Raspberry-Touchscreen-Monitor-HDMI-Compatible/dp/B07FDYXPT7) |
 | SLAMTec RPLidar | 1 | [Link](https://www.amazon.com/Slamtec-RPLIDAR-Scanning-Avoidance-Navigation/dp/B07TJW5SXF) |
 | Logitech Brio 101 | 1 | [Link](https://www.amazon.com/Logitech-Webcam-Meetings-Streaming-Built/dp/B0BXGFFSL1) |
@@ -95,7 +97,7 @@ The tools provided in the table below are some examples of tested equipment that
 **⚠️ Safety Notice:** Please exercise caution when handling tools that involve high temperature or voltage.
 
 | Name | URL |
-|------|-----|
+|:------:|:-----:|
 | Soldering Iron, Flux and Solder Wire | [Link](https://www.amazon.com/Gorilla-Heavy-Double-Sided-Mounting/dp/B082TQ3KB5/) |
 | Glue / Glue Gun | [Link](https://www.amazon.com/Gorilla-8401509-Hot-Glue-Sticks/dp/B07K791YRP/)|
 | Wire Strippers | [Link](https://www.amazon.com/haisstronica-Stripper-Automatic-Crimping-Universal/dp/B0B2NWK1QX/)|
@@ -116,7 +118,7 @@ This project requires several 3D printed housing parts which can be found in the
 **⚠️ Safety Notice:** Please exercise caution when fabricating wire connections and always remember to do a safety power check before plugging power electronics.
 
 | Part Name | Quantity | Notes |
-|-----------|----------|-------|
+|:-----------:|:----------:|:-------:|
 | USB C to JST Connector | 1 | Power for Ethernet Board |
 | 2.1 Barrel Jack Power In Cable | 1 | External Power delivery from Powerboard |
 | 2.1 Barrel Jack Power Out Cable | 1 | Powerboard to Jetson AGX |
@@ -131,7 +133,7 @@ We recommned using a standard **PETG-CF** reel. Carbon Fibre offers minimal inte
 
 
 | Name | Quantity | 3D Model  |
-|------|----------|----------------|
+|:------:|:----------:|:----------------:|
 | Backpack Shell | 1 | [Link](../CAD/PRISM-Box.stl) |
 | Backpack Mount Bracket | 1 | [Link](../CAD/PRISM-BaseMountBracket.stl) |
 | Jetson AGX Push Fit Bracket | 1 | [Link](../CAD/PRISM-AGXPushFitBracket.stl) |
@@ -249,7 +251,7 @@ We recommned using a standard **PETG-CF** reel. Carbon Fibre offers minimal inte
     
 **Congratulations, you have finished your PRISM setup!**
 
-### Troubleshooting
+[//]: # (Troubleshooting)
 
 ## Appendix:
 
