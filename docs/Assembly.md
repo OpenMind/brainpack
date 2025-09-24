@@ -17,7 +17,7 @@ Additionally, you may refer here for additional information:
 
 [Cable Fabrication]
 
-[FAQ](./faq.md)
+[FAQ](../docs/FAQ.md)
 
 ## Quick Start Guide:
 
