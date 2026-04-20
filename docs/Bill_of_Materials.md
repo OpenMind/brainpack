@@ -23,12 +23,59 @@
 | 25 mm M3 socket head screw with washer for front 2 holes of interface bracket | | 2 | Screws | 3rd party | The SHORT screw are used near the head of the dog | |
 | 35 mm M3 socket head screw with washer for back 2 holes of interface bracket | | 2 | Screws | 3rd party | The LONGer M3 bolts are used near the tail of the dog | |
 
-## Display Unit
+## Display Unit ("Face")
 
 | Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
 |:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
-| Display Bezel | | 1 | Housing | 3D printed | | <STL file goes here> | |
-| Lidar Mount | | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Frame | | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Frame Back (Unitree Go2, LimX Tron 1 ) | | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Frame Back (Unitree G1) | | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Widefield Camera Box | | 1 | Housing | 3D printed | | <STL file goes here> | |
+
+5inch High-Brightness Touch Screen, 1024x600 Pixels, Toughened Glass Panel, HDMI Interface, IPS Panel
+SKU: 27960
+Manufacturer Part No.: 5DP-CAPLCD-H
+Brand: Waveshare
+
+Speaker 
+665-AS04204PR
+AS04204PR
+PUI Audio Speakers & Transducers
+US HTS:8518298000 ECCN:EAR99 COO:CN
+https://mou.sr/4sO2Qsp
+
+
+
+
+## Thor Mounts
+
+| Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
+|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
+| Mount with sideplates, Unitree Go2| | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Mount with sideplates, Unitree G1| | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Mount, LimX Tron 1| | 1 | Housing | 3D printed | | <STL file goes here> | |
+
+Thor Nylon Holding Strap for Unitree G1 and Go2
+
+Bolts and Washers to mount to back of Unitree Go2
+Bolts and Washers to mount to front of Unitree G1
+Bolts and Nuts to mount to top of LimX Tron 1
+
+
+
+| Frame Back (Unitree Go2, LimX Tron 1 ) | | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Frame Back (Unitree G1) | | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Widefield Camera Box | | 1 | Housing | 3D printed | | <STL file goes here> | |
+
+
+## Cable Harness
+
+Thor Power Cable
+MICRO-FIT3.0 R-S 4 CIRCUIT 600MM
+DigiKey Part No.: 900-2147561043-ND
+Manufacturer Part No.: 2147561043
+https://www.digikey.com/en/products/detail/molex/2147561043/12180337
+
 
 ### Display
 

@@ -1,22 +1,21 @@
-![Dog Backpack](https://github.com/user-attachments/assets/f3defe3e-7c6b-4db6-a260-7e872cf4ac9a)
+![BrainPack](https://github.com/user-attachments/assets/f3defe3e-7c6b-4db6-a260-7e872cf4ac9a)
 
 
-# PRISM Backpack for Unitree Go2
+# BrainPack for LimX Tron 1, Unitree G1, and Unitree Go2
 
 ## Introduction
 
-The **PRISM Backpack** provides an easy to use, modular compute-and-development platform for robotics, seamlessly integrated with the Unitree Go2. 
+The **BrainPack** provides an easy to use, modular compute-and-development platform for robotics, seamlessly integrated with the LimX Tron 1, Unitree G1, and Unitree Go2. 
 
 Included is a full-suite of sensors that allow your Go2 to understand and react to its environment, and interact with people through OM1. The PRISM Backpack comes with OM1 fully built in - simply turn on the Go2 and OM1 will breathe life into your robot.
 
 ## Features
 
 - **Powered by OM1** - Full suite of OM1 functionalities built-in.
-- **Human in the Loop** - Connect and control your robot remotely, or request help from a professional whenever you need.
+- **Human in the Loop** - Connect and control your robot remotely, or request help from a professional whenever you need. (requires use of the paid OpenMind portal)
 - **Developer Friendly** - Highly modular design with multiple connections and ports for easy hardware integration.
 
 ## Quick Start Guide
-
 
 1. First, unplug the power and Ethernet cables that plug into the Unitree Go2 proprietary compute unit. 
 2. Remove the compute unit:
