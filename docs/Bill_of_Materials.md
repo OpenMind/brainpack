@@ -22,46 +22,46 @@ Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module<br>
 SKU: B0202<br>
 [Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)<br>
 
-**1 ea. RealSense Depth Camera (i435)**
-Intel RealSense Depth Camera D435i, Silver, 
-1080p Video Capture Resolution (82635D435IDK5P)
-https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
+**1 ea. RealSense Depth Camera (i435)**<br>
+Intel RealSense Depth Camera D435i, Silver, <br>
+1080p Video Capture Resolution (82635D435IDK5P)<br>
+https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB<br>
 
-**1 ea. USB cable for RealSense**
-Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 
-4K USBC Video High Speed Data Transfer Fast Charging Cord
-https://www.amazon.com/dp/B094V4RJGC
-NOTE: should be improved - should be a USB-C to USB-A cable
+**1 ea. USB cable for RealSense**<br>
+Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W <br>
+4K USBC Video High Speed Data Transfer Fast Charging Cord<br>
+https://www.amazon.com/dp/B094V4RJGC<br>
+NOTE: should be improved - should be a USB-C to USB-A cable<br>
 
-**1 ea. High-Brightness Touch Screen**
-5inch High-Brightness Touch Screen, 1024x600 Pixels, 
-Toughened Glass Panel, HDMI Interface, IPS Panel
-SKU: 27960
-Mfr. #: 5DP-CAPLCD-H
-Brand: Waveshare
-https://www.waveshare.com/5dp-caplcd.htm?sku=27960
+**1 ea. High-Brightness Touch Screen**<br>
+5inch High-Brightness Touch Screen, 1024x600 Pixels, <br>
+Toughened Glass Panel, HDMI Interface, IPS Panel<br>
+SKU: 27960<br>
+Mfr. #: 5DP-CAPLCD-H<br>
+Brand: Waveshare<br>
+https://www.waveshare.com/5dp-caplcd.htm?sku=27960<br>
 
-**1 ea. Touchscreen Power/USB cable**
-aceyoon 3 Pack 90 Degree USB C Cable 
-0.6ft Short Right Angle Type C Charger Braided 
-USBC to USB A 20cm Charging and Data Sync Cord
-https://www.amazon.com/dp/B096VYVR17
+**1 ea. Touchscreen Power/USB cable**<br>
+aceyoon 3 Pack 90 Degree USB C Cable <br>
+0.6ft Short Right Angle Type C Charger Braided <br>
+USBC to USB A 20cm Charging and Data Sync Cord<br>
+https://www.amazon.com/dp/B096VYVR17<br>
 
-**1 ea. Audio Amplifier**
-DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board 
-PAM8620 DC 8-26V 24V Digital Stereo Amp Module Class D Mini Power 
-https://www.amazon.com/dp/B0CQJRL235
+**1 ea. Audio Amplifier**<br>
+DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board <br>
+PAM8620 DC 8-26V 24V Digital Stereo Amp Module Class D Mini Power <br>
+https://www.amazon.com/dp/B0CQJRL235<br>
 
-**2 ea. Speaker 42mm 8W 4ohm**
-Mouser #: 665-AS04204PR
-Mfr. #: AS04204PR
-Mfr.: PUI Audio
-https://mou.sr/4sO2Qsp
+**2 ea. Speaker 42mm 8W 4ohm**<br>
+Mouser #: 665-AS04204PR<br>
+Mfr. #: AS04204PR<br>
+Mfr.: PUI Audio<br>
+https://mou.sr/4sO2Qsp<br>
 
-**1 ea. Audio Cable**
-Seadream 3.5mm Aux Cable Short 2Pack 
-8inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable
-https://www.amazon.com/dp/B01L0YPVOY
+**1 ea. Audio Cable**<br>
+Seadream 3.5mm Aux Cable Short 2Pack <br>
+8inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable<br>
+https://www.amazon.com/dp/B01L0YPVOY<br>
 
 **1 ea. Sound Card ADC and DAC**
 SABRENT USB External Stereo Sound Adapter 
