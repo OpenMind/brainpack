@@ -5,7 +5,7 @@
 
 | Name | Quantity | Fab | Link | Picture |
 |:------|:---:|----------|----------|-----|
-| Frame                                  | 1 | 3D printed | STL file goes here | picture |
+| Face Frame                             | 1 | 3D printed | STL file goes here | picture |
 | Frame Back (Unitree Go2, LimX Tron 1)  | 1 | 3D printed | STL file goes here | picture |
 | Frame Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
 | Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
@@ -92,13 +92,25 @@ Iexcell 100 Pcs M3 x 8mm Thread Pitch
 Hex Socket Button Head Cap Screws Bolts Kit
 https://www.amazon.com/dp/B08H2HTTRT
 
-Screws to mount frame back to Unitree Go2 and Tron 1 head
-4 ea. M3 cap screws with lock nuts  
+## Face Mounting
 
-Screws to monut fram back to Unitree G1
-2 ea. large bolts with lock nuts
+| Robot  | Name | Quantity | Fab | Link | Picture |
+|--------|------| --- |----------|----------|---------|
+| Unitree Go2, LimX Tron 1 | Face Back | 1 | 3D printed | STL file goes here | picture |
+| Unitree Go2, LimX Tron 1 | Face and Sensor Carrier ("Head") | 1 | 3D printed | STL file goes here | picture |
+| Unitree G1 | Face Back | 1 | 3D printed | STL file goes here | picture |
 
-## Thor and Other Mounts
+### Unitree G1
+
+**2 ea. M6 x 25mm Cap Screws** with nylon lock nut<br>
+These are used to secure the frame back to the front of the Unitree G1<br> 
+
+### Unitree Go2 and LimX Tron 1
+
+**4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers<br>
+These are used to secure the frame back to the front of the standard sensor and display carrier ("head")<br>
+
+## Thor Mounts
 
 | Name | Quantity | Fab | Link | Picture |
 |------|-------------|----------|----------|-----|
@@ -146,14 +158,6 @@ Manufacturer Part No.: 2147561043
 https://www.digikey.com/en/products/detail/molex/2147561043/12180337
 
 
-2 ea. 50 mm 
-
-Bolts and Washers to mount to front of Unitree G1 (big ones, two lengths)
-
-
-
-
-Bolts and Washers to mount to back of Unitree Go2
 
 
 Cables - 
