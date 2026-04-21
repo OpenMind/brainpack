@@ -49,7 +49,6 @@ Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module<br>
 SKU: B0202<br>
 https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html<br>
 
-
 **1 ea. RealSense Depth Camera (i435)**
 Intel RealSense Depth Camera D435i, Silver, 
 1080p Video Capture Resolution (82635D435IDK5P)
@@ -160,6 +159,22 @@ DigiKey Part No.: 900-2147561043-ND
 Manufacturer Part No.: 2147561043
 https://www.digikey.com/en/products/detail/molex/2147561043/12180337
 
+Cables - 
+ 
+ The kit features two USB-A 3.2 Gen 2 ports for peripherals.
+ 
+Bus A - 0.4 + 0.3 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
+Bus B - 0.7 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
+
+USB-A Power for Laserscan - Operating Current: 40mA(5V power supply, in sleep); 400mA(5V power supply, working)
+USB-A Microphone and Speaker ADC and DAQ - time senstitive - no power specs public but < 0.5 A - might be a lot lower
+USB-A Widefield Camera - way too long - normal video - USB powered 5V Working Current: MAX 300mA
+
+USB-C from RealSense - generally too long and and ends in wrong plug - ~700 mA - USB 3.1 needed
+USB-A Data for Laserscan - 0 mA data only line
+USB-A Display power and cap data - length ok - assume 0.5A power draw due to back lighting - no idea - could be lower?
+
+Might need powered hubs
 
 ### Display
 
