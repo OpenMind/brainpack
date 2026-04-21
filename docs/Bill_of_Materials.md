@@ -6,7 +6,7 @@
 | Name | Quantity | Fab | Link | Picture |
 |:------|:---:|----------|----------|-----|
 | Frame                                  | 1 | 3D printed | STL file goes here | picture |
-| Frame Back (Unitree Go2, LimX Tron 1 ) | 1 | 3D printed | STL file goes here | picture |
+| Frame Back (Unitree Go2, LimX Tron 1)  | 1 | 3D printed | STL file goes here | picture |
 | Frame Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
 | Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
 
@@ -20,7 +20,7 @@ Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
 Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module<br>
 2MP CMOS IMX291 160 Degree Fisheye Mini UVC USB2.0<br>
 SKU: B0202<br>
-https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html<br>
+[Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)<br>
 
 **1 ea. RealSense Depth Camera (i435)**
 Intel RealSense Depth Camera D435i, Silver, 
