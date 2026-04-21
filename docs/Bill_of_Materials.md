@@ -1,5 +1,31 @@
-# Bill of Materials
+# Bill of Materials and Assembly Notes
 [//]:# (**v 0.2**)
+
+# HAZARD/DANGER/CRITICAL: Power Budget
+
+**In general, you should be aware that regardless of robot, you might be operating the system clearly above its design power budget. Solution: careful design consideration of the robot's intend use, average and peak power requirements, and sensor//model/robot interplay** 
+
+Unless you get this right, you will notice fast battery drain, intermittent faults and resets, electrical shorts and fires, overheating, poor sensor performance and many other possible problems. For example a problem could be that if your robot tries to speak and walk at the same time, while running multiple large policies, this could overload the power system, resulting in a power glitch and the robot crashing to the floor. Debugging individual subsystems will not reveal this problem, which only occurs when the robot wishes to move, think, and speak at the same time. 
+
+Solution: Depending on which software you are running, which functionality you wish to support, and how your sensors and Thor are configured, you need to carefully analyze your solution's **ACTUAL** power budget. First, **measure** the actual power draw for your sensors in your specific configuration, and then design and build a suyitalbe power augmentation system and needed power converters. For example, for the Unitree G1 we add an extra battery to the robot, or we add buck regulators as needed. 
+
+**CAUTION/NOTE: adding extra mass to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. Solution: train custom motion policies for your robot in its final mass configuration.**
+
+We recommend a **USB Tester 4-28V 7A LCD USB A&C Voltage Current Power Tester Multimeter** so you can evaluate the average and peak power draw for all the different sensors. Here are some example values:
+ 
+**USB Bus A** 
+USB-A Power for RPLidare S2 Laserscan - Operating Current: 40mA(5V power supply, in sleep); 400mA(5V power supply, working)
+USB-A Microphone and Speaker ADC and DAQ - time sensitive - no power specs public but < 0.5 A - might be a lot lower - need to measure
+USB-A Widefield Camera - cable way too long - normal video data rates - USB powered 5V Working Current: MAX 300mA
+
+**USB Bus B** 
+USB-C from RealSense - cable generally too long and and ends in wrong plug - ~700 mA - USB 3.1 needed
+USB-A Data for Laserscan - 0 mA data only line - need to confirm
+USB-A Display power and cap data - length ok - assume 0.5A power draw due to back lighting - no idea - could be lower?
+
+Note that both of these buses are overloaded and out of spec, suggesting use of a powered USB hub. 
+USB Bus A: 0.4 + 0.3 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
+USB Bus B: 0.7 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
 
 ## Display Unit ("Face")
 
@@ -163,25 +189,44 @@ DigiKey Part No.: 900-2147561043-ND
 Manufacturer Part No.: 2147561043
 https://www.digikey.com/en/products/detail/molex/2147561043/12180337
 
+## Power Electronics
+
+| Robot  | Name |
+|--------|------|
+| All | MICRO-FIT3.0 R-S Thor Power Cable |
+| All | Mil-spec hookup wire, M22759/16-20 Mil-Spec Tefzel Hi-Temp Stranded Wire 20AWG Gauge, Black |
+| All | Mil-spec hookup wire, M22759/16-20 Mil-Spec Tefzel Hi-Temp Stranded Wire 20AWG Gauge, Red |
+| All | Crimp butt connectors, heat shrink, associated tooling |
+| Unitree Go2 and G1 | Male XT30 connector |
+| Unitree Go2 | MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator | 
+| Tron 1 | Male XT60 connector with wire leads |
+| Unitree G1 | Male EC5 connector with 14AWG wire leeds |
+| Unitree G1 | 120S 14.8V 10000 mAh LiPo battery with female EC5 connector and LiPo charger |
+| Unitree G1 | CAMWAY 5PCS 2in1 1-8s Lipo Battery Low Voltage Buzzer Alarm |
+
+### Tron 1 Custom Power Cable
+
+The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor. Use crimp butt connectors to connect the male XT60 plug to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the audio amplifier. **You will damage either the audio amplifier, the Thor, or the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
+
+### Unitree G1 Custom Power Cable
+
+The Unitree G1 **does not** provide sufficient power for the both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor and the G1 just powers the audio amplifier via the G1's 24V/5A plug.
+
+1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to the audio amplifier cables (red, black) from the face unit. Plug the XT30 plug into the **MIDDLE** G1 power supply, which provides 24V/5A. **You will damage either the audio amplifier, or the robot, or both, if you get this wrong. Do not reverse the polarity!** 
+
+2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to decide the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity!** 
+
+3. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to overdischarge. Use the second velcro nylon strap to attach the LiPo battery to the Thor mount.
+
+### Unitree Go2 Custom Power Cable
+
+The Unitree Go2 provides 28 to 33.6V, which is too much for the Audio Amplifier. Solution - use an MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator to provide 12V to the audio amplifier. 
+
+1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the MATEKSYS BEC 12S power. Add a drop of solder to short the 12V config pins of the MATEKSYS BEC 12S so that is provides 12V rather than the default 5.2V. Connect the outputs of the MATEKSYS BEC 12S to the red/black wires from the audio amplifier in the face unit. **You will damage either the audio amplifier, or the Thor, or the robot, or all three, if you get this wrong. Do not reverse the polarity!** 
+
+2. Plug the XT30 plug into the 33.6V Go2 power supply port. 
 
 
-
-Cables - 
- 
- The kit features two USB-A 3.2 Gen 2 ports for peripherals.
- 
-Bus A - 0.4 + 0.3 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
-Bus B - 0.7 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
-
-USB-A Power for Laserscan - Operating Current: 40mA(5V power supply, in sleep); 400mA(5V power supply, working)
-USB-A Microphone and Speaker ADC and DAQ - time senstitive - no power specs public but < 0.5 A - might be a lot lower
-USB-A Widefield Camera - way too long - normal video - USB powered 5V Working Current: MAX 300mA
-
-USB-C from RealSense - generally too long and and ends in wrong plug - ~700 mA - USB 3.1 needed
-USB-A Data for Laserscan - 0 mA data only line
-USB-A Display power and cap data - length ok - assume 0.5A power draw due to back lighting - no idea - could be lower?
-
-Might need powered hubs
 
 ### Display
 
