@@ -32,20 +32,99 @@
 | Frame Back (Unitree G1) | | 1 | Housing | 3D printed | | <STL file goes here> | |
 | Widefield Camera Box | | 1 | Housing | 3D printed | | <STL file goes here> | |
 
-5inch High-Brightness Touch Screen, 1024x600 Pixels, Toughened Glass Panel, HDMI Interface, IPS Panel
-SKU: 27960
-Manufacturer Part No.: 5DP-CAPLCD-H
-Brand: Waveshare
+**1 ea. Flexible HDMI to HDMI Cable**
 
-Speaker 
-665-AS04204PR
-AS04204PR
-PUI Audio Speakers & Transducers
-US HTS:8518298000 ECCN:EAR99 COO:CN
+For Unitree G1 and Go2:
+Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT, 
+Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz
+https://www.amazon.com/dp/B09XHYH4KY
+
+For LimX Tron 1 (need extra length to reach Nvidia Thor):
+Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 3.3FT, 
+Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz
+https://www.amazon.com/dp/B09XHZD6Z2
+
+**1 ea. Fisheye RGB Camera**
+Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module
+2MP CMOS IMX291 160 Degree Fisheye Mini UVC USB2.0
+SKU: B0202
+https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html 
+
+**1 ea. RealSense Depth Camera (i435)**
+Intel RealSense Depth Camera D435i, Silver, 
+1080p Video Capture Resolution (82635D435IDK5P)
+https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
+
+**1 ea. USB cable for RealSense**
+Short USB C to USB C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 4K USBC Video High Speed Data Transfer Fast Charging Cord
+https://www.amazon.com/dp/B094V4RJGC
+
+**1 ea. High-Brightness Touch Screen**
+5inch High-Brightness Touch Screen, 1024x600 Pixels, 
+Toughened Glass Panel, HDMI Interface, IPS Panel
+SKU: 27960
+Mfr. #: 5DP-CAPLCD-H
+Brand: Waveshare
+https://www.waveshare.com/5dp-caplcd.htm?sku=27960
+
+**1 ea. Touchscreen Power/USB cable**
+aceyoon 3 Pack 90 Degree USB C Cable, 
+0.6ft Short Right Angle Type C Charger Braided 
+USBC to USB A 20cm Charging and Data Sync Cord
+https://www.amazon.com/dp/B096VYVR17
+
+**1 ea. Audio Amplifier**
+DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board 
+PAM8620 DC 8-26V 24V Digital Stereo Amp Module Class D Mini Power 
+https://www.amazon.com/dp/B0CQJRL235
+
+**2 ea. Speaker 42mm 8W 4ohm**
+Mouser #: 665-AS04204PR
+Mfr. #: AS04204PR
+Mfr.: PUI Audio
 https://mou.sr/4sO2Qsp
 
+**1 ea. Audio Cable**
+Seadream 3.5mm Aux Cable Short 2Pack 
+8inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable
+https://www.amazon.com/dp/B01L0YPVOY
 
+**1 ea. ADC and DAC; Sound Card**
+SABRENT USB External Stereo Sound Adapter for Windows and Mac. 
+Plug and Play No Drivers Needed
+USB-A (do not buy USB-C version - degraded audio quality)
+https://www.amazon.com/dp/B00IRVQ0F8
 
+**1 ea. Directional Microphone**
+comica Camera Microphone, CVM-VM10II 
+Directional Microphone Cardioid Shotgun Video Camcorder Microphone
+(with Wind Muff)
+https://www.amazon.com/dp/B0748CYPDJ
+(retain included 3.5 mm TRS cable; will be used in final assembly)
+
+**1 ea. Microphone Mount**
+SMALLRIG Cold Shoe Mount Adapter with 1/4 Thread Hole – 1241
+https://www.amazon.com/dp/B00HJFBUCQ
+
+**5 ea. M3 Threaded Inserts for 3D Printing Components**
+For example:
+Kadrick 520Pcs M2 M3 M4 M5 Threaded Inserts 
+Assortment Kit for 3D Printing Components, 
+Metric Brass Knurled Nuts, Insert by Heat into Plastic Parts
+https://www.amazon.com/dp/B0D5V3TZLB
+
+**5 ea. M3 x 8mm Thread Pitch Cap Screws**
+For example:
+iexcell 100 Pcs M3 x 8mm Thread Pitch 
+0.5 mm Stainless Steel 304 
+Hex Socket Button Head Cap Screws Bolts Kit
+https://www.amazon.com/dp/B08H2HTTRT
+
+Screws to mount frame back to Unitree Go2 and Tron 1 head
+4 ea. M3 cap screws with lock nuts  
+
+Screws to monut fram back to Unitree G1
+2 ea. large bolts with lock nuts
 
 ## Thor Mounts
 
@@ -53,20 +132,25 @@ https://mou.sr/4sO2Qsp
 |:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
 | Mount with sideplates, Unitree Go2| | 1 | Housing | 3D printed | | <STL file goes here> | |
 | Mount with sideplates, Unitree G1| | 1 | Housing | 3D printed | | <STL file goes here> | |
-| Mount, LimX Tron 1| | 1 | Housing | 3D printed | | <STL file goes here> | |
 
 Thor Nylon Holding Strap for Unitree G1 and Go2
+Fastening Hook and Loop Cable Straps, 10 Pack 
+Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles, 
+Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20")
+https://www.amazon.com/dp/B088FJCJDL
 
 Bolts and Washers to mount to back of Unitree Go2
-Bolts and Washers to mount to front of Unitree G1
-Bolts and Nuts to mount to top of LimX Tron 1
+Bolts and Washers to mount to front of Unitree G1 (big ones, two lengths)
 
+### LimX Tron 1
 
+1 ea. Mount, LimX Tron 1 STL file goes here
 
-| Frame Back (Unitree Go2, LimX Tron 1 ) | | 1 | Housing | 3D printed | | <STL file goes here> | |
-| Frame Back (Unitree G1) | | 1 | Housing | 3D printed | | <STL file goes here> | |
-| Widefield Camera Box | | 1 | Housing | 3D printed | | <STL file goes here> | |
-
+1 ea. Bolts and Nuts to mount to top of LimX Tron 1:
+200Pcs 2020 Aluminum Extrusion M5 T Slot Nuts and Bolts Screws 
+20 Series Extruded Hardware Drop in T Nut Slide Nut 
+M5x8 10mm for 20/20 80 20 2040 T V Slot Black Aluminum Profile Accessories
+https://www.amazon.com/dp/B08VGSNT2S
 
 ## Cable Harness
 
