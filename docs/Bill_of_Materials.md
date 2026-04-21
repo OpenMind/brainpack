@@ -112,11 +112,11 @@ These are used to secure the frame back to the front of the standard sensor and 
 
 ## Thor Mounts
 
-| Name | Quantity | Fab | Link | Picture |
-|------|-------------|----------|----------|-----|
-| Mount with sideplates, Unitree Go2 | 1 | 3D printed | STL file goes here | picture |
-| Mount with sideplates, Unitree G1  | 1 | 3D printed | STL file goes here | picture |
-| Head Mount, LimX Tron 1            | 1 | 3D printed | STL file goes here | picture |
+| Robot  | Name | Quantity | Fab | Link | Picture |
+|--------|------| --- |----------|----------|---------|
+| Unitree Go2 | Mount with sideplates | 1 | 3D printed | STL file goes here | picture |
+| LimX Tron 1 | Head Mount | 1 | 3D printed | STL file goes here | picture |
+| Unitree G1 | Mount with sideplates | 1 | 3D printed | STL file goes here | picture |
 
 ### LimX Tron 1
 
@@ -135,6 +135,12 @@ Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles, <br>
 Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20")<br> 
 https://www.amazon.com/dp/B088FJCJDL<br> 
 
+**2 ea. M6 x 35mm Cap Screws**<br>
+These are used to secure the TOP of the Thor mount.<br> 
+
+**2 ea. M6 x 30mm Cap Screws**<br>
+These are used to secure the BOTTOM of the Thor mount.<br>
+
 ### Unitree Go2
 
 **1 ea. Nylon Holding Strap**<br>
@@ -143,13 +149,13 @@ Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles<br>
 Adjustable and Reusable Cinch Straps for Cords Organized and Tidy (1" x 20")<br>
 https://www.amazon.com/dp/B088FJCJDL<br>
 
-**2 ea. M3 x 50mm Cap Screws** with washers<br>
-These are used to secure the BACK of the Thor mount.<br> 
-
 **2 ea. M3 x 35mm Cap Screws** with washers<br>
 These are used to secure the FRONT of the Thor mount.<br>
 
-## Cable Harness
+**2 ea. M3 x 50mm Cap Screws** with washers<br>
+These are used to secure the BACK of the Thor mount.<br> 
+
+## Thor Power Cable Harness
 
 Thor Power Cable
 MICRO-FIT3.0 R-S 4 CIRCUIT 600MM
