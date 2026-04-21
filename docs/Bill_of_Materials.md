@@ -1,4 +1,4 @@
-# Bill of Materials and Assembly Notes
+# Materials and Assembly
 [//]:# (**v 0.2**)
 
 # HAZARD/DANGER: Power Budget and Thermal Limits
