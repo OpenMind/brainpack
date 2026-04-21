@@ -1,47 +1,20 @@
 # Bill of Materials
 [//]:# (**v 0.2**)
 
-## Backpack Unit
-
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|
-| Shell | | 1 | Housing | 3D printed | | <STL file goes here> |
-| Base Mount bracket | | 1 | Housing | 3D printed | | <STL file goes here> |
-| Lid | | 1 | Housing | 3D printed | | <STL file goes here> |
-| AGX push fit bracket | | 1 | Housing | 3D printed | | <STL file goes here> |
-| Magnets for snap on lid | | 4 | Housing | 3rd party | | |
-| Openmind Powerboard | | 2 | Electronics | Custom Fab | Openmind PCB | |
-| Nvidia Jetson AGX Orin Developer Kit | ‎945-13730-0050-000 | 1 | Electronics | 3rd party | | https://www.amazon.com/NVIDIA-Jetson-Orin-64GB-Developer/dp/B0BYGB3WV4/ref=sr_1_2?s=electronics |
-| Waveshare Audio codec driver | ‎RS232/485 USB All | 1 | Electronics | 3rd party | USB drive enclosure is removed and discarded. | https://www.amazon.com/Waveshare-USB-Converter-Raspberry-Driver-Free/dp/B08R38TXXL |
-| Speakers | a19090500ux0199 | 2 | Electronics | 3rd party | +ve/-ve leads soldered to JST 4 pin adapter | https://www.amazon.com/uxcell-Internal-Magnet-Speaker-Loudspeaker/dp/B082ZPP56D |
-| Speaker cable (custom) | | 1 | Cabling | Custom Fab | Modified from cable that is shipped with the Waveshare Audio speaker system | |
-| Ethernet bridge | SPM10236514602 | 1 | Electronics | 3rd party | Need to remove (and discard) enclosure | https://www.amazon.com/dp/B0D9BN22ZX |
-| USB C to JST power connector for the Ethernet board | | 1 | Cabling | Custom Fab | | |
-| 2.1 mm Male Barrel Jack power in cable | | 1 | Cabling | Custom Fab | | |
-| 2.1 mm Female Barrel Jack power out cable | | 1 | Cabling | Custom Fab | | |
-| Split power delivery cable | | 1 | Cabling | Custom Fab | | |
-| 25 mm M3 socket head screw with washer for front 2 holes of interface bracket | | 2 | Screws | 3rd party | The SHORT screw are used near the head of the dog | |
-| 35 mm M3 socket head screw with washer for back 2 holes of interface bracket | | 2 | Screws | 3rd party | The LONGer M3 bolts are used near the tail of the dog | |
-
 ## Display Unit ("Face")
 
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
-| Frame | | 1 | Housing | 3D printed | | <STL file goes here> | |
-| Frame Back (Unitree Go2, LimX Tron 1 ) | | 1 | Housing | 3D printed | | <STL file goes here> | |
-| Frame Back (Unitree G1) | | 1 | Housing | 3D printed | | <STL file goes here> | |
-| Widefield Camera Box | | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Name | Quantity | Fab | Link | Picture |
+|:------:|:---:|:----------:|:----------:|:-----:|:-------------:|
+| Frame                                  | 1 | 3D printed | STL file goes here | picture |
+| Frame Back (Unitree Go2, LimX Tron 1 ) | 1 | 3D printed | STL file goes here | picture |
+| Frame Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
+| Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
 
 **1 ea. Flexible HDMI to HDMI Cable**<br>
-For Unitree G1 and Go2:<br>
 Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT<br>
 Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
-https://www.amazon.com/dp/B09XHYH4KY<br>
-
-For LimX Tron 1 (need extra length to reach Nvidia Thor):<br>
-Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 3.3FT<br>
-Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
-https://www.amazon.com/dp/B09XHZD6Z2<br>
+**For Unitree G1 and Go2**: 1FT length: https://www.amazon.com/dp/B09XHYH4KY<br>
+**For Tron 1**: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2<br>
 
 **1 ea. Fisheye RGB Camera**<br>
 Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module<br>
@@ -55,8 +28,10 @@ Intel RealSense Depth Camera D435i, Silver,
 https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
 
 **1 ea. USB cable for RealSense**
-Short USB C to USB C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 4K USBC Video High Speed Data Transfer Fast Charging Cord
+Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 
+4K USBC Video High Speed Data Transfer Fast Charging Cord
 https://www.amazon.com/dp/B094V4RJGC
+NOTE: should be improved - should be a USB-C to USB-A cable
 
 **1 ea. High-Brightness Touch Screen**
 5inch High-Brightness Touch Screen, 1024x600 Pixels, 
@@ -67,7 +42,7 @@ Brand: Waveshare
 https://www.waveshare.com/5dp-caplcd.htm?sku=27960
 
 **1 ea. Touchscreen Power/USB cable**
-aceyoon 3 Pack 90 Degree USB C Cable, 
+aceyoon 3 Pack 90 Degree USB C Cable 
 0.6ft Short Right Angle Type C Charger Braided 
 USBC to USB A 20cm Charging and Data Sync Cord
 https://www.amazon.com/dp/B096VYVR17
@@ -88,33 +63,31 @@ Seadream 3.5mm Aux Cable Short 2Pack
 8inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable
 https://www.amazon.com/dp/B01L0YPVOY
 
-**1 ea. ADC and DAC; Sound Card**
-SABRENT USB External Stereo Sound Adapter for Windows and Mac. 
-Plug and Play No Drivers Needed
+**1 ea. Sound Card ADC and DAC**
+SABRENT USB External Stereo Sound Adapter 
 USB-A (do not buy USB-C version - degraded audio quality)
 https://www.amazon.com/dp/B00IRVQ0F8
 
 **1 ea. Directional Microphone**
-comica Camera Microphone, CVM-VM10II 
+Comica Camera Microphone, CVM-VM10II 
 Directional Microphone Cardioid Shotgun Video Camcorder Microphone
-(with Wind Muff)
 https://www.amazon.com/dp/B0748CYPDJ
-(retain included 3.5 mm TRS cable; will be used in final assembly)
+Note: retain included 3.5 mm TRS cable; will be used in final assembly
 
 **1 ea. Microphone Mount**
 SMALLRIG Cold Shoe Mount Adapter with 1/4 Thread Hole – 1241
 https://www.amazon.com/dp/B00HJFBUCQ
 
 **5 ea. M3 Threaded Inserts for 3D Printing Components**
-For example:
+Many suppliers, for example:
 Kadrick 520Pcs M2 M3 M4 M5 Threaded Inserts 
 Assortment Kit for 3D Printing Components, 
 Metric Brass Knurled Nuts, Insert by Heat into Plastic Parts
 https://www.amazon.com/dp/B0D5V3TZLB
 
 **5 ea. M3 x 8mm Thread Pitch Cap Screws**
-For example:
-iexcell 100 Pcs M3 x 8mm Thread Pitch 
+Many suppliers, for example:
+Iexcell 100 Pcs M3 x 8mm Thread Pitch 
 0.5 mm Stainless Steel 304 
 Hex Socket Button Head Cap Screws Bolts Kit
 https://www.amazon.com/dp/B08H2HTTRT
@@ -125,31 +98,54 @@ Screws to mount frame back to Unitree Go2 and Tron 1 head
 Screws to monut fram back to Unitree G1
 2 ea. large bolts with lock nuts
 
-## Thor Mounts
+## Thor and Other Mounts
 
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
+| Name | Quantity | Fab | Link | Picture |
 |:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
-| Mount with sideplates, Unitree Go2| | 1 | Housing | 3D printed | | <STL file goes here> | |
-| Mount with sideplates, Unitree G1| | 1 | Housing | 3D printed | | <STL file goes here> | |
+| Mount with sideplates, Unitree Go2 | 1 | 3D printed | STL file goes here | picture |
+| Mount with sideplates, Unitree G1  | 1 | 3D printed | STL file goes here | picture |
+| Head Mount, LimX Tron 1  | 1 | 3D printed | STL file goes here | picture |
 
-Thor Nylon Holding Strap for Unitree G1 and Go2
+### LimX Tron 1
+
+**1 ea. M5 T Slot Nut and Bolt Kit**
+Many suppliers, for example:<br> 
+200Pcs 2020 Aluminum Extrusion M5 T Slot Nuts and Bolts Screws<br>
+20 Series Extruded Hardware Drop in T Nut Slide Nut<br>
+M5x8 10mm for 20/20 80 20 2040 T V Slot Black Aluminum Profile Accessories<br>
+https://www.amazon.com/dp/B08VGSNT2S<br>
+
+### Unitree G1
+
+**2 ea. Nylon Holding Strap**
 Fastening Hook and Loop Cable Straps, 10 Pack 
 Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles, 
 Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20")
 https://www.amazon.com/dp/B088FJCJDL
 
-Bolts and Washers to mount to back of Unitree Go2
+2 ea. 50 mm 
+
 Bolts and Washers to mount to front of Unitree G1 (big ones, two lengths)
 
-### LimX Tron 1
 
-1 ea. Mount, LimX Tron 1 STL file goes here
 
-1 ea. Bolts and Nuts to mount to top of LimX Tron 1:
-200Pcs 2020 Aluminum Extrusion M5 T Slot Nuts and Bolts Screws 
-20 Series Extruded Hardware Drop in T Nut Slide Nut 
-M5x8 10mm for 20/20 80 20 2040 T V Slot Black Aluminum Profile Accessories
-https://www.amazon.com/dp/B08VGSNT2S
+
+Bolts and Washers to mount to back of Unitree Go2
+
+
+### Unitree Go2
+
+**1 ea. Nylon Holding Strap**<br>
+Fastening Hook and Loop Cable Straps, 10 Pack<br>
+Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles<br>
+Adjustable and Reusable Cinch Straps for Cords Organized and Tidy (1" x 20")<br>
+https://www.amazon.com/dp/B088FJCJDL<br>
+
+**2 ea. M3 x 50mm Cap Screws** with washers<br>
+These are used to secure the BACK of the Thor mount.<br> 
+
+**2 ea. M3 x 35mm Cap Screws** with washers<br>
+These are used to secure the FRONT of the Thor mount.<br>
 
 ## Cable Harness
 
@@ -214,3 +210,27 @@ Might need powered hubs
 | Intel D435i depth camera | 82635D435IDK5P | 1 | electronics | 3rd party | Uses cable that comes with the Unitree. Also uses a USB-C to USB-A adapter | | |
 | Unitree 435 mount and cable | | 1 | mount/cable | 3rd party | Comes with each Go2 EDU, but we pay extra for it | | |
 | USB-C to USB-A adapter | US701 | 1 | connector | 3rd party | For connecting the d435i to the Jetson AGX | https://www.amazon.com/UGREEN-Adapter-10Gbps-Converter-Samsung/dp/B0CY1Y3TSQ/ref=sr_1_4?s=electronics | |
+
+
+
+## Backpack Unit
+
+| Name | Part No. | Quantity | Category | Fab | Build Notes | Link |
+|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|
+| Shell | | 1 | Housing | 3D printed | | <STL file goes here> |
+| Base Mount bracket | | 1 | Housing | 3D printed | | <STL file goes here> |
+| Lid | | 1 | Housing | 3D printed | | <STL file goes here> |
+| AGX push fit bracket | | 1 | Housing | 3D printed | | <STL file goes here> |
+| Magnets for snap on lid | | 4 | Housing | 3rd party | | |
+| Openmind Powerboard | | 2 | Electronics | Custom Fab | Openmind PCB | |
+| Nvidia Jetson AGX Orin Developer Kit | ‎945-13730-0050-000 | 1 | Electronics | 3rd party | | https://www.amazon.com/NVIDIA-Jetson-Orin-64GB-Developer/dp/B0BYGB3WV4/ref=sr_1_2?s=electronics |
+| Waveshare Audio codec driver | ‎RS232/485 USB All | 1 | Electronics | 3rd party | USB drive enclosure is removed and discarded. | https://www.amazon.com/Waveshare-USB-Converter-Raspberry-Driver-Free/dp/B08R38TXXL |
+| Speakers | a19090500ux0199 | 2 | Electronics | 3rd party | +ve/-ve leads soldered to JST 4 pin adapter | https://www.amazon.com/uxcell-Internal-Magnet-Speaker-Loudspeaker/dp/B082ZPP56D |
+| Speaker cable (custom) | | 1 | Cabling | Custom Fab | Modified from cable that is shipped with the Waveshare Audio speaker system | |
+| Ethernet bridge | SPM10236514602 | 1 | Electronics | 3rd party | Need to remove (and discard) enclosure | https://www.amazon.com/dp/B0D9BN22ZX |
+| USB C to JST power connector for the Ethernet board | | 1 | Cabling | Custom Fab | | |
+| 2.1 mm Male Barrel Jack power in cable | | 1 | Cabling | Custom Fab | | |
+| 2.1 mm Female Barrel Jack power out cable | | 1 | Cabling | Custom Fab | | |
+| Split power delivery cable | | 1 | Cabling | Custom Fab | | |
+| 25 mm M3 socket head screw with washer for front 2 holes of interface bracket | | 2 | Screws | 3rd party | The SHORT screw are used near the head of the dog | |
+| 35 mm M3 socket head screw with washer for back 2 holes of interface bracket | | 2 | Screws | 3rd party | The LONGer M3 bolts are used near the tail of the dog | |
