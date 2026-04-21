@@ -1,33 +1,33 @@
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-- [Safety](#safety)
-   * [DANGER: Power Budget and Thermal Limits](#danger-power-budget-and-thermal-limits)
-   * [DANGER: Robot Stability](#danger-robot-stability)
-- [Materials](#materials)
-   * [Display Unit ("Face")](#display-unit-face)
-   * [Face Mounting](#face-mounting)
+- [1. Safety](#safety)
+   * [1.1 DANGER: Power Budget and Thermal Limits](#danger-power-budget-and-thermal-limits)
+   * [1.2 DANGER: Robot Stability](#danger-robot-stability)
+- [2. Materials](#materials)
+   * [2.1 Display Unit ("Face")](#display-unit-face)
+   * [2.2 Face Mounting](#face-mounting)
       + [Unitree G1](#unitree-g1)
       + [Unitree Go2 and LimX Tron 1](#unitree-go2-and-limx-tron-1)
-   * [Thor Mounts](#thor-mounts)
+   * [2.3 Thor Mounts](#thor-mounts)
       + [LimX Tron 1](#limx-tron-1)
       + [Unitree G1](#unitree-g1-1)
       + [Unitree Go2](#unitree-go2)
-- [Cables and Power](#cables-and-power)
-   * [Thor Power Cable Harness](#thor-power-cable-harness)
-   * [Power Electronics](#power-electronics)
+- [3. Cables and Power](#cables-and-power)
+   * [3.1 Thor Power Cable Harness](#thor-power-cable-harness)
+   * [3.2 Power Electronics](#power-electronics)
       + [Tron 1 Custom Power Cable](#tron-1-custom-power-cable)
       + [Unitree G1 Custom Power Cable](#unitree-g1-custom-power-cable)
       + [Unitree Go2 Custom Power Cable](#unitree-go2-custom-power-cable)
-   * [Example BrainPack Power Budget Calculation ](#example-brainpack-power-budget-calculation)
+   * [3.3 Example BrainPack Power Budget Calculation ](#example-brainpack-power-budget-calculation)
 <!-- TOC end -->
 
 <!-- TOC --><a name="brainpack"></a>
 # BrainPack
 
 <!-- TOC --><a name="brainpack"></a>
-## Safety
+## 1. Safety
 
 <!-- TOC --><a name="danger-power-budget-and-thermal-limits"></a>
-### DANGER: Power Budget and Thermal Limits
+### 1.1 DANGER: Power Budget and Thermal Limits
 
 **It is easy to operate a robot above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. air temperature), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
 
@@ -42,15 +42,15 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 **Potential Solution**: ensure that your software is monitoring the temperature and currents of all joints. If your software detects operation near the thermal limits, warn bystanders and perform a safe sink-to-floor action with an audible alarm and flashing light alarm.   
 
 <!-- TOC --><a name="danger-robot-stability"></a>
-### DANGER: Robot Stability
+### 1.2 DANGER: Robot Stability
 
 **CAUTION: adding extra mass (such as external computers, sensors, grippers, and batteries) to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. You may observe the robot swaying back and forth while simply trying to stand. Solution: train custom motion policies for your robot in its final mass configuration.**
 
 <!-- TOC --><a name="materials"></a>
-## Materials
+## 2. Materials
 
 <!-- TOC --><a name="display-unit-face"></a>
-### Display Unit ("Face")
+### 2.1 Display Unit ("Face")
 
 | Name | Quantity | Fab | Link | Picture |
 |:------|:---:|----------|----------|-----|
@@ -132,7 +132,7 @@ Many suppliers, for example: Iexcell 100 Pcs M3 x 8mm Thread Pitch<br>
 https://www.amazon.com/dp/B08H2HTTRT<br>
 
 <!-- TOC --><a name="face-mounting"></a>
-### Face Mounting
+### 2.2 Face Mounting
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
 |--------|------| --- |----------|----------|---------|
@@ -153,7 +153,7 @@ These are used to secure the frame back to the front of the Unitree G1<br>
 These are used to secure the frame back to the front of the standard sensor and display carrier ("head")<br>
 
 <!-- TOC --><a name="thor-mounts"></a>
-### Thor Mounts
+### 2.3 Thor Mounts
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
 |--------|------| --- |----------|----------|---------|
@@ -202,10 +202,10 @@ These are used to secure the FRONT of the Thor mount.<br>
 These are used to secure the BACK of the Thor mount.<br> 
 
 <!-- TOC --><a name="cables-and-power"></a>
-## Cables and Power
+## 3. Cables and Power
 
 <!-- TOC --><a name="thor-power-cable-harness"></a>
-### Thor Power Cable Harness
+### 3.1 Thor Power Cable Harness
 
 Thor Power Cable<br>
 MICRO-FIT3.0 R-S 4 CIRCUIT 600MM<br>
@@ -214,7 +214,7 @@ Manufacturer Part No.: 2147561043<br>
 https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 
 <!-- TOC --><a name="power-electronics"></a>
-### Power Electronics
+### 3.2 Power Electronics
 
 | Robot  | Name |
 |--------|------|
@@ -255,7 +255,7 @@ The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier.
 2. Plug the XT30 plug into the 33.6V Go2 power supply port. 
 
 <!-- TOC --><a name="example-brainpack-power-budget-calculation"></a>
-### Example BrainPack Power Budget Calculation 
+### 3.3 Example BrainPack Power Budget Calculation 
 
 **USB Bus A**<br>
 USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working)<br>
