@@ -3,21 +3,21 @@
 
 ## HAZARD/DANGER: Power Budget and Thermal Limits
 
-**Be aware that regardless of robot, it is easy to operate it above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. air temperature), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
+**It is easy to operate a robot above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. air temperature), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
 
 Unless you get this right, you may experience fast battery drain, intermittent faults and resets, electrical shorts and fires, overheating, poor sensor performance and many other possible problems. 
 
 **Example 1**: when a robot tries to speak (at max volume) and walk at the same time, while also running multiple large policies, this could overload (and reset) the power system. The humanoid will then suddenly crash to the floor. Testing individual robot subsystems will not predict this problem, which only occurs when the robot wishes to move, think, and speak at the same time.
 
-**Potential Solution**: use an inline **USB Voltage Current Power Tester Multimeter** to measure the actual power draw of your payload. If needed, change how you are powering your computers and sensors, such as by moving loads to other power buses, proving powered USB hubs, or adding external batteries (but see [below](#danger-robot-stability)).
+**Potential Solution**: use an inline **USB Voltage Current Power Tester Multimeter** to measure the actual power draw of your payload. If needed, change how you are powering your computers and sensors, such as by moving loads to other power buses, providing powered USB hubs, or adding external batteries (but see [below](#danger-robot-stability)).
 
-**Example 2**: The robot performs flawlessly in an air conditioned lab, but falls over frequently when deployed in hot sunny environment. In this case, different joint are probably overheating, switching the system to damp mode, resulting in a fall and damage to the robot. 
+**Example 2**: The robot performs flawlessly in an air conditioned lab, but falls over frequently when deployed in a hot sunny environment. In this case, different joint are probably overheating, switching the system to emergency damp mode, resulting in a fall and damage to the robot. 
 
-**Potential Solution**: ensure that your software is monitoring the temperature and currents of all joints. If your software detects operation near the thermal limits, warn bystanders and perform a safe sink-to-floor action with audible and flashing light alarm.   
+**Potential Solution**: ensure that your software is monitoring the temperature and currents of all joints. If your software detects operation near the thermal limits, warn bystanders and perform a safe sink-to-floor action with an audible alarm and flashing light alarm.   
 
 ## DANGER: Robot Stability
 
-**CAUTION: adding extra mass to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. Solution: train custom motion policies for your robot in its final mass configuration.**
+**CAUTION: adding extra mass (such as external computers, sensors, grippers, and batteries) to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. You may observe the robot swaying back and forth while simply trying to stand. Solution: train custom motion policies for your robot in its final mass configuration.**
 
 ## Display Unit ("Face")
 
@@ -81,34 +81,34 @@ Seadream 3.5mm Aux Cable Short 2Pack <br>
 8inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable<br>
 https://www.amazon.com/dp/B01L0YPVOY<br>
 
-**1 ea. Sound Card ADC and DAC**
-SABRENT USB External Stereo Sound Adapter 
-USB-A (do not buy USB-C version - degraded audio quality)
-https://www.amazon.com/dp/B00IRVQ0F8
+**1 ea. Sound Card ADC and DAC**<br>
+SABRENT USB External Stereo Sound Adapter <br>
+USB-A (do not buy USB-C version - degraded audio quality)<br>
+https://www.amazon.com/dp/B00IRVQ0F8<br>
 
-**1 ea. Directional Microphone**
-Comica Camera Microphone, CVM-VM10II 
-Directional Microphone Cardioid Shotgun Video Camcorder Microphone
-https://www.amazon.com/dp/B0748CYPDJ
-Note: retain included 3.5 mm TRS cable; will be used in final assembly
+**1 ea. Directional Microphone**<br>
+Comica Camera Microphone, CVM-VM10II <br>
+Directional Microphone Cardioid Shotgun Video Camcorder Microphone<br>
+https://www.amazon.com/dp/B0748CYPDJ<br>
+Note: retain included 3.5 mm TRS cable; will be used in final assembly<br>
 
-**1 ea. Microphone Mount**
-SMALLRIG Cold Shoe Mount Adapter with 1/4 Thread Hole – 1241
-https://www.amazon.com/dp/B00HJFBUCQ
+**1 ea. Microphone Mount**<br>
+SMALLRIG Cold Shoe Mount Adapter with 1/4 Thread Hole – 1241<br>
+https://www.amazon.com/dp/B00HJFBUCQ<br>
 
-**5 ea. M3 Threaded Inserts for 3D Printing Components**
-Many suppliers, for example:
-Kadrick 520Pcs M2 M3 M4 M5 Threaded Inserts 
-Assortment Kit for 3D Printing Components, 
-Metric Brass Knurled Nuts, Insert by Heat into Plastic Parts
+**5 ea. M3 Threaded Inserts for 3D Printing Components**<br>
+Many suppliers, for example:<br>
+Kadrick 520Pcs M2 M3 M4 M5 Threaded Inserts <br>
+Assortment Kit for 3D Printing Components, <br>
+Metric Brass Knurled Nuts, Insert by Heat into Plastic Parts<br>
 https://www.amazon.com/dp/B0D5V3TZLB
 
-**5 ea. M3 x 8mm Thread Pitch Cap Screws**
-Many suppliers, for example:
-Iexcell 100 Pcs M3 x 8mm Thread Pitch 
-0.5 mm Stainless Steel 304 
-Hex Socket Button Head Cap Screws Bolts Kit
-https://www.amazon.com/dp/B08H2HTTRT
+**5 ea. M3 x 8mm Thread Pitch Cap Screws**<br>
+Many suppliers, for example:<br>
+Iexcell 100 Pcs M3 x 8mm Thread Pitch <br>
+0.5 mm Stainless Steel 304 <br>
+Hex Socket Button Head Cap Screws Bolts Kit<br>
+https://www.amazon.com/dp/B08H2HTTRT<br>
 
 ## Face Mounting
 
@@ -175,11 +175,11 @@ These are used to secure the BACK of the Thor mount.<br>
 
 ## Thor Power Cable Harness
 
-Thor Power Cable
-MICRO-FIT3.0 R-S 4 CIRCUIT 600MM
-DigiKey Part No.: 900-2147561043-ND
-Manufacturer Part No.: 2147561043
-https://www.digikey.com/en/products/detail/molex/2147561043/12180337
+Thor Power Cable<br>
+MICRO-FIT3.0 R-S 4 CIRCUIT 600MM<br>
+DigiKey Part No.: 900-2147561043-ND<br>
+Manufacturer Part No.: 2147561043<br>
+https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 
 ## Power Electronics
 
@@ -208,7 +208,7 @@ The Unitree G1 **does not** provide sufficient power for the both the Thor and t
 
 2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to decide the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity!** 
 
-3. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to overdischarge. Use the second velcro nylon strap to attach the LiPo battery to the Thor mount.
+3. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. Use the second velcro nylon strap to attach the LiPo battery to the Thor mount.
 
 ### Unitree Go2 Custom Power Cable
 
@@ -221,15 +221,15 @@ The Unitree Go2 provides 28 to 33.6V, which is too much for the Audio Amplifier.
 ## Example BrainPack Power Budget Calculation 
 
 **USB Bus A** 
-USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working)
-USB-A Microphone and Speaker ADC and DAQ - time sensitive data - peak 0.5 A
-USB-A Widefield Camera - normal video data rates - peak 300mA
+USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working)<br>
+USB-A Microphone and Speaker ADC and DAQ - time sensitive data - peak 0.5 A<br>
+USB-A Widefield Camera - normal video data rates - peak 300mA<br>
 
 **USB Bus B** 
-USB-C from RealSense - peak 700 mA - USB 3.1 critical
-USB-A Data lines for RPLidar S2 Laserscan - 0 mA data only line
-USB-A LCD Display power - peak 500mA depending on back-lighting
+USB-C from RealSense - peak 700 mA - USB 3.1 critical<br>
+USB-A Data lines for RPLidar S2 Laserscan - 0 mA data only line<br>
+USB-A LCD Display power - peak 500mA depending on back-lighting<br>
 
-Note that both of these buses would be overloaded and out of spec, suggesting use of a powered USB hub. 
-USB Bus A: 0.4 + 0.3 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
-USB Bus B: 0.7 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
+Note that both of these buses would be overloaded and out of spec, suggesting use of a powered USB hub.<br> 
+USB Bus A: 0.4 + 0.3 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).<br>
+USB Bus B: 0.7 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).<br>
