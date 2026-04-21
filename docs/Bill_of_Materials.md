@@ -4,7 +4,7 @@
 ## Display Unit ("Face")
 
 | Name | Quantity | Fab | Link | Picture |
-|:------:|:---:|:----------:|:----------:|:-----:|
+|:------|:---:|----------|----------|-----|
 | Frame                                  | 1 | 3D printed | STL file goes here | picture |
 | Frame Back (Unitree Go2, LimX Tron 1 ) | 1 | 3D printed | STL file goes here | picture |
 | Frame Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
