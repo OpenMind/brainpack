@@ -1,6 +1,33 @@
 # Materials and Assembly
 [//]:# (**v 0.2**)
 
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Materials and Assembly](#materials-and-assembly)
+   * [HAZARD/DANGER: Power Budget and Thermal Limits](#hazarddanger-power-budget-and-thermal-limits)
+   * [DANGER: Robot Stability](#danger-robot-stability)
+   * [Display Unit ("Face")](#display-unit-face)
+   * [Face Mounting](#face-mounting)
+      + [Unitree G1](#unitree-g1)
+      + [Unitree Go2 and LimX Tron 1](#unitree-go2-and-limx-tron-1)
+   * [Thor Mounts](#thor-mounts)
+      + [LimX Tron 1](#limx-tron-1)
+      + [Unitree G1](#unitree-g1-1)
+      + [Unitree Go2](#unitree-go2)
+   * [Thor Power Cable Harness](#thor-power-cable-harness)
+   * [Power Electronics](#power-electronics)
+      + [Tron 1 Custom Power Cable](#tron-1-custom-power-cable)
+      + [Unitree G1 Custom Power Cable](#unitree-g1-custom-power-cable)
+      + [Unitree Go2 Custom Power Cable](#unitree-go2-custom-power-cable)
+   * [Example BrainPack Power Budget Calculation ](#example-brainpack-power-budget-calculation)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="materials-and-assembly"></a>
+# Materials and Assembly
+[//]:# (**v 0.2**)
+
+<!-- TOC --><a name="hazarddanger-power-budget-and-thermal-limits"></a>
 ## HAZARD/DANGER: Power Budget and Thermal Limits
 
 **It is easy to operate a robot above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. air temperature), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
@@ -15,10 +42,12 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 **Potential Solution**: ensure that your software is monitoring the temperature and currents of all joints. If your software detects operation near the thermal limits, warn bystanders and perform a safe sink-to-floor action with an audible alarm and flashing light alarm.   
 
+<!-- TOC --><a name="danger-robot-stability"></a>
 ## DANGER: Robot Stability
 
 **CAUTION: adding extra mass (such as external computers, sensors, grippers, and batteries) to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. You may observe the robot swaying back and forth while simply trying to stand. Solution: train custom motion policies for your robot in its final mass configuration.**
 
+<!-- TOC --><a name="display-unit-face"></a>
 ## Display Unit ("Face")
 
 | Name | Quantity | Fab | Link | Picture |
@@ -41,18 +70,18 @@ SKU: B0202<br>
 [Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)<br>
 
 **1 ea. RealSense Depth Camera (i435)**<br>
-Intel RealSense Depth Camera D435i, Silver, <br>
+Intel RealSense Depth Camera D435i, Silver<br>
 1080p Video Capture Resolution (82635D435IDK5P)<br>
 https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB<br>
 
 **1 ea. USB cable for RealSense**<br>
-Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W <br>
+Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W<br>
 4K USBC Video High Speed Data Transfer Fast Charging Cord<br>
 https://www.amazon.com/dp/B094V4RJGC<br>
 NOTE: should be improved - should be a USB-C to USB-A cable<br>
 
 **1 ea. High-Brightness Touch Screen**<br>
-5inch High-Brightness Touch Screen, 1024x600 Pixels, <br>
+5inch High-Brightness Touch Screen, 1024x600 Pixels<br>
 Toughened Glass Panel, HDMI Interface, IPS Panel<br>
 SKU: 27960<br>
 Mfr. #: 5DP-CAPLCD-H<br>
@@ -60,14 +89,13 @@ Brand: Waveshare<br>
 https://www.waveshare.com/5dp-caplcd.htm?sku=27960<br>
 
 **1 ea. Touchscreen Power/USB cable**<br>
-aceyoon 3 Pack 90 Degree USB C Cable <br>
-0.6ft Short Right Angle Type C Charger Braided <br>
-USBC to USB A 20cm Charging and Data Sync Cord<br>
+Aceyoon 90 Degree USB C Cable<br>
+0.6ft Short Right Angle Type C<br>
 https://www.amazon.com/dp/B096VYVR17<br>
 
 **1 ea. Audio Amplifier**<br>
-DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board <br>
-PAM8620 DC 8-26V 24V Digital Stereo Amp Module Class D Mini Power <br>
+DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board<br>
+PAM8620 DC 8-26V 24V Digital Stereo Amp Module Class D Mini Power<br>
 https://www.amazon.com/dp/B0CQJRL235<br>
 
 **2 ea. Speaker 42mm 8W 4ohm**<br>
@@ -77,17 +105,17 @@ Mfr.: PUI Audio<br>
 https://mou.sr/4sO2Qsp<br>
 
 **1 ea. Audio Cable**<br>
-Seadream 3.5mm Aux Cable Short 2Pack <br>
+Seadream 3.5mm Aux Cable Short 2Pack<br>
 8inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable<br>
 https://www.amazon.com/dp/B01L0YPVOY<br>
 
 **1 ea. Sound Card ADC and DAC**<br>
-SABRENT USB External Stereo Sound Adapter <br>
+SABRENT USB External Stereo Sound Adapter<br>
 USB-A (do not buy USB-C version - degraded audio quality)<br>
 https://www.amazon.com/dp/B00IRVQ0F8<br>
 
 **1 ea. Directional Microphone**<br>
-Comica Camera Microphone, CVM-VM10II <br>
+Comica Camera Microphone, CVM-VM10II<br>
 Directional Microphone Cardioid Shotgun Video Camcorder Microphone<br>
 https://www.amazon.com/dp/B0748CYPDJ<br>
 Note: retain included 3.5 mm TRS cable; will be used in final assembly<br>
@@ -98,18 +126,19 @@ https://www.amazon.com/dp/B00HJFBUCQ<br>
 
 **5 ea. M3 Threaded Inserts for 3D Printing Components**<br>
 Many suppliers, for example:<br>
-Kadrick 520Pcs M2 M3 M4 M5 Threaded Inserts <br>
-Assortment Kit for 3D Printing Components, <br>
+Kadrick 520Pcs M2 M3 M4 M5 Threaded Inserts<br>
+Assortment Kit for 3D Printing Components<br>
 Metric Brass Knurled Nuts, Insert by Heat into Plastic Parts<br>
 https://www.amazon.com/dp/B0D5V3TZLB
 
 **5 ea. M3 x 8mm Thread Pitch Cap Screws**<br>
 Many suppliers, for example:<br>
-Iexcell 100 Pcs M3 x 8mm Thread Pitch <br>
-0.5 mm Stainless Steel 304 <br>
+Iexcell 100 Pcs M3 x 8mm Thread Pitch<br>
+0.5 mm Stainless Steel 304<br>
 Hex Socket Button Head Cap Screws Bolts Kit<br>
 https://www.amazon.com/dp/B08H2HTTRT<br>
 
+<!-- TOC --><a name="face-mounting"></a>
 ## Face Mounting
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
@@ -118,16 +147,19 @@ https://www.amazon.com/dp/B08H2HTTRT<br>
 | Unitree Go2, LimX Tron 1 | Face and Sensor Carrier ("Head") | 1 | 3D printed | STL file goes here | picture |
 | Unitree G1 | Face Back | 1 | 3D printed | STL file goes here | picture |
 
+<!-- TOC --><a name="unitree-g1"></a>
 ### Unitree G1
 
 **2 ea. M6 x 25mm Cap Screws** with nylon lock nut<br>
 These are used to secure the frame back to the front of the Unitree G1<br> 
 
+<!-- TOC --><a name="unitree-go2-and-limx-tron-1"></a>
 ### Unitree Go2 and LimX Tron 1
 
 **4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers<br>
 These are used to secure the frame back to the front of the standard sensor and display carrier ("head")<br>
 
+<!-- TOC --><a name="thor-mounts"></a>
 ## Thor Mounts
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
@@ -136,6 +168,7 @@ These are used to secure the frame back to the front of the standard sensor and 
 | LimX Tron 1 | Head Mount | 1 | 3D printed | STL file goes here | picture |
 | Unitree G1 | Mount with sideplates | 1 | 3D printed | STL file goes here | picture |
 
+<!-- TOC --><a name="limx-tron-1"></a>
 ### LimX Tron 1
 
 **1 ea. M5 T Slot Nut and Bolt Kit**<br> 
@@ -145,11 +178,12 @@ Many suppliers, for example:<br>
 M5x8 10mm for 20/20 80 20 2040 T V Slot Black Aluminum Profile Accessories<br>
 https://www.amazon.com/dp/B08VGSNT2S<br>
 
+<!-- TOC --><a name="unitree-g1-1"></a>
 ### Unitree G1
 
 **2 ea. Nylon Holding Strap**<br> 
-Fastening Hook and Loop Cable Straps, 10 Pack <br> 
-Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles, <br> 
+Fastening Hook and Loop Cable Straps, 10 Pack<br> 
+Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles<br> 
 Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20")<br> 
 https://www.amazon.com/dp/B088FJCJDL<br> 
 
@@ -159,6 +193,7 @@ These are used to secure the TOP of the Thor mount.<br>
 **2 ea. M6 x 30mm Cap Screws**<br>
 These are used to secure the BOTTOM of the Thor mount.<br>
 
+<!-- TOC --><a name="unitree-go2"></a>
 ### Unitree Go2
 
 **1 ea. Nylon Holding Strap**<br>
@@ -173,6 +208,7 @@ These are used to secure the FRONT of the Thor mount.<br>
 **2 ea. M3 x 50mm Cap Screws** with washers<br>
 These are used to secure the BACK of the Thor mount.<br> 
 
+<!-- TOC --><a name="thor-power-cable-harness"></a>
 ## Thor Power Cable Harness
 
 Thor Power Cable<br>
@@ -181,6 +217,7 @@ DigiKey Part No.: 900-2147561043-ND<br>
 Manufacturer Part No.: 2147561043<br>
 https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 
+<!-- TOC --><a name="power-electronics"></a>
 ## Power Electronics
 
 | Robot  | Name |
@@ -196,10 +233,12 @@ https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 | Unitree G1 | 120S 14.8V 10000 mAh LiPo battery with female EC5 connector and LiPo charger |
 | Unitree G1 | CAMWAY 5PCS 2in1 1-8s Lipo Battery Low Voltage Buzzer Alarm |
 
+<!-- TOC --><a name="tron-1-custom-power-cable"></a>
 ### Tron 1 Custom Power Cable
 
 The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor. Use crimp butt connectors to connect the male XT60 plug to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the audio amplifier. **You will damage either the audio amplifier, the Thor, or the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
 
+<!-- TOC --><a name="unitree-g1-custom-power-cable"></a>
 ### Unitree G1 Custom Power Cable
 
 The Unitree G1 **does not** provide sufficient power for the both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor and the G1 just powers the audio amplifier via the G1's 24V/5A plug.
@@ -210,6 +249,7 @@ The Unitree G1 **does not** provide sufficient power for the both the Thor and t
 
 3. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. Use the second velcro nylon strap to attach the LiPo battery to the Thor mount.
 
+<!-- TOC --><a name="unitree-go2-custom-power-cable"></a>
 ### Unitree Go2 Custom Power Cable
 
 The Unitree Go2 provides 28 to 33.6V, which is too much for the Audio Amplifier. Solution - use an MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator to provide 12V to the audio amplifier. 
@@ -218,6 +258,7 @@ The Unitree Go2 provides 28 to 33.6V, which is too much for the Audio Amplifier.
 
 2. Plug the XT30 plug into the 33.6V Go2 power supply port. 
 
+<!-- TOC --><a name="example-brainpack-power-budget-calculation"></a>
 ## Example BrainPack Power Budget Calculation 
 
 **USB Bus A** 
