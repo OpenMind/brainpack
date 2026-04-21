@@ -101,14 +101,14 @@ Screws to monut fram back to Unitree G1
 ## Thor and Other Mounts
 
 | Name | Quantity | Fab | Link | Picture |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
+|------|-------------|----------|----------|-----|
 | Mount with sideplates, Unitree Go2 | 1 | 3D printed | STL file goes here | picture |
 | Mount with sideplates, Unitree G1  | 1 | 3D printed | STL file goes here | picture |
-| Head Mount, LimX Tron 1  | 1 | 3D printed | STL file goes here | picture |
+| Head Mount, LimX Tron 1            | 1 | 3D printed | STL file goes here | picture |
 
 ### LimX Tron 1
 
-**1 ea. M5 T Slot Nut and Bolt Kit**
+**1 ea. M5 T Slot Nut and Bolt Kit**<br> 
 Many suppliers, for example:<br> 
 200Pcs 2020 Aluminum Extrusion M5 T Slot Nuts and Bolts Screws<br>
 20 Series Extruded Hardware Drop in T Nut Slide Nut<br>
@@ -117,21 +117,11 @@ https://www.amazon.com/dp/B08VGSNT2S<br>
 
 ### Unitree G1
 
-**2 ea. Nylon Holding Strap**
-Fastening Hook and Loop Cable Straps, 10 Pack 
-Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles, 
-Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20")
-https://www.amazon.com/dp/B088FJCJDL
-
-2 ea. 50 mm 
-
-Bolts and Washers to mount to front of Unitree G1 (big ones, two lengths)
-
-
-
-
-Bolts and Washers to mount to back of Unitree Go2
-
+**2 ea. Nylon Holding Strap**<br> 
+Fastening Hook and Loop Cable Straps, 10 Pack <br> 
+Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles, <br> 
+Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20")<br> 
+https://www.amazon.com/dp/B088FJCJDL<br> 
 
 ### Unitree Go2
 
@@ -154,6 +144,17 @@ MICRO-FIT3.0 R-S 4 CIRCUIT 600MM
 DigiKey Part No.: 900-2147561043-ND
 Manufacturer Part No.: 2147561043
 https://www.digikey.com/en/products/detail/molex/2147561043/12180337
+
+
+2 ea. 50 mm 
+
+Bolts and Washers to mount to front of Unitree G1 (big ones, two lengths)
+
+
+
+
+Bolts and Washers to mount to back of Unitree Go2
+
 
 Cables - 
  
