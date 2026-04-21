@@ -1,31 +1,23 @@
 # Bill of Materials and Assembly Notes
 [//]:# (**v 0.2**)
 
-# HAZARD/DANGER/CRITICAL: Power Budget
+# HAZARD/DANGER: Power Budget and Thermal Limits
 
-**In general, you should be aware that regardless of robot, you might be operating the system clearly above its design power budget. Solution: careful design consideration of the robot's intend use, average and peak power requirements, and sensor//model/robot interplay** 
+**Be aware that regardless of robot, it is easy to operate it above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. air temperature), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
 
-Unless you get this right, you will notice fast battery drain, intermittent faults and resets, electrical shorts and fires, overheating, poor sensor performance and many other possible problems. For example a problem could be that if your robot tries to speak and walk at the same time, while running multiple large policies, this could overload the power system, resulting in a power glitch and the robot crashing to the floor. Debugging individual subsystems will not reveal this problem, which only occurs when the robot wishes to move, think, and speak at the same time. 
+Unless you get this right, you may experience fast battery drain, intermittent faults and resets, electrical shorts and fires, overheating, poor sensor performance and many other possible problems. 
 
-Solution: Depending on which software you are running, which functionality you wish to support, and how your sensors and Thor are configured, you need to carefully analyze your solution's **ACTUAL** power budget. First, **measure** the actual power draw for your sensors in your specific configuration, and then design and build a suyitalbe power augmentation system and needed power converters. For example, for the Unitree G1 we add an extra battery to the robot, or we add buck regulators as needed. 
+**Example 1**: when a robot tries to speak (at max volume) and walk at the same time, while also running multiple large policies, this could overload (and reset) the power system. The humanoid will then suddenly crash to the floor. Testing individual robot subsystems will not predict this problem, which only occurs when the robot wishes to move, think, and speak at the same time.
+
+**Potential Solution**: use an inline **USB Voltage Current Power Tester Multimeter** to measure the actual power draw of your payload. If needed, change how you are powering your computers and sensors, such as by moving loads to other power buses or adding external batteries. 
+
+**Example 2**: The robot performs flawlessly in an air conditioned lab, but falls over frequently when deployed in hot sunny environment. In this case, different joint are probably overheating, switching the system to damp mode, resulting in a fall and damage to the robot. 
+
+**Potential Solution**: ensure that your software is monitoring the temperature and currents of all joints. If your software detects operation near the thermal limits, warn bystanders and perform a safe sink-to-floor action with audible and flashing light alarm.   
+
+# HAZARD/DANGER: Robot Stability
 
 **CAUTION/NOTE: adding extra mass to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. Solution: train custom motion policies for your robot in its final mass configuration.**
-
-We recommend a **USB Tester 4-28V 7A LCD USB A&C Voltage Current Power Tester Multimeter** so you can evaluate the average and peak power draw for all the different sensors. Here are some example values:
- 
-**USB Bus A** 
-USB-A Power for RPLidare S2 Laserscan - Operating Current: 40mA(5V power supply, in sleep); 400mA(5V power supply, working)
-USB-A Microphone and Speaker ADC and DAQ - time sensitive - no power specs public but < 0.5 A - might be a lot lower - need to measure
-USB-A Widefield Camera - cable way too long - normal video data rates - USB powered 5V Working Current: MAX 300mA
-
-**USB Bus B** 
-USB-C from RealSense - cable generally too long and and ends in wrong plug - ~700 mA - USB 3.1 needed
-USB-A Data for Laserscan - 0 mA data only line - need to confirm
-USB-A Display power and cap data - length ok - assume 0.5A power draw due to back lighting - no idea - could be lower?
-
-Note that both of these buses are overloaded and out of spec, suggesting use of a powered USB hub. 
-USB Bus A: 0.4 + 0.3 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
-USB Bus B: 0.7 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
 
 ## Display Unit ("Face")
 
@@ -226,67 +218,18 @@ The Unitree Go2 provides 28 to 33.6V, which is too much for the Audio Amplifier.
 
 2. Plug the XT30 plug into the 33.6V Go2 power supply port. 
 
+## Example BrainPack Power Budget Calculation 
 
+**USB Bus A** 
+USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working)
+USB-A Microphone and Speaker ADC and DAQ - time sensitive data - peak 0.5 A
+USB-A Widefield Camera - normal video data rates - peak 300mA
 
-### Display
+**USB Bus B** 
+USB-C from RealSense - peak 700 mA - USB 3.1 critical
+USB-A Data lines for RPLidar S2 Laserscan - 0 mA data only line
+USB-A LCD Display power - peak 500mA depending on back-lighting
 
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
-| Elecrow 800x400 Touchscreen Display | RC050 | 1 | Electronics | 3rd party | | https://www.amazon.com/ELECROW-Raspberry-Touchscreen-Monitor-HDMI-Compatible/dp/B07FDYXPT7 | |
-| MicroUSB cable for display power | 200017-BLKx2 | 1 | Cabling | 3rd party | Cable from this pack also used for RPLidar connection | https://www.amazon.com/Cable-Matters-Combo-Pack-Right-Inches/dp/B00S8GU03A | |
-| HDMI cable for display | HD-016-0.3M-L | 1 | Cabling | 3rd party | | 90 Deg connector, Twozoh Flexible HDMI to HDMI Cable Left Angled 90° 1FT, Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz. https://www.amazon.com/dp/B09XHZB9X5 | |
-| HDMI to DP adapter | 5e40d1e3-7769-4fd2-8da5-d54d582f8e3b | 1 | Adapter | 3rd party | | Displayport to HDMI Adapter 4K 24K Gold Plated Displayport DP to HDMI Female Converter. https://www.amazon.com/dp/B09MTKHFKR | |
-
-## Laserscan/LIDAR
-
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
-| RPlidar 2d Lidar | RPLIDAR A1M8 | 1 | Electronics | 3rd party | Legs are unscrewed and then the unit is mounted on top of the lidar mount. | https://www.amazon.com/Slamtec-RPLIDAR-Scanning-Avoidance-Navigation/dp/B07TJW5SXF | |
-| MicroUSB bridge connector for RPlidar | | 1 | Cabling | 3rd party | | https://www.amazon.com/Cable-Matters-Combo-Pack-Right-Inches/dp/B00S8GU03A | |
-
-## Webcam/microphone
-
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
-| Logitech Brio Webcam | 960-001589 | 1 | Electronics | 3rd party | Webcam is glued into bezel, and the USB cable is shortened via a USB-A connector. | https://www.amazon.com/Logitech-Webcam-Meetings-Streaming-Built/dp/B0BXGFFSL1 | |
-| Webcam USB-A jack | | | Cabling | Custom Fab | USB end for the shortened webcam cable to be plugged into the USB A port on the hub. | Maxmoral 10PCS USB 2.0 Connector A Type Male 4-Pin Plug with Black Plastic Cover DIY Connector. https://www.amazon.com/dp/B081YV9VDH | |
-
-## USB HUB
-
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
-| Coolgear powered USB Hub | CG-U3MINI4PH | 1 | Electronics | 3rd party | Enclosure is removed and discarded. | https://www.amazon.com/Coolgear-Powered-Port-Surge-Protection/dp/B07G7GP15C/ref=sr_1_4?s=electronics | |
-| USB C to USB B 3.0 Cable | 201007-BLK-0.3m | 1 | Cabling | 3rd party | This must be a USB 3.0 cable otherwise the system does not work | https://www.amazon.com/Cable-Matters-Short-USB-3-0/dp/B0DN4NWJ9D | |
-| Powered USB hub power cable (Barrel Jack to JST) | | 1 | Cabling | Custom Fab | Uses the barrel jack from the coolgear kit, butt connectors, and JST cables/plug | | |
-
-## Depth Camera
-
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link | Picture |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|:---------:|
-| Intel D435i depth camera | 82635D435IDK5P | 1 | electronics | 3rd party | Uses cable that comes with the Unitree. Also uses a USB-C to USB-A adapter | | |
-| Unitree 435 mount and cable | | 1 | mount/cable | 3rd party | Comes with each Go2 EDU, but we pay extra for it | | |
-| USB-C to USB-A adapter | US701 | 1 | connector | 3rd party | For connecting the d435i to the Jetson AGX | https://www.amazon.com/UGREEN-Adapter-10Gbps-Converter-Samsung/dp/B0CY1Y3TSQ/ref=sr_1_4?s=electronics | |
-
-
-
-## Backpack Unit
-
-| Name | Part No. | Quantity | Category | Fab | Build Notes | Link |
-|:------:|:-------------:|:----------:|:----------:|:-----:|:-------------:|:------:|
-| Shell | | 1 | Housing | 3D printed | | <STL file goes here> |
-| Base Mount bracket | | 1 | Housing | 3D printed | | <STL file goes here> |
-| Lid | | 1 | Housing | 3D printed | | <STL file goes here> |
-| AGX push fit bracket | | 1 | Housing | 3D printed | | <STL file goes here> |
-| Magnets for snap on lid | | 4 | Housing | 3rd party | | |
-| Openmind Powerboard | | 2 | Electronics | Custom Fab | Openmind PCB | |
-| Nvidia Jetson AGX Orin Developer Kit | ‎945-13730-0050-000 | 1 | Electronics | 3rd party | | https://www.amazon.com/NVIDIA-Jetson-Orin-64GB-Developer/dp/B0BYGB3WV4/ref=sr_1_2?s=electronics |
-| Waveshare Audio codec driver | ‎RS232/485 USB All | 1 | Electronics | 3rd party | USB drive enclosure is removed and discarded. | https://www.amazon.com/Waveshare-USB-Converter-Raspberry-Driver-Free/dp/B08R38TXXL |
-| Speakers | a19090500ux0199 | 2 | Electronics | 3rd party | +ve/-ve leads soldered to JST 4 pin adapter | https://www.amazon.com/uxcell-Internal-Magnet-Speaker-Loudspeaker/dp/B082ZPP56D |
-| Speaker cable (custom) | | 1 | Cabling | Custom Fab | Modified from cable that is shipped with the Waveshare Audio speaker system | |
-| Ethernet bridge | SPM10236514602 | 1 | Electronics | 3rd party | Need to remove (and discard) enclosure | https://www.amazon.com/dp/B0D9BN22ZX |
-| USB C to JST power connector for the Ethernet board | | 1 | Cabling | Custom Fab | | |
-| 2.1 mm Male Barrel Jack power in cable | | 1 | Cabling | Custom Fab | | |
-| 2.1 mm Female Barrel Jack power out cable | | 1 | Cabling | Custom Fab | | |
-| Split power delivery cable | | 1 | Cabling | Custom Fab | | |
-| 25 mm M3 socket head screw with washer for front 2 holes of interface bracket | | 2 | Screws | 3rd party | The SHORT screw are used near the head of the dog | |
-| 35 mm M3 socket head screw with washer for back 2 holes of interface bracket | | 2 | Screws | 3rd party | The LONGer M3 bolts are used near the tail of the dog | |
+Note that both of these buses would be overloaded and out of spec, suggesting use of a powered USB hub. 
+USB Bus A: 0.4 + 0.3 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
+USB Bus B: 0.7 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).
