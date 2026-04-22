@@ -218,15 +218,15 @@ The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier.
 ### 3.3 Example BrainPack Power Budget Calculation 
 
 **USB Bus A**<br>
-USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working)<br>
-USB-A Microphone and Speaker ADC and DAQ - time sensitive data - peak 0.5 A<br>
-USB-A Widefield Camera - normal video data rates - peak 300mA<br>
+USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working); actual 340mA<br>
+USB-A Microphone and Speaker ADC and DAQ - time sensitive data - Microphone only with Comica 24 mA<br>
+USB-A Widefield Camera - normal video data rates - actual 210mA<br>
 
 **USB Bus B**<br>
-USB-C from RealSense - peak 700 mA - USB 3.1 critical<br>
-USB-A Data for RPLidar S2 Laserscan - 0 mA<br>
-USB-A LCD Display power - peak 500mA depending on back-lighting<br>
+USB-C from RealSense - peak 700 mA - USB 3.1 critical - 60mA sleep, 130mA RGB<br>
+USB-A Data for RPLidar S2 Laserscan - 40 mA<br>
+USB-A LCD Display power - sleep 130mA to full power 900mA depending on back-lighting<br>
 
-Note that both of these buses would be overloaded and out of spec, suggesting use of a powered USB hub.<br> 
-USB Bus A: 0.4 + 0.3 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).<br>
-USB Bus B: 0.7 + 0.5 = 1.2A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).<br>
+Note that one of these buses would be overloaded and out of spec, suggesting use of a powered USB hub.<br> 
+USB Bus A: 0.34 + 0.03 + 0.20 = 0.57A - which is below USB 3.0/3.1: 4.5W (5V @ 0.9A).<br>
+USB Bus B: 0.70 + 0.04 + 0.90 = 1.64A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).<br>
