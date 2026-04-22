@@ -224,6 +224,8 @@ The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier.
 <!-- TOC --><a name="example-brainpack-power-budget-calculation"></a>
 ### 3.3 Example BrainPack Power Budget Calculation 
 
+We recommend a [FNB58USB Voltage/Current/Power tester/monitor](https://www.fnirsi.com/products/fnb58) to measure actual power draw.
+
 **USB Bus A**<br>
 USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working); actual 340mA<br>
 USB-A Microphone and Speaker ADC and DAQ - time sensitive data - Microphone only with Comica 24 mA<br>
