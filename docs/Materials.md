@@ -4,7 +4,7 @@
    * [1.2 DANGER: Robot Stability](#danger-robot-stability)
 - [2. Materials](#materials)
    * [2.1 Display Unit ("Face")](#display-unit-face)
-   * [2.2 Face Mounting](#face-mounting)
+   * [2.2 Face and Sensor Carrier ("Head"); LiDAR](#face-mounting)
       + [Unitree G1](#unitree-g1)
       + [Unitree Go2 and LimX Tron 1](#unitree-go2-and-limx-tron-1)
    * [2.3 Thor Mounts](#thor-mounts)
@@ -60,14 +60,14 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 | Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
 
 **1 ea. Flexible HDMI to HDMI Cable** Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
-**For Unitree G1 and Go2**: 1FT length: https://www.amazon.com/dp/B09XHYH4KY<br>
-**For Tron 1**: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2<br>
+- For Unitree G1 and Go2**: 1FT length: https://www.amazon.com/dp/B09XHYH4KY<br>
+- For Tron 1**: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2<br>
 
 **1 ea. Fisheye RGB Camera** Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module 2MP CMOS IMX291 160 Degree Fisheye Mini UVC USB2.0 SKU: B0202 [Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)<br>
 
 **1 ea. RealSense Depth Camera (i435)** Intel RealSense Depth Camera D435i, Silver 1080p Video Capture Resolution (82635D435IDK5P) https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB<br>
 
-**1 ea. USB cable for RealSense** Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 4K USBC Video High Speed Data Transfer Fast Charging Cord https://www.amazon.com/dp/B094V4RJGC<br>
+**1 ea. USB Cable for RealSense** Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 4K USBC Video High Speed Data Transfer Fast Charging Cord https://www.amazon.com/dp/B094V4RJGC<br>
 NOTE: should be improved - should be a USB-C to USB-A cable<br>
 
 **1 ea. High-Brightness Touch Screen** 5 inch High-Brightness Touch Screen, 1024x600 Pixels Toughened Glass Panel, HDMI Interface, IPS Panel SKU: 27960 Mfr. #: 5DP-CAPLCD-H Brand: Waveshare https://www.waveshare.com/5dp-caplcd.htm?sku=27960<br>
@@ -92,12 +92,13 @@ Note: retain included 3.5 mm TRS cable; will be used in final assembly<br>
 **5 ea. M3 x 8mm Thread Pitch Cap Screws** Many suppliers, for example: Iexcell 100 Pcs M3 x 8mm Thread Pitch 0.5 mm Stainless Steel 304 Hex Socket Button Head Cap Screws Bolts Kit https://www.amazon.com/dp/B08H2HTTRT
 
 <!-- TOC --><a name="face-mounting"></a>
-### 2.2 Face Mounting
+### 2.2 Face and Sensor Carrier ("Head"); LiDAR
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
 |--------|------| --- |----------|----------|---------|
 | Unitree Go2, LimX Tron 1 | Face Back | 1 | 3D printed | STL file goes here | picture |
 | Unitree Go2, LimX Tron 1 | Face and Sensor Carrier ("Head") | 1 | 3D printed | STL file goes here | picture |
+| Unitree Go2, LimX Tron 1 | Face and Sensor Carrier Lid | 1 | 3D printed | STL file goes here | picture |
 | Unitree G1 | Face Back | 1 | 3D printed | STL file goes here | picture |
 
 <!-- TOC --><a name="unitree-g1"></a>
@@ -106,11 +107,17 @@ Note: retain included 3.5 mm TRS cable; will be used in final assembly<br>
 **2 ea. M6 x 25mm Cap Screws** with nylon lock nut<br>
 These are used to secure the frame back to the front of the Unitree G1<br> 
 
+The Unitree G1 is supplied with an internal [Livox Mid360](https://www.livoxtech.com/mid-360). Please refer to the Unitree and Livox documentation.  
+
 <!-- TOC --><a name="unitree-go2-and-limx-tron-1"></a>
 #### Unitree Go2 and LimX Tron 1
 
 **4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers<br>
 These are used to secure the frame back to the front of the standard sensor and display carrier ("head")<br>
+
+**1 ea. RPLidar S2 - ToF LiDAR**  360 Degree Laser Range Scanner, 2D, 30-meter range, sunlight resistant, 10Hz (600rpm), 32kHz sample rate (angular resolution is 0.1125°). https://www.slamtec.com/en/s2
+
+Once all the electronics/wiring have been completed, close the "Head" (Face and Sensor Carrier) with the lid. This lid also serves as the base of the [RPLidar S2 - ToF LiDAR](https://www.slamtec.com/en/s2). 
 
 <!-- TOC --><a name="thor-mounts"></a>
 ### 2.3 Thor Mounts
@@ -190,7 +197,7 @@ https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 | Unitree G1 | CAMWAY 5PCS 2in1 1-8s LiPo Battery Low Voltage Buzzer Alarm |
 
 <!-- TOC --><a name="tron-1-custom-power-cable"></a>
-#### Tron 1 Custom Power Cable
+#### LimX Tron 1 Custom Power Cable
 
 The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor. Use crimp butt connectors to connect the male XT60 plug to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the audio amplifier. **You will damage either the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
 
