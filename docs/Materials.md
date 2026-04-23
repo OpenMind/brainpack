@@ -107,15 +107,14 @@ Note: retain included 3.5 mm TRS cable; will be used in final assembly<br>
 <!-- TOC --><a name="unitree-g1"></a>
 #### Unitree G1
 
-**2 ea. M6 x 25mm Cap Screws** with nylon lock nut<br>
-These are used to secure the face back to the front of the Unitree G1<br> 
+**2 ea. M6 x 25mm Cap Screws** with nylon lock nut. Generic part, many suppliers. These are used to secure the face back to the front of the Unitree G1.
 
 The Unitree G1 is supplied with an internal [Livox Mid360](https://www.livoxtech.com/mid-360). Please refer to the Unitree and Livox documentation.  
 
 <!-- TOC --><a name="unitree-go2-and-limx-tron-1"></a>
 #### Unitree Go2 and LimX Tron 1
 
-**4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers. These are used to secure the face back to the front of the **Face and Sensor Carrier ("Head")**.
+**4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers. Generic part, many suppliers. These are used to secure the face back to the front of the **Face and Sensor Carrier ("Head")**.
 
 **1 ea. RPLidar S2 - ToF LiDAR** 360 Degree Laser Range Scanner, 2D, 30-meter range, sunlight resistant, 10Hz (600rpm), 32kHz sample rate (angular resolution is 0.1125°). https://www.slamtec.com/en/s2
 
@@ -140,18 +139,18 @@ Once all the electronics/wiring has been completed, close the head with the lid.
 
 **2 ea. Nylon Holding Strap** Fastening Hook and Loop Cable Straps, 10 Pack Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20") https://www.amazon.com/dp/B088FJCJDL
 
-**2 ea. M6 x 35mm Cap Screws** Generic part, Many suppliers. These are used to secure the TOP of the Thor mount. 
+**2 ea. M6 x 35mm Cap Screws** Generic part, many suppliers. These are used to secure the TOP of the Thor mount. 
 
-**2 ea. M6 x 30mm Cap Screws** Generic part, Many suppliers. These are used to secure the BOTTOM of the Thor mount.
+**2 ea. M6 x 30mm Cap Screws** Generic part, many suppliers. These are used to secure the BOTTOM of the Thor mount.
 
 <!-- TOC --><a name="unitree-go2"></a>
 #### Unitree Go2
 
 **1 ea. Nylon Holding Strap** Fastening Hook and Loop Cable Straps, 10 Pack Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles Adjustable and Reusable Cinch Straps for Cords Organized and Tidy (1" x 20") https://www.amazon.com/dp/B088FJCJDL
 
-**2 ea. M3 x 35mm Cap Screws** with washers. Generic part, Many suppliers. These are used to secure the FRONT of the Thor mount.
+**2 ea. M3 x 35mm Cap Screws** with washers. Generic part, many suppliers. These are used to secure the FRONT of the Thor mount.
 
-**2 ea. M3 x 50mm Cap Screws** with washers. Generic part, Many suppliers. These are used to secure the BACK of the Thor mount. 
+**2 ea. M3 x 50mm Cap Screws** with washers. Generic part, many suppliers. These are used to secure the BACK of the Thor mount. 
 
 <!-- TOC --><a name="cables-and-power"></a>
 ## 3. Cables and Power
