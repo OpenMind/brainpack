@@ -12,7 +12,7 @@
       + [Unitree G1](#unitree-g1-1)
       + [Unitree Go2](#unitree-go2)
 - [3. Cables and Power](#cables-and-power)
-   * [3.1 Thor Power Cable Harness](#thor-power-cable-harness)
+   * [3.1 Thor Power Harness](#thor-power-harness)
    * [3.2 Power Electronics](#power-electronics)
       + [Tron 1 Custom Power Cable](#tron-1-custom-power-cable)
       + [Unitree G1 Custom Power Cable](#unitree-g1-custom-power-cable)
@@ -60,8 +60,8 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 | Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
 
 **1 ea. Flexible HDMI to HDMI Cable** Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
-- For Unitree G1 and Go2**: 1FT length: https://www.amazon.com/dp/B09XHYH4KY<br>
-- For Tron 1**: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2<br>
+- For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY<br>
+- For Tron 1: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2<br>
 
 **1 ea. Fisheye RGB Camera** Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module 2MP CMOS IMX291 160 Degree Fisheye Mini UVC USB2.0 SKU: B0202 [Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)<br>
 
@@ -77,9 +77,9 @@ NOTE: should be improved - should be a USB-C to USB-A cable<br>
 **1 ea. Audio Amplifier** DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board PAM8620 DC 8-26V Digital Stereo Amp Module Class D Mini Power https://www.amazon.com/dp/B0CQJRL235
 
 Design notes: Working voltage: DC8~26V, 15W stereo (24V 8ohm)/ 10W stereo (12V 8 ohm), if connect 4 ohm or 2 ohm speaker, the power will be automatically limited to 15W.
-Calulation: We are powering with 12V. Assuming autolimiting to 15W per side, aka (12V/15W =) 1.25 A per channel, the combined max power draw is limited to 1.25 + 1.25 = 2.5A, with overhead that works out to ~3A. 
+Calculation: We are powering with 12V. Assuming auto limiting to 15W per side, aka (12V/15W =) 1.25 A per channel, the combined max power draw is limited to 1.25 + 1.25 = 2.5A, with overhead that works out to ~3A. 
 
-**2 ea. Speaker 42mm 8W 4ohm** Mouser #: 665-AS04204PR Mfr. #: AS04204PR Mfr.: PUI Audio https://mou.sr/4sO2Qsp. These are 4 ohm speakers. The DROK audio amplifier will autolimit power to 15W per side (which overloads the speakers, leading to distortion, so do not turn the volume up all the way). 
+**2 ea. Speaker 42mm 8W 4ohm** Mouser #: 665-AS04204PR Mfr. #: AS04204PR Mfr.: PUI Audio https://mou.sr/4sO2Qsp. These are 4 ohm speakers. The DROK audio amplifier will auto limit power to 15W per side (which overloads the speakers, leading to distortion, so do not turn the volume up all the way). 
 
 **1 ea. Audio Cable** Seadream 3.5mm Aux Cable Short 2Pack 8 inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable https://www.amazon.com/dp/B01L0YPVOY<br>
 
@@ -188,8 +188,8 @@ The different robots have different power plugs:
 
 **NOTE: In general, you will need to design, fabricate, and assemble a custom step-down regulator which (1) takes 24 to 34V and (2) provides 12-17V for the audio amplifier, and 5V 2A for the LCD screen back-lighting. In an emergency, you can use 2 ea. MATEKSYS BEC 12S Pro Synchronous switching step-down regulators, or equivalent, but this is probably not ideal.**
 
-<!-- TOC --><a name="thor-power-cable-harness"></a>
-### 3.1 Thor Power Cable Harness
+<!-- TOC --><a name="thor-power-harness"></a>
+### 3.1 Thor Power Harness
 
 Thor Power Cable, MICRO-FIT3.0 R-S 4 CIRCUIT 600MM<br>
 DigiKey Part No.: 900-2147561043-ND<br>
