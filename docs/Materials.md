@@ -74,12 +74,12 @@ NOTE: should be improved - should be a USB-C to USB-A cable<br>
 
 **1 ea. Touchscreen Power/USB cable** Aceyoon 90 Degree USB C Cable 0.6ft Short Right Angle Type C https://www.amazon.com/dp/B096VYVR17<br>
 
-**1 ea. Audio Amplifier** DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board PAM8620 DC 8-26V 24V Digital Stereo Amp Module Class D Mini Power https://www.amazon.com/dp/B0CQJRL235
+**1 ea. Audio Amplifier** DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board PAM8620 DC 8-26V Digital Stereo Amp Module Class D Mini Power https://www.amazon.com/dp/B0CQJRL235
 
 Design notes: Working voltage: DC8~26V, 15W stereo (24V 8ohm)/ 10W stereo (12V 8 ohm), if connect 4 ohm or 2 ohm speaker, the power will be automatically limited to 15W.
-We are powering with 12V. Assuming autolimiting to 15W per side, aka (12V/15W =) 1.25 A per channel, the combined max power draw is limited to 1.25 + 1.25 = 2.5A, with overhead that works out to ~ 3A. 
+Calulation: We are powering with 12V. Assuming autolimiting to 15W per side, aka (12V/15W =) 1.25 A per channel, the combined max power draw is limited to 1.25 + 1.25 = 2.5A, with overhead that works out to ~3A. 
 
-**2 ea. Speaker 42mm 8W 4ohm** Mouser #: 665-AS04204PR Mfr. #: AS04204PR Mfr.: PUI Audio https://mou.sr/4sO2Qsp. These are 4ohm speakers. The DROK audio amplifier will autolimit power to 15W per side (which overloads the speakers, leading to distortion, so do not turn the volume up all the way). 
+**2 ea. Speaker 42mm 8W 4ohm** Mouser #: 665-AS04204PR Mfr. #: AS04204PR Mfr.: PUI Audio https://mou.sr/4sO2Qsp. These are 4 ohm speakers. The DROK audio amplifier will autolimit power to 15W per side (which overloads the speakers, leading to distortion, so do not turn the volume up all the way). 
 
 **1 ea. Audio Cable** Seadream 3.5mm Aux Cable Short 2Pack 8 inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable https://www.amazon.com/dp/B01L0YPVOY<br>
 
@@ -174,23 +174,30 @@ These are used to secure the BACK of the Thor mount.<br>
 <!-- TOC --><a name="cables-and-power"></a>
 ## 3. Cables and Power
 
+The Nvidia Thor is typically powered with:
+
+* 14.8V external LiPo (Unitree G1)
+* 28V to 33.6V main robot power bus (Unitree Go2)
+* 24V main robot power bus (LimX Tron 1)
+
+The different robots have different power plugs:
+
+* Unitree G1 - 24V/5A plug - can be used for the audio amplifier directly (which accepts anything below 26V)
+* Tron 1 - 24V via XT60 plug - can be used for the audio amplifier directly (which accepts anything below 26V) **AND** the Nvidia Thor
+* Unitree Go2 - 28V to 33.6V via XT30 - can be used for the Nvidia Thor and, via a step-down (buck) regulator, the audio amplifier.
+
+**NOTE: In general, you will need to design, fabricate, and assemble a custom step-down regulator which (1) takes 24 to 34V and (2) provides 12-17V for the audio amplifier, and 5V 2A for the LCD screen back-lighting. In an emergency, you can use 2 ea. MATEKSYS BEC 12S Pro Synchronous switching step-down regulators, or equivalent, but this is probably not ideal.**
+
 <!-- TOC --><a name="thor-power-cable-harness"></a>
 ### 3.1 Thor Power Cable Harness
 
-Thor Power Cable<br>
-MICRO-FIT3.0 R-S 4 CIRCUIT 600MM<br>
+Thor Power Cable, MICRO-FIT3.0 R-S 4 CIRCUIT 600MM<br>
 DigiKey Part No.: 900-2147561043-ND<br>
 Manufacturer Part No.: 2147561043<br>
 https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 
 <!-- TOC --><a name="power-electronics"></a>
 ### 3.2 Power Electronics
-
-Unitree G1: 24V/5A plug - can be used for the audio amplifier directly (which accepts anything below 26V)
-Tron 1: 24V via XT60 plug - can be used for the audio amplifier directly (which accepts anything below 26V)
-Unitree Go2: 28V to 33.6V via XT30 - needs step-down (buck) regulator.
-
-**NOTE: In general, you will need to design, fabricate, and assemble a custom step-down regulator which (1) takes 24 to 34V and (2 )provides 12-17V for the audio amplifier, and 5V 2A for the LCD screen backlighting. You can use 2ea. MATEKSYS BEC 12S Pro Synchronous switching step-down regulators, or equivalent, but this is proably not ideal in terms of energy efficiency.**
 
 | Robot  | Name |
 |--------|------|
@@ -203,23 +210,23 @@ Unitree Go2: 28V to 33.6V via XT30 - needs step-down (buck) regulator.
 | Tron 1 | Male XT60 connector with wire leads |
 | Unitree G1 | Male EC5 connector with 14AWG wire leads |
 | Unitree G1 | 120S 14.8V 10000 mAh LiPo battery with female EC5 connector and LiPo charger |
-| Unitree G1 | CAMWAY 5PCS 2in1 1-8s LiPo Battery Low Voltage Buzzer Alarm |
+| Unitree G1 | CAMWAY 5PCS 2 in 1 1-8s LiPo Battery Low Voltage Buzzer Alarm |
 
 <!-- TOC --><a name="tron-1-custom-power-cable"></a>
 #### LimX Tron 1 Custom Power Cable
 
-The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor. Use crimp butt connectors to connect the male XT60 plug to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the audio amplifier. **You will damage either the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
+The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor. Use crimp butt connectors to connect the male XT60 plug to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the audio amplifier. **You will damage the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
 
 <!-- TOC --><a name="unitree-g1-custom-power-cable"></a>
 #### Unitree G1 Custom Power Cable
 
-The Unitree G1 **does not** provide sufficient power for the both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor and the G1 just powers the audio amplifier via the G1's 24V/5A plug.
+The Unitree G1 **does not** provide sufficient power for the both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor. The G1 just powers the audio amplifier via the G1's 24V/5A plug. **WARNING: Do not plug in the XT30 connector into the G1's 5V or 55V connectors. The 24V connector is the one in the middle.**
 
 1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to the audio amplifier cables (red, black) from the face unit. Plug the XT30 plug into the **MIDDLE** G1 power supply, which provides 24V/5A. **You will the audio amplifier, the G1, or both, if you get this wrong. Do not reverse the polarity!** 
 
-2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to determine the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity!** 
+2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to determine the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity!** **WARNING FIRE HAZARD: Do not short the 120S 14.8V 10000 mAh LiPo battery!**  
 
-3. Use the second velcro nylon strap to attach the LiPo battery to the Thor mount. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. 
+3. Use the second Velcro nylon strap to attach the LiPo battery to the Thor mount. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. **WARNING BATTERY DAMAGE: Do not fully discharge the LiPo battery. The Thor will try to drain the battery to below 12V, which will destroy it. Replace the battery when it has discharged to about 15V.**
 
 <!-- TOC --><a name="unitree-go2-custom-power-cable"></a>
 #### Unitree Go2 Custom Power Cable
