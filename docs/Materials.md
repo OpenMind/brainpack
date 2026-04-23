@@ -59,25 +59,21 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 | Frame Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
 | Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
 
-**<ins>1 ea. Flexible HDMI to HDMI Cable</ins>** This is used to connect the Thor to the LCD screen. Suggested part: Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
-- For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY<br>
+**<ins>1 ea. Flexible HDMI to HDMI Cable</ins>** This is used to connect the Thor to the LCD screen. Suggested part: Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz
+- For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY
 - For Tron 1: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2
 
 **<ins>1 ea. Fisheye RGB Camera</ins>** Suggested part: Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module 2MP CMOS IMX291 160 Degree Fisheye Mini UVC USB2.0 SKU: B0202 [Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)
 
 **<ins>1 ea. RealSense Depth Camera (i435)</ins>** Intel RealSense Depth Camera D435i, Silver 1080p Video Capture Resolution (82635D435IDK5P) https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
 
-**<ins>1 ea. USB Cable for RealSense</ins>** Suggested part: Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 4K USBC Video High Speed Data Transfer Fast Charging Cord https://www.amazon.com/dp/B094V4RJGC<br>
-NOTE: should be improved - should be a USB-C to USB-A cable
+**<ins>1 ea. USB Cable for RealSense</ins>** Suggested part: Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 4K USBC Video High Speed Data Transfer Fast Charging Cord https://www.amazon.com/dp/B094V4RJGC **Design notes**: should be improved - should be a USB-C to USB-A cable
 
 **<ins>1 ea. High-Brightness Touch Screen</ins>** 5 inch High-Brightness Touch Screen, 1024x600 Pixels Toughened Glass Panel, HDMI Interface, IPS Panel SKU: 27960 Mfr. #: 5DP-CAPLCD-H Brand: Waveshare https://www.waveshare.com/5dp-caplcd.htm?sku=27960
 
 **<ins>1 ea. Touchscreen Power/USB Cable</ins>** Suggested part: Aceyoon 90 Degree USB C Cable 0.6ft Short Right Angle Type C https://www.amazon.com/dp/B096VYVR17
 
-**<ins>1 ea. Audio Amplifier</ins>** DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board PAM8620 DC 8-26V Digital Stereo Amp Module Class D Mini Power https://www.amazon.com/dp/B0CQJRL235
-
-Design notes: Working voltage: DC8~26V, 15W stereo (24V 8ohm)/ 10W stereo (12V 8 ohm), if connect 4 ohm or 2 ohm speaker, the power will be automatically limited to 15W.
-Calculation: We are powering with 12V. Assuming auto limiting to 15W per side, aka (12V/15W =) 1.25 A per channel, the combined max power draw is limited to 1.25 + 1.25 = 2.5A, with overhead that works out to ~3A. 
+**<ins>1 ea. Audio Amplifier</ins>** DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board PAM8620 DC 8-26V Digital Stereo Amp Module Class D Mini Power https://www.amazon.com/dp/B0CQJRL235 **Design notes**: Working voltage: DC8~26V, 15W stereo (24V 8ohm)/ 10W stereo (12V 8 ohm), if connect 4 ohm or 2 ohm speaker, the power will be automatically limited to 15W. Calculation: We are powering with 12V. Assuming auto limiting to 15W per side, aka (12V/15W =) 1.25 A per channel, the combined max power draw is limited to 1.25 + 1.25 = 2.5A, with overhead that works out to ~3A. 
 
 **<ins>2 ea. Speaker 42mm 8W 4ohm</ins>** Mouser #: 665-AS04204PR Mfr. #: AS04204PR Mfr.: PUI Audio https://mou.sr/4sO2Qsp. These are 4 ohm speakers. The DROK audio amplifier will auto limit power to 15W per side (which overloads the speakers, leading to distortion, so do not turn the volume up all the way). 
 
@@ -85,8 +81,7 @@ Calculation: We are powering with 12V. Assuming auto limiting to 15W per side, a
 
 **<ins>1 ea. Sound Card ADC and DAC</ins>** SABRENT USB External Stereo Sound Adapter USB-A (do not buy USB-C version - degraded audio quality) https://www.amazon.com/dp/B00IRVQ0F8
 
-**<ins>1 ea. Directional Microphone</ins>** Comica Camera Microphone, CVM-VM10II Directional Microphone Cardioid Shotgun Video Camcorder Microphone https://www.amazon.com/dp/B0748CYPDJ<br>
-Note: retain included 3.5 mm TRS cable; will be used in final assembly
+**<ins>1 ea. Directional Microphone</ins>** Comica Camera Microphone, CVM-VM10II Directional Microphone Cardioid Shotgun Video Camcorder Microphone https://www.amazon.com/dp/B0748CYPDJ **Design notes**: retain included 3.5 mm TRS cable; will be used in final assembly
 
 **<ins>1 ea. Microphone Mount** SMALLRIG Cold Shoe Mount Adapter with 1/4 Thread Hole – 1241 https://www.amazon.com/dp/B00HJFBUCQ
 
