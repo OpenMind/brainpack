@@ -74,9 +74,12 @@ NOTE: should be improved - should be a USB-C to USB-A cable<br>
 
 **1 ea. Touchscreen Power/USB cable** Aceyoon 90 Degree USB C Cable 0.6ft Short Right Angle Type C https://www.amazon.com/dp/B096VYVR17<br>
 
-**1 ea. Audio Amplifier** DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board PAM8620 DC 8-26V 24V Digital Stereo Amp Module Class D Mini Power https://www.amazon.com/dp/B0CQJRL235<br>
+**1 ea. Audio Amplifier** DROK 15W+15W 2.0 2pcs 12V Amplifier Board, Dual Channel Audio Amplifier Board PAM8620 DC 8-26V 24V Digital Stereo Amp Module Class D Mini Power https://www.amazon.com/dp/B0CQJRL235
 
-**2 ea. Speaker 42mm 8W 4ohm** Mouser #: 665-AS04204PR Mfr. #: AS04204PR Mfr.: PUI Audio https://mou.sr/4sO2Qsp<br>
+Design notes: Working voltage: DC8~26V, 15W stereo (24V 8ohm)/ 10W stereo (12V 8 ohm), if connect 4 ohm or 2 ohm speaker, the power will be automatically limited to 15W.
+We are powering with 12V. Assuming autolimiting to 15W per side, aka (12V/15W =) 1.25 A per channel, the combined max power draw is limited to 1.25 + 1.25 = 2.5A, with overhead that works out to ~ 3A. 
+
+**2 ea. Speaker 42mm 8W 4ohm** Mouser #: 665-AS04204PR Mfr. #: AS04204PR Mfr.: PUI Audio https://mou.sr/4sO2Qsp. These are 4ohm speakers. The DROK audio amplifier will autolimit power to 15W per side (which overloads the speakers, leading to distortion, so do not turn the volume up all the way). 
 
 **1 ea. Audio Cable** Seadream 3.5mm Aux Cable Short 2Pack 8 inch 3Port 3.5mm Right Angle Male to Male Stereo Audio Cable https://www.amazon.com/dp/B01L0YPVOY<br>
 
@@ -182,6 +185,12 @@ https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 
 <!-- TOC --><a name="power-electronics"></a>
 ### 3.2 Power Electronics
+
+Unitree G1: 24V/5A plug - can be used for the audio amplifier directly (which accepts anything below 26V)
+Tron 1: 24V via XT60 plug - can be used for the audio amplifier directly (which accepts anything below 26V)
+Unitree Go2: 28V to 33.6V via XT30 - needs step-down (buck) regulator.
+
+**NOTE: In general, you will need to design, fabricate, and assemble a custom step-down regulator which (1) takes 24 to 34V and (2 )provides 12-17V for the audio amplifier, and 5V 2A for the LCD screen backlighting. You can use 2ea. MATEKSYS BEC 12S Pro Synchronous switching step-down regulators, or equivalent, but this is proably not ideal in terms of energy efficiency.**
 
 | Robot  | Name |
 |--------|------|
