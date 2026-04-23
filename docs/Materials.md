@@ -59,7 +59,7 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 | Frame Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
 | Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
 
-**1 ea. Flexible HDMI to HDMI Cable** Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
+**1 ea. Flexible HDMI to HDMI Cable** This is used to connect the Thor to the LCD screen. Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
 - For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY<br>
 - For Tron 1: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2<br>
 
@@ -99,77 +99,59 @@ Note: retain included 3.5 mm TRS cable; will be used in final assembly<br>
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
 |--------|------| --- |----------|----------|---------|
+| Unitree G1 | Face Back | 1 | 3D printed | STL file goes here | picture |
 | Unitree Go2, LimX Tron 1 | Face Back | 1 | 3D printed | STL file goes here | picture |
 | Unitree Go2, LimX Tron 1 | Face and Sensor Carrier ("Head") | 1 | 3D printed | STL file goes here | picture |
 | Unitree Go2, LimX Tron 1 | Face and Sensor Carrier Lid | 1 | 3D printed | STL file goes here | picture |
-| Unitree G1 | Face Back | 1 | 3D printed | STL file goes here | picture |
 
 <!-- TOC --><a name="unitree-g1"></a>
 #### Unitree G1
 
 **2 ea. M6 x 25mm Cap Screws** with nylon lock nut<br>
-These are used to secure the frame back to the front of the Unitree G1<br> 
+These are used to secure the face back to the front of the Unitree G1<br> 
 
 The Unitree G1 is supplied with an internal [Livox Mid360](https://www.livoxtech.com/mid-360). Please refer to the Unitree and Livox documentation.  
 
 <!-- TOC --><a name="unitree-go2-and-limx-tron-1"></a>
 #### Unitree Go2 and LimX Tron 1
 
-**4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers<br>
-These are used to secure the frame back to the front of the standard sensor and display carrier ("head")<br>
+**4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers. These are used to secure the face back to the front of the **Face and Sensor Carrier ("Head")**.
 
-**1 ea. RPLidar S2 - ToF LiDAR**  360 Degree Laser Range Scanner, 2D, 30-meter range, sunlight resistant, 10Hz (600rpm), 32kHz sample rate (angular resolution is 0.1125°). https://www.slamtec.com/en/s2
+**1 ea. RPLidar S2 - ToF LiDAR** 360 Degree Laser Range Scanner, 2D, 30-meter range, sunlight resistant, 10Hz (600rpm), 32kHz sample rate (angular resolution is 0.1125°). https://www.slamtec.com/en/s2
 
-Once all the electronics/wiring have been completed, close the "Head" (Face and Sensor Carrier) with the lid. This lid also serves as the base of the [RPLidar S2 - ToF LiDAR](https://www.slamtec.com/en/s2). 
+Once all the electronics/wiring has been completed, close the head with the lid. The lid also serves as the base of the [RPLidar S2 - ToF LiDAR](https://www.slamtec.com/en/s2). 
 
 <!-- TOC --><a name="thor-mounts"></a>
 ### 2.3 Thor Mounts
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
 |--------|------| --- |----------|----------|---------|
+| Unitree G1  | Mount with sideplates | 1 | 3D printed | STL file goes here | picture |
 | Unitree Go2 | Mount with sideplates | 1 | 3D printed | STL file goes here | picture |
 | LimX Tron 1 | Head Mount | 1 | 3D printed | STL file goes here | picture |
-| Unitree G1 | Mount with sideplates | 1 | 3D printed | STL file goes here | picture |
 
 <!-- TOC --><a name="limx-tron-1"></a>
 #### LimX Tron 1
 
-**1 ea. M5 T Slot Nut and Bolt Kit**<br> 
-Many suppliers, for example:<br> 
-200Pcs 2020 Aluminum Extrusion M5 T Slot Nuts and Bolts Screws<br>
-20 Series Extruded Hardware Drop in T Nut Slide Nut<br>
-M5x8 10mm for 20/20 80 20 2040 T V Slot Black Aluminum Profile Accessories<br>
-https://www.amazon.com/dp/B08VGSNT2S<br>
+**1 ea. M5 T Slot Nut and Bolt Kit** Many suppliers, for example: 200Pcs 2020 Aluminum Extrusion M5 T Slot Nuts and Bolts Screws 20 Series Extruded Hardware Drop in T Nut Slide Nut M5x8 10mm for 20/20 80 20 2040 T V Slot Black Aluminum Profile Accessories https://www.amazon.com/dp/B08VGSNT2S
 
 <!-- TOC --><a name="unitree-g1-1"></a>
 #### Unitree G1
 
-**2 ea. Nylon Holding Strap**<br> 
-Fastening Hook and Loop Cable Straps, 10 Pack<br> 
-Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles<br> 
-Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20")<br> 
-https://www.amazon.com/dp/B088FJCJDL<br> 
+**2 ea. Nylon Holding Strap** Fastening Hook and Loop Cable Straps, 10 Pack Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles Adjustable and Reusable Cinch Straps for Cords Organized and Tidy(1" x 20") https://www.amazon.com/dp/B088FJCJDL
 
-**2 ea. M6 x 35mm Cap Screws**<br>
-These are used to secure the TOP of the Thor mount.<br> 
+**2 ea. M6 x 35mm Cap Screws** Generic part, Many suppliers. These are used to secure the TOP of the Thor mount. 
 
-**2 ea. M6 x 30mm Cap Screws**<br>
-These are used to secure the BOTTOM of the Thor mount.<br>
+**2 ea. M6 x 30mm Cap Screws** Generic part, Many suppliers. These are used to secure the BOTTOM of the Thor mount.
 
 <!-- TOC --><a name="unitree-go2"></a>
 #### Unitree Go2
 
-**1 ea. Nylon Holding Strap**<br>
-Fastening Hook and Loop Cable Straps, 10 Pack<br>
-Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles<br>
-Adjustable and Reusable Cinch Straps for Cords Organized and Tidy (1" x 20")<br>
-https://www.amazon.com/dp/B088FJCJDL<br>
+**1 ea. Nylon Holding Strap** Fastening Hook and Loop Cable Straps, 10 Pack Black Self-Adhesive Cable Ties, Nylon Securing Straps with Buckles Adjustable and Reusable Cinch Straps for Cords Organized and Tidy (1" x 20") https://www.amazon.com/dp/B088FJCJDL
 
-**2 ea. M3 x 35mm Cap Screws** with washers<br>
-These are used to secure the FRONT of the Thor mount.<br>
+**2 ea. M3 x 35mm Cap Screws** with washers. Generic part, Many suppliers. These are used to secure the FRONT of the Thor mount.
 
-**2 ea. M3 x 50mm Cap Screws** with washers<br>
-These are used to secure the BACK of the Thor mount.<br> 
+**2 ea. M3 x 50mm Cap Screws** with washers. Generic part, Many suppliers. These are used to secure the BACK of the Thor mount. 
 
 <!-- TOC --><a name="cables-and-power"></a>
 ## 3. Cables and Power
