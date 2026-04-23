@@ -59,13 +59,17 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 | Frame Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
 | Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
 
-<u>**1 ea. Flexible HDMI to HDMI Cable**</u> This is used to connect the Thor to the LCD screen. Suggested part: Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
+<u>**1 ea. Flexible HDMI to HDMI Cable**</u>
+
+**<u>1 ea. Flexible HDMI to HDMI Cable</u>**
+
+ This is used to connect the Thor to the LCD screen. Suggested part: Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz<br>
 - For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY<br>
 - For Tron 1: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2
 
 **1 ea. Fisheye RGB Camera** Suggested part: Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module 2MP CMOS IMX291 160 Degree Fisheye Mini UVC USB2.0 SKU: B0202 [Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)
 
-**1 ea. RealSense Depth Camera (i435)** Intel RealSense Depth Camera D435i, Silver 1080p Video Capture Resolution (82635D435IDK5P) https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
+**<ins>1 ea. RealSense Depth Camera (i435)</ins>** Intel RealSense Depth Camera D435i, Silver 1080p Video Capture Resolution (82635D435IDK5P) https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
 
 **1 ea. USB Cable for RealSense** Suggested part: Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 4K USBC Video High Speed Data Transfer Fast Charging Cord https://www.amazon.com/dp/B094V4RJGC<br>
 NOTE: should be improved - should be a USB-C to USB-A cable
