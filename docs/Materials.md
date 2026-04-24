@@ -17,8 +17,9 @@
       + [LimX Tron 1 Custom Power Cable](#limx-tron-1-custom-power-cable)
       + [Unitree G1 Custom Power Cable](#unitree-g1-custom-power-cable)
       + [Unitree Go2 Custom Power Cable](#unitree-go2-custom-power-cable)
-   * [3.3 Example BrainPack Power Budget Calculation](#example-brainpack-power-budget-calculation)
+   * [3.3 Example Power Budget Calculation](#example-power-budget-calculation)
    * [3.4 Powered USB Hubs](#powered-usb-hubs)
+- [4. Reliable Networking](#reliable-networking)
 <!-- TOC end -->
 
 <!-- TOC --><a name="brainpack"></a>
@@ -64,15 +65,23 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 **<ins>1 ea. Flexible HDMI to HDMI Cable</ins>** This is used to connect the Thor to the LCD screen. Suggested part: Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz
 - For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY
-- For Tron 1: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2
+- For LimX Tron 1: 3.3FT length: https://www.amazon.com/dp/B09XHZD6Z2
 
 **<ins>1 ea. Fisheye RGB Camera</ins>** Suggested part: Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module 2MP CMOS IMX291 160 Degree Fisheye Mini UVC USB2.0 SKU: B0202 [Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)
 
 **<ins>1 ea. RealSense Depth Camera (i435)</ins>** Intel RealSense Depth Camera D435i, Silver 1080p Video Capture Resolution (82635D435IDK5P) https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
 
-**<ins>1 ea. USB Cable for RealSense</ins>** Suggested part: Short USB-C to USB-C Cable (1.5ft 2 Packs), 3.1 Gen 2 10Gbps 100W 4K USBC Video High Speed Data Transfer Fast Charging Cord https://www.amazon.com/dp/B094V4RJGC **Design notes**: should be improved - should be a USB-C to USB-A cable
+**<ins>1 ea. USB Cable for RealSense</ins>** Generic part, many suppliers. Suggested part: SUNGUY 10Gbps Android Auto USB Cable 1FT, 3A USB C 3.1 Gen2 Cable Data Transfer https://www.amazon.com/dp/B0B28ZCV2Y
 
-**<ins>1 ea. High-Brightness Touch Screen</ins>** 5 inch High-Brightness Touch Screen, 1024x600 Pixels Toughened Glass Panel, HDMI Interface, IPS Panel SKU: 27960 Mfr. #: 5DP-CAPLCD-H Brand: Waveshare https://www.waveshare.com/5dp-caplcd.htm?sku=27960
+**<ins>2 ea. Powered USB Hub</ins>** Coolgear 3.2 Gen 1 USB Hub - 4 Port USB Hub with 5Gbps Data Transfers, Mountable Metal Housing, 5V Power Adapter, ESD Surge Protection, Bus or Self Powered https://www.amazon.com/dp/B07G7GP15C. 
+
+**Design Note 1**: A better part is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection but this can be hard to source. This part accepts +7~14V, making it easier to use compared to the 5V version ("Coolgear 3.2 Gen 1 USB Hub 5V"). 
+
+**Design Note 2**: Another alternative is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub w/ ESD Surge Protection & Power Adapter</ins>** https://www.usbgear.com/cg-u3micro4ph.html. This is the enclosed version of the CG-817X4AX1C-PD-PCBA, so it comes with a 12V power supply and an enclosure. It accepts +7~14V DC Input via a barrel jack.
+
+**<ins>2 ea. Barrel Power Jack, Male</ins>** Generic part, many suppliers. Suggested part: SDTC Tech 3 Sets 5.5 x 2.5 MM 10A DC Power Jack Socket Threaded Female Mount Connector Adapter & 12V Male DC Power Pigtail Cable with Dustproof Plug https://www.amazon.com/dp/B0B6FFN4V5 
+
+**<ins>1 ea. High-Brightness Touch Screen</ins>** Waveshare 5 inch High-Brightness Touch Screen, 1024x600 Pixels Toughened Glass Panel, HDMI Interface, IPS Panel SKU: 27960 Mfr. #: 5DP-CAPLCD-H https://www.waveshare.com/5dp-caplcd.htm?sku=27960
 
 **<ins>1 ea. Touchscreen Power/USB Cable</ins>** Suggested part: Aceyoon 90 Degree USB C Cable 0.6ft Short Right Angle Type C https://www.amazon.com/dp/B096VYVR17
 
@@ -215,24 +224,33 @@ The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier.
 
 2. Plug the XT30 plug into the 33.6V Go2 power supply port. 
 
-<!-- TOC --><a name="example-brainpack-power-budget-calculation"></a>
-### 3.3 Example BrainPack Power Budget Calculation
+<!-- TOC --><a name="example-power-budget-calculation"></a>
+### 3.3 Example Power Budget Calculation
 
 We recommend a [FNB58USB Voltage/Current/Power tester/monitor](https://www.fnirsi.com/products/fnb58) to measure actual power draw.
 
 **USB Bus A** This must be externally powered<br>
-USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working); actual 340mA<br>
-USB-A Data for RPLidar S2 Laserscan - 40 mA<br>
-USB-A Microphone and Speaker ADC and DAQ - time sensitive data - Microphone only with Comica 24 mA<br>
-USB-A LCD Display power - sleep 130mA to full power 900mA depending on back-lighting<br>
+USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working); actual current 340mA<br>
+USB-A Data for RPLidar S2 Laserscan - actual current 40 mA<br>
+USB-A Microphone and Speaker ADC and DAQ - time sensitive data - Microphone only with Comica actual current 24 mA<br>
+USB-A LCD Display power - sleep 130mA, full power 900mA (depending on back-lighting)<br>
 
 **USB Bus B** This should be externally powered<br>
 USB-C RealSense - peak 700 mA - USB 3.1 critical - 60mA sleep, 130mA RGB only<br>
-USB-A Widefield Camera - normal video data rates - USB 2.0 ok - actual 210mA<br>
+USB-A Widefield Camera - normal video data rates - USB 2.0 ok - actual current 210mA<br>
 
 <!-- TOC --><a name="powered-usb-hubs"></a>
 ### 3.4 Powered USB Hubs
 
-For reliable and stable performance, **you must use powered USB hubs**. We recommend the Coolgear 3.2 Gen 1 USB Hub - 4 Port USB Hub with 5Gbps Data Transfers, Mountable Metal Housing, 5V Power Adapter, ESD Surge Protection, Bus or Self Powered https://www.amazon.com/dp/B07G7GP15C. 
+For reliable and stable performance **you must use powered USB hubs**. We recommend the Coolgear 3.2 Gen 1 USB Hub - 4 Port USB Hub with 5Gbps Data Transfers, Mountable Metal Housing, 5V Power Adapter, ESD Surge Protection, Bus or Self Powered https://www.amazon.com/dp/B07G7GP15C. 
 
 This hub can provide 20W total power, or 900 mA per port. Provide 5V via the barrel jack connector; you can obtain 5V via a MATEKSYS BEC 12S (or equivalent). The MATEKSYS BEC 12S can provide Continuous 5A output Peak 9A output. 
+
+Better Options: **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection but this can be hard to source. This part accepts +7~14V, making it easier to use compared to the 5V version ("Coolgear 3.2 Gen 1 USB Hub 5V"). The best solution is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub w/ ESD Surge Protection & Power Adapter</ins>** https://www.usbgear.com/cg-u3micro4ph.html. This is the enclosed version of the CG-817X4AX1C-PD-PCBA, so it comes with a 12V power supply and an enclosure. It accepts +7~14V DC Input via a barrel jack.
+
+<!-- TOC --><a name="reliable-networking"></a>
+## 4. Reliable Networking
+
+The Nvidia Thor dev kit contains a Wi-Fi 6E module (AzureWave AW-XB560NF IEEE 802.11ax (Wi-Fi 6/6E) and Bluetooth 5.3/5.4 combo module). The two antennas are located inside the dev kit, and the antennas can be occluded depending on how the dev kit is mounted on your robot. We recommend adding an omnidirectional WiFi antenna to your robot, and then connecting it to the AW-XB560NF via custom I-PEX MHF4 terminated coax. This can be somewhat involved and exceeds the scope of this writeup. 
+
+

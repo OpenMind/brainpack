@@ -1,7 +1,17 @@
 
-# PRISM Build Guide
+# BrainPack Build Guide
 
-## Introduction: 
+## Introduction
+
+The BrainPack is a module that can be attached to various robots (such as the Unitree G1 and Go2, ad well as the LimX Tron 1). As long as your robot provides power and ability for external computers to interface with it, most typically via an Ethernet cable, then the BrainPack should work for your robot. The BrainPack expects developer access to the robot and therefore will not work with toy/entertainment versions of the above robots (such as the Unitree Go2 Air).  
+
+The BrainPack is designed for Human-Robot interaction research and pilot testing. The BrainPack also allows yo to rapidly test new combinations of advanced compute, new types of sensors, and new types of outputs and actuators. 
+
+**NOTE: The correct assembly of, and safe use of, this research tool requires a fully equipped electronics test and assembly space with all the needed tools and equipment, such as soldering irons, hot glue guns, PCB reflow, crimp tools, multimeters, lab power supplies, thermal imaging (to monitor thermals), and other generic electronics and robotics test and assembly infrastructure.**
+
+**NOTE: this write up is a high-level summary of the central steps required to assemble and use the BrainPack. We assume advanced familiarity with robotics hardware, associated actuators, batteries, and sensors, 3-D printing, and related capabilities. The overall assembly process involves more than 300 specific steps. We only provide the most important ones in this write up. Most robotics engineers should be able to follow along with minimal difficulty. If you have any questions please reach out to our engineers.**
+
+, such as greeting humns,  and software interaction and provide a platform for further development and research.
 
 PRISM (Platform for Robotics Integration, Sensing and Modularity) is a complete hardware-software package that provides a generalized and universal hardware configuration to interface with proprietary robotics and expose it to widely used communication routines such as Robotics Operating System (ROS2), CYCLONEDDS, etc. 
 
@@ -11,13 +21,9 @@ Included in this document is a detailed set of instructions to fabricate and ass
 Please refer below for hardware specifications, parts requirements and guidelines on 3D printing and custom fabrication.
 Additionally, you may refer here for additional information:
 
-[Bill of Materials](../docs/Bill_of_Materials.md)
+[Bill of Materials](../docs/Materials.md)
 
 [CAD Drawings](../CAD/)
-
-[Cable Fabrication](#cable-fabrication-instructions)
-
-[FAQ](../docs/FAQ.md)
 
 ## Quick Start Guide:
 

@@ -7,7 +7,7 @@
 
 The **BrainPack** provides an easy to use, modular compute-and-development platform for robotics, seamlessly integrated with the LimX Tron 1, Unitree G1, and Unitree Go2. 
 
-Included is a full-suite of sensors that allow your Go2 to understand and react to its environment, and interact with people through OM1. The PRISM Backpack comes with OM1 fully built in - simply turn on the Go2 and OM1 will breathe life into your robot.
+Included is a full-suite of sensors that allow your Go2 to understand and react to its environment, and interact with people through OM1. The BrainPack Backpack comes ready to connect to OM1 cloud endponits for voice, spatial navigation, emotion generation, and other core robot functionality.
 
 ## Features
 
@@ -43,7 +43,7 @@ Included is a full-suite of sensors that allow your Go2 to understand and react 
 
 ## Documentation
 
-- [Bill of Materials](./docs/Bill_of_Materials.md)
+- [Bill of Materials](./docs/Materials.md)
 - [CAD Files](./CAD/)
 - [Detailed Assembly Instructions and Custom Fabrication Guidelines](./docs/Assembly.md)
 
@@ -53,11 +53,10 @@ Included is a full-suite of sensors that allow your Go2 to understand and react 
 PRISM/
 ├── README.md
 ├── docs/
-│   ├── Bill_of_Materials.md       # Bill of Materials
-│   ├── FAQ.md                     # Frequently Asked Questions
-│   └── Assembly.md                # Assembly Instructions
+│   ├── Materials.md       # Bill of Materials
+│   └── Assembly.md        # Assembly Instructions
 ├── cad/
-    └──                            # STL files for 3D printing
+    └──                    # STL files for 3D printing
 ```
 
 ## License
