@@ -14,7 +14,7 @@
 - [3. Cables and Power](#cables-and-power)
    * [3.1 Thor Power Harness](#thor-power-harness)
    * [3.2 Power Electronics](#power-electronics)
-      + [Tron 1 Custom Power Cable](#tron-1-custom-power-cable)
+      + [LimX Tron 1 Custom Power Cable](#limx-tron-1-custom-power-cable)
       + [Unitree G1 Custom Power Cable](#unitree-g1-custom-power-cable)
       + [Unitree Go2 Custom Power Cable](#unitree-go2-custom-power-cable)
    * [3.3 Example BrainPack Power Budget Calculation](#example-brainpack-power-budget-calculation)
@@ -191,7 +191,7 @@ https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 | Unitree G1 | 120S 14.8V 10000 mAh LiPo battery with female EC5 connector and LiPo charger |
 | Unitree G1 | CAMWAY 5PCS 2 in 1 1-8s LiPo Battery Low Voltage Buzzer Alarm |
 
-<!-- TOC --><a name="tron-1-custom-power-cable"></a>
+<!-- TOC --><a name="limx-tron-1-custom-power-cable"></a>
 #### LimX Tron 1 Custom Power Cable
 
 The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor. Use crimp butt connectors to connect the male XT60 plug to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the audio amplifier. **You will damage the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
