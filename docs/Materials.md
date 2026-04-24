@@ -171,8 +171,7 @@ The different robots have different power plugs:
 ### 3.1 Thor Power Harness
 
 Thor Power Cable, MICRO-FIT3.0 R-S 4 CIRCUIT 600MM<br>
-DigiKey Part No.: 900-2147561043-ND<br>
-Manufacturer Part No.: 2147561043<br>
+DigiKey #: 900-2147561043-ND Mfr. #: 2147561043<br>
 https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 
 <!-- TOC --><a name="power-electronics"></a>
@@ -221,13 +220,13 @@ The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier.
 
 We recommend a [FNB58USB Voltage/Current/Power tester/monitor](https://www.fnirsi.com/products/fnb58) to measure actual power draw.
 
-**USB Bus A** This must be externally powered!<br>
+**USB Bus A** This must be externally powered<br>
 USB-A Power for RPLidar S2 Laserscan - Operating Current: 40mA (5V power supply, in sleep); 400mA (5V power supply, working); actual 340mA<br>
 USB-A Data for RPLidar S2 Laserscan - 40 mA<br>
 USB-A Microphone and Speaker ADC and DAQ - time sensitive data - Microphone only with Comica 24 mA<br>
 USB-A LCD Display power - sleep 130mA to full power 900mA depending on back-lighting<br>
 
-**USB Bus B** This should be externally powered!<br>
+**USB Bus B** This should be externally powered<br>
 USB-C RealSense - peak 700 mA - USB 3.1 critical - 60mA sleep, 130mA RGB only<br>
 USB-A Widefield Camera - normal video data rates - USB 2.0 ok - actual 210mA<br>
 
