@@ -17,7 +17,8 @@
       + [Tron 1 Custom Power Cable](#tron-1-custom-power-cable)
       + [Unitree G1 Custom Power Cable](#unitree-g1-custom-power-cable)
       + [Unitree Go2 Custom Power Cable](#unitree-go2-custom-power-cable)
-   * [3.3 Example BrainPack Power Budget Calculation ](#example-brainpack-power-budget-calculation)
+   * [3.3 Example BrainPack Power Budget Calculation](#example-brainpack-power-budget-calculation)
+   * [3.4 Powered USB Hubs](#powered-usb-hubs)
 <!-- TOC end -->
 
 <!-- TOC --><a name="brainpack"></a>
@@ -29,13 +30,13 @@
 <!-- TOC --><a name="danger-power-budget-and-thermal-limits"></a>
 ### 1.1 DANGER: Power Budget and Thermal Limits
 
-**It is easy to operate a robot above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. air temperature), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
+**It is easy to operate a robot above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. external air temperature), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
 
 Unless you get this right, you may experience fast battery drain, intermittent faults and resets, electrical shorts and fires, overheating, poor sensor performance and many other possible problems. 
 
 **Example 1**: when a robot tries to speak (at max volume) and walk at the same time, while also running multiple large policies, this could overload (and reset) the power system. The humanoid will then suddenly crash to the floor. Testing individual robot subsystems will not predict this problem, which only occurs when the robot wishes to move, think, and speak at the same time.
 
-**Potential Solution**: use an inline **USB Voltage Current Power Tester Multimeter** to measure the actual power draw of your payload. If needed, change how you are powering your computers and sensors, such as by moving loads to other power buses, providing powered USB hubs, or adding external batteries (but see [below](#danger-robot-stability)).
+**Potential Solution**: use an inline **USB Voltage Current Power Tester Multimeter** (such as the [FNB58USB Voltage/Current/Power tester/monitor](https://www.fnirsi.com/products/fnb58)) to measure the actual power draw of your sensors and other electronics payload. If needed, change how you are powering your computers and sensors, such as by moving loads to other power buses, providing powered USB hubs, or adding external batteries (but see [below](#danger-robot-stability)).
 
 **Example 2**: The robot performs flawlessly in an air conditioned lab, but falls over frequently when deployed in a hot sunny environment. In this case, different joint are probably overheating, switching the system to emergency damp mode, resulting in a fall and damage to the robot. 
 
@@ -44,7 +45,9 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="danger-robot-stability"></a>
 ### 1.2 DANGER: Robot Stability
 
-**CAUTION: adding extra mass (such as external computers, sensors, grippers, and batteries) to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. You may observe the robot swaying back and forth while simply trying to stand. Solution: train custom motion policies for your robot in its final mass configuration.**
+**CAUTION: adding extra mass (such as external computers, sensors, grippers, and batteries) to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. You may for example observe the robot swaying back and forth while simply trying to stand."
+
+**Potential Solution**: train custom motion policies for your robot in its final mass configuration.
 
 <!-- TOC --><a name="materials"></a>
 ## 2. Materials
@@ -54,10 +57,10 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 | Name | Quantity | Fab | Link | Picture |
 |:------|:---:|----------|----------|-----|
-| Face Frame                             | 1 | 3D printed | STL file goes here | picture |
-| Frame Back (Unitree Go2, LimX Tron 1)  | 1 | 3D printed | STL file goes here | picture |
-| Frame Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
-| Widefield Camera Box                   | 1 | 3D printed | STL file goes here | picture |
+| Face Frame                            | 1 | 3D printed | STL file goes here | picture |
+| Face Back (Unitree Go2, LimX Tron 1)  | 1 | 3D printed | STL file goes here | picture |
+| Face Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
+| Widefield Camera Box                  | 1 | 3D printed | STL file goes here | picture |
 
 **<ins>1 ea. Flexible HDMI to HDMI Cable</ins>** This is used to connect the Thor to the LCD screen. Suggested part: Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz
 - For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY
@@ -94,10 +97,10 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
 |--------|------| --- |----------|----------|---------|
-| Unitree G1 | Face Back | 1 | 3D printed | STL file goes here | picture |
+| Unitree G1               | Face Back | 1 | 3D printed | STL file goes here | picture |
 | Unitree Go2, LimX Tron 1 | Face Back | 1 | 3D printed | STL file goes here | picture |
 | Unitree Go2, LimX Tron 1 | Face and Sensor Carrier ("Head") | 1 | 3D printed | STL file goes here | picture |
-| Unitree Go2, LimX Tron 1 | Face and Sensor Carrier Lid | 1 | 3D printed | STL file goes here | picture |
+| Unitree Go2, LimX Tron 1 | Face and Sensor Carrier, Lid | 1 | 3D printed | STL file goes here | picture |
 
 <!-- TOC --><a name="unitree-g1"></a>
 #### Unitree G1
@@ -152,7 +155,7 @@ Once all the electronics/wiring has been completed, close the head with the lid.
 
 The Nvidia Thor is typically powered with:
 
-* 14.8V external LiPo (Unitree G1)
+* 4S 14.8V external LiPo (Unitree G1)
 * 28V to 33.6V main robot power bus (Unitree Go2)
 * 24V main robot power bus (LimX Tron 1)
 
@@ -160,7 +163,7 @@ The different robots have different power plugs:
 
 * Unitree G1 - 24V/5A plug - can be used for the audio amplifier directly (which accepts anything below 26V)
 * Tron 1 - 24V via XT60 plug - can be used for the audio amplifier directly (which accepts anything below 26V) **AND** the Nvidia Thor
-* Unitree Go2 - 28V to 33.6V via XT30 - can be used for the Nvidia Thor and, via a step-down (buck) regulator, the audio amplifier.
+* Unitree Go2 - 28V to 33.6V via XT30 - can be used for the Nvidia Thor **AND** via a step-down (buck) regulator, the audio amplifier.
 
 **NOTE: In general, you will need to design, fabricate, and assemble a custom step-down regulator which (1) takes 24 to 34V and (2) provides 12-17V for the audio amplifier, and 5V 2A for the LCD screen back-lighting. In an emergency, you can use 2 ea. MATEKSYS BEC 12S Pro Synchronous switching step-down regulators, or equivalent, but this is probably not ideal.**
 
@@ -182,7 +185,7 @@ https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 | All | Mil-spec hookup wire, M22759/16-20 Mil-Spec Tefzel Hi-Temp Stranded Wire 20AWG Gauge, Red |
 | All | Crimp butt connectors, heat shrink, associated tooling |
 | Unitree Go2 and G1 | Male XT30 connector with wire leads |
-| Unitree Go2 | MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator | 
+| Unitree Go2 | MATEKSYS BEC 12S Pro 9-55V to 5/8/12V-5A Synchronous switching step-down (buck) regulator | 
 | Tron 1 | Male XT60 connector with wire leads |
 | Unitree G1 | Male EC5 connector with 14AWG wire leads |
 | Unitree G1 | 120S 14.8V 10000 mAh LiPo battery with female EC5 connector and LiPo charger |
@@ -202,19 +205,19 @@ The Unitree G1 **does not** provide sufficient power for the both the Thor and t
 
 2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to determine the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity!** **WARNING FIRE HAZARD: Do not short the 120S 14.8V 10000 mAh LiPo battery!**  
 
-3. Use the second Velcro nylon strap to attach the LiPo battery to the Thor mount. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. **WARNING BATTERY DAMAGE: Do not fully discharge the LiPo battery. The Thor will try to drain the battery to below 12V, which will destroy it. Replace the battery when it has discharged to about 15V.**
+3. Use the second Velcro nylon strap to attach the LiPo battery to the Thor mount. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. **WARNING BATTERY DAMAGE: Do not fully drain the LiPo battery. The Thor will try to drain the battery to below 12V, which will destroy it. Replace the battery when it has discharged to about 14V.**
 
 <!-- TOC --><a name="unitree-go2-custom-power-cable"></a>
 #### Unitree Go2 Custom Power Cable
 
 The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier. Solution: use an MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator to provide 12V to the audio amplifier. 
 
-1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the MATEKSYS BEC 12S power. Add a drop of solder to short the 12V config pins of the MATEKSYS BEC 12S so that is provides 12V rather than the default 5.2V. Connect the outputs of the MATEKSYS BEC 12S to the red/black wires from the audio amplifier in the face unit. **You will damage the audio amplifier, the Thor, or the robot, or all three, if you get this wrong. Do not reverse the polarity!** 
+1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input of the MATEKSYS BEC 12S power buck. Add a drop of solder to short the 12V config pins of the MATEKSYS BEC 12S so that it provides 12V rather than the default 5.2V. Connect the outputs of the MATEKSYS BEC 12S to the red/black wires from the audio amplifier in the face unit. **You will damage the audio amplifier, the Thor, or the robot, or all three, if you get this wrong. Do not reverse the polarity!** 
 
 2. Plug the XT30 plug into the 33.6V Go2 power supply port. 
 
 <!-- TOC --><a name="example-brainpack-power-budget-calculation"></a>
-### 3.3 Example BrainPack Power Budget Calculation 
+### 3.3 Example BrainPack Power Budget Calculation
 
 We recommend a [FNB58USB Voltage/Current/Power tester/monitor](https://www.fnirsi.com/products/fnb58) to measure actual power draw.
 
@@ -231,3 +234,10 @@ USB-A Widefield Camera - normal video data rates - USB 2.0 ok - actual 210mA<br>
 Note that one of these buses would be overloaded and out of spec, suggesting use of a powered USB hub.<br> 
 USB Bus A: 0.34 + 0.03 + 0.20 = 0.57A - which is below USB 3.0/3.1: 4.5W (5V @ 0.9A).<br>
 USB Bus B: 0.70 + 0.04 + 0.90 = 1.64A - which exceeds USB 3.0/3.1: 4.5W (5V @ 0.9A).<br>
+
+<!-- TOC --><a name="powered-usb-hubs"></a>
+### 3.4 Powered USB Hubs
+
+For reliable and stable performance, **you must use powered USB hubs**. We recommend the Coolgear 3.2 Gen 1 USB Hub - 4 Port USB Hub with 5Gbps Data Transfers, Mountable Metal Housing, 5V Power Adapter, ESD Surge Protection, Bus or Self Powered https://www.amazon.com/dp/B07G7GP15C. 
+
+This hub can provide 20W total power, or 900 mA per port. Provide 5V via the barrel jack connector; you can obtain 5V via a MATEKSYS BEC 12S (or equivalent). The MATEKSYS BEC 12S can provide Continuous 5A output Peak 9A output. 
