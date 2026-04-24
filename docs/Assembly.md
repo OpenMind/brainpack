@@ -11,32 +11,113 @@ The BrainPack is designed for Human-Robot interaction research and pilot testing
 
 **NOTE: this write up is a high-level summary of the central steps required to assemble and use the BrainPack. We assume advanced familiarity with robotics hardware, associated actuators, batteries, and sensors, 3-D printing, and related capabilities. The overall assembly process involves more than 300 specific steps. We only provide the most important ones in this write up. Most robotics engineers should be able to follow along with minimal difficulty. If you have any questions please reach out to our engineers.**
 
-, such as greeting humns,  and software interaction and provide a platform for further development and research.
-
-PRISM (Platform for Robotics Integration, Sensing and Modularity) is a complete hardware-software package that provides a generalized and universal hardware configuration to interface with proprietary robotics and expose it to widely used communication routines such as Robotics Operating System (ROS2), CYCLONEDDS, etc. 
-
-Designed with the goal of Human-Robot interaction, PRISM aims to bridge the gap between robotics and software interaction and provide a platform for further development and research.
-
-Included in this document is a detailed set of instructions to fabricate and assemble to a ready-to-develop state. 
 Please refer below for hardware specifications, parts requirements and guidelines on 3D printing and custom fabrication.
 Additionally, you may refer here for additional information:
 
-[Bill of Materials](../docs/Materials.md)
+[Materials](../docs/Materials.md)
 
 [CAD Drawings](../CAD/)
 
 ## Quick Start Guide:
 
 ### Prerequisites:
-See also  [List of Tools](#tools-overview)
 
-    1. A Unitree Go2 Edu
-    
-    2. A complete PRISM kit
-    
-    3. Screwdriver and Allen Key Set
+1. A Unitree Go2 Edu (for example)
 
-### Installation Steps:
+2. All the needed [Materials](../docs/Materials.md)
+
+3. An electronics and robotics rapid protoyping and development lab
+
+### Assembly Steps:
+
+#### 1. Face Unit
+
+1. Start with a 3D printed face unit. 
+
+2. Plug-in a 90° USB cable into the touch USB plug of the LCD screen. 
+
+3. Attach the angled HDMI cable into the screen unit HDMI port. 
+
+4. Peel off the screne protection film. Use hot glue to secure the LCD display in the face unit.
+
+5. Connect the LCD display to power and HDMI so that the screen power is on then use the configuration buttons on the right side of the screen to navigate to the brightness menu and adjust the brightness to 100%.
+
+6. Use hot glue to secure the two speakers in the face unit. Make sure to choose a good angle for the plus and minus hook up lungs. In general, the speaker hook up logs should be pointing towards the middle of the face unit for subsequent good access with the speaker hook up wire..
+
+7. Use hot glue to secure the RealSense 435 camera into the face unit.
+
+8. Use a pair of pliers to cut off the large stereo output connectors for the audio amplifier. Otherwise, they will conflict with the rest of the assembly. Make sure to remove any dangling or superfluous pieces of metal created during the removal.
+
+9. Turn over the audio amplifier and then mechanically secure it to the face unit with the volume knob nut and a washer provided at this point you should be looking at the back PCB of the audio amplifier. We recommend directly soldering connections to the 12 V power supply and the two speakers to the BACK of the PCB rather than using the screw terminals so that the final assembly is relatively compact. **CZAUTION: nsure that wires or routed in the flat possible manner and make sure that the wires are not shorted by protruding pins**. Use hot glue and fabric electrical tape on to secure wires and subsequently press the fabric electrical tape into the still soft hot glue to generate secure mount that resistance vibration and mechanical pulling.
+
+10. For the Unitree Go2, use permanent double sided Gorilla mounting tape to secure the 12S buck converter to the right inside caivity of the face unit. Use the mil spec Teflon coated hook up wire (40cm length) to create a power cable for providing input power for the 12S buck converter use a soldering iron to short the 12 V bridge on the 12 S converter on use hook up wire to connect the 12 V output of the 12 S to the 12 V input of the audio amplifier.
+
+11. Connect a audio cable to the audio amplifier at the SE N Court use the right angle side of the stereo audio hook up cable.
+
+12. At this point, the face unit will have five cables coming from it:
+
+* the two power cables going to the buck converter
+* the stereo audio input cable 
+* the USB power/touch cable 
+* the HDMI cable
+* the USB 3.1 cable going to the RealSense camera
+
+#### 2. Face Unit Back Plate
+
+1. Take the 3-D printed face unit back plate. 
+
+2. Attach the SMALLRIG Cold Shoe Mount Adapter with the provided three screws (two of these are very small and one of these is a large larger quarter thread bolt). These screws will be hard to screw into the 3-D printed material unless you use a hobby knife to create a slightly recessed/rough area in the three screw holes. 
+
+2. Insert 5 ea. M3 threaded brass inserts into the face unit back plate.
+
+3. Connect the Comica directional microphone to the face unit back plate via the hot shoe. Use the 3.5 mm TRS cable provided with rational microphone. The right angle side of the TRS cable goes into the back of the microphone. The straight connector on the tourist cable will subsequently be plugged into the DAC.
+
+4. Finally use 4 ea. M3 x 20 cap screws to secure the face unit back plate to the head unit. Use washers and nylon lock nuts to ensure that the face unit back plate does not separate from the head. 
+
+5. Thread all five cables from the face unit through the aperture into the head and out the back of the head use five M3 by eight Screws to secure the face unit to the face unit back plate.
+
+6. Thread the 3.5 mm TRS cable (straight side) through the small microphone cable hole on the head.
+
+#### 3. Whitefield Camera
+
+1. Connect the Kam Whitefield camera to a computer and confirm correct focus of the Whitefield lens adjust focus of wide field lens as needed.
+
+2. Use hot glue to secure the R Kam Whitefield camera PCB into the 3-D printed camera enclosure nicely. Arrange the camera cable inside the camera enclosure and use hot glue to secure the camera lid. Use hot glue to firmly connect to the camera cable to the camera enclosure to avoid to provide strain relief to the camera cable. In general, this camera cable is far too long. We recommend manually shorten this cable and slicing to generate a more compact cable assembly manually splice the four USB sub cables as needed.
+
+3. Use permanent gorilla double sided sticky tape to connect the white field camera on to the provided camera receptacle on the face unit.
+
+4. Finally thread, the camera USB cable through the large hole at the side of the head.
+
+#### 4. Internal Cabling
+
+1. At this point you have many wires going into the head generally, those will terminate in USBA connectors or DA simple hook up wire next connect all USB connectors to appropriate powered USB hubs to optimize power delivery and Datta transmission rates. It appears very difficult at first, but there is just enough space to correctly route all cables in the head unit once you have achieved good cable routing close the head with the provided head lid, which also serves as the mounting support for the RP lighter S2 unit. If you feel you do not have sufficient space inside the head manually create custom, USB or power cables, using angle, USB connectors as needed to achieve more compact, internal wire routing.
+
+2. For powering the powered USB hubs use the barrel jacks and connect them to 12 V power converters according to your personal preference hook up your 12 V power converters, according to a personal preference to the rest of your custom power cabling make sure to not exceed on the current limits.
+
+3. For powering the internal 12 S power converter connect the two power cables to your custom power cabling according to your own preference we generally recommend not to solder any connections, but to use, but crimp connections and mill spec. Heat shrink tubing with internal adhesive, minimize the length of any cabling and maximize the AWG of the cable to achieve a mechanically, robust and safe power harness.
+
+4. This power harness should also interface in the case of Unitree go to with the custom power connector for the Nvidia four please consult the Nvidia for developer documentation to determine which wires of the four pin power connector need to be connected to which poles of your power delivery cables.
+
+
+#### 5. Thor attaching
+
+1. On the back of the Unitree go to there may be a secondary compute module remove the secondary compute module, and it is no longer needed. Remove the power cable, which we recommend replacing it in its entirety with a custom power cable with the correct length retain the short ethernet cable.
+
+2. Use the two and 3 x 35 mm cap screws with washers to secure the front of the 3-D printed for mount to the back of the Unitree. Go to use the two long M3 by 50 cap screws with washers to secure the back of the four mount to the back of the Unitree go to.
+
+3. Insert a nylon holding strap into the provided, aperture on both sides of the Nvidia for back mount.
+
+4. Insert the two side plates into the back mount. These can be used two more securely hold the Nvidia for, but sometimes it can be useful not to use them that allows you to move the Nvidia for further back for example for access to internal cabling and other purposes.
+
+5. Remove any real sense 435 cameras that may have been mounted to the head of the Unitree go to we strongly recommend using removing the Unitree lighter unit underneath the chin of the Unitree go to the functionality of that lighter unit will be replaced by the face mounted real sense depth camera working together with the RP light RS2 unit the problem with the Unitree light R is that it is heavy loud and the data coming from the unit are relatively sports and noisy, making it difficult to use data from this unit to pour reliable collision, avoidance and mapping to remove the lighter unit. Remove the two screws and then rotate the unit until it falls out then carefully unplugged The USB connector to the Unitree lighter after using a razor blade to scrape off the black retaining cement if you like, you can fill the resulting void with a 3-D printed adapter, for example for a two finger gripper or simple hook that involves you to prototype last mile and simple physical manipulation tasks.
+
+#### 6. Head Attachnig and Data Security
+
+1. Use hot glue to attach the head to the front top of the dog. Do not drill into the Go2's head since this is where the WiFi antenna is lcated. 
+
+
+
+
     1. First, unplug the power and Ethernet cables that plug into the Unitree Go2 proprietary compute unit. 
 
     2. Remove the compute unit:
