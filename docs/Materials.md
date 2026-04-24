@@ -199,7 +199,7 @@ The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power c
 <!-- TOC --><a name="unitree-g1-custom-power-cable"></a>
 #### Unitree G1 Custom Power Cable
 
-The Unitree G1 **does not** provide sufficient power for the both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor. The G1 just powers the audio amplifier via the G1's 24V/5A plug. **WARNING: Do not plug in the XT30 connector into the G1's 5V or 55V connectors. The 24V connector is the one in the middle.**
+The Unitree G1 **does not** provide sufficient power for both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor. The G1 just powers the audio amplifier via the G1's 24V/5A plug. **WARNING: Do not plug in the XT30 connector into the G1's 5V or 55V connectors. The 24V connector is the one in the middle.**
 
 1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to the audio amplifier cables (red, black) from the face unit. Plug the XT30 plug into the **MIDDLE** G1 power supply, which provides 24V/5A. **You will the audio amplifier, the G1, or both, if you get this wrong. Do not reverse the polarity!** 
 
