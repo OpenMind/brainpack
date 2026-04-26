@@ -216,20 +216,20 @@ The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power c
 
 The Unitree G1 **does not** provide sufficient power for both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor. The G1 just powers the audio amplifier via the G1's 24V/5A plug. **WARNING: Do not plug in the XT30 connector into the G1's 5V or 55V connectors. The 24V connector is the one in the middle.**
 
-1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to the audio amplifier cables (red, black) from the face unit. Plug the XT30 plug into the **MIDDLE** G1 power supply, which provides 24V/5A. **You will the audio amplifier, the G1, or both, if you get this wrong. Do not reverse the polarity!** 
+1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to the audio amplifier cables (red, black) from the face unit. Plug the XT30 plug into the **MIDDLE** G1 power supply, which provides 24V/5A. **You will damage the audio amplifier, the G1, or both, if you get this wrong. Do not reverse the polarity!** 
 
-2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to determine the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity!** **WARNING FIRE HAZARD: Do not short the 120S 14.8V 10000 mAh LiPo battery!**  
+2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to determine the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity! WARNING FIRE HAZARD: Do not short the 120S 14.8V 10000 mAh LiPo battery!**  
 
-3. Use the second Velcro nylon strap to attach the LiPo battery to the Thor mount. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. **WARNING BATTERY DAMAGE: Do not fully drain the LiPo battery. The Thor will try to drain the battery to below 12V, which will destroy it. Replace the battery when it has discharged to about 14V.**
+3. Use the second Velcro nylon strap to attach the LiPo battery to the Thor cradle. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. **WARNING BATTERY DAMAGE: Do not fully drain the LiPo battery. The Thor will try to drain the battery to below 12V, which will destroy it. Replace the battery when it has discharged to about 14V.**
 
 <!-- TOC --><a name="unitree-go2-custom-power-cable"></a>
 #### Unitree Go2 Custom Power Cable
 
 The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier. Solution: use an MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator to provide 12V to the audio amplifier. 
 
-1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input of the MATEKSYS BEC 12S power buck. Add a drop of solder to short the 12V config pins of the MATEKSYS BEC 12S so that it provides 12V rather than the default 5.2V. Connect the outputs of the MATEKSYS BEC 12S to the red/black wires from the audio amplifier in the face unit. **You will damage the audio amplifier, the Thor, or the robot, or all three, if you get this wrong. Do not reverse the polarity!** 
+1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input of the MATEKSYS BEC 12S power buck. Add a drop of solder to short the 12V config pins of the MATEKSYS BEC 12S so that it provides 12V rather than the default 5.2V. Connect the outputs of the MATEKSYS BEC 12S to the red/black wires from the audio amplifier in the face unit. **You will damage the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!** 
 
-2. Plug the XT30 plug into the 33.6V Go2 power supply port. 
+2. Plug the XT30 plug into the 33.6V Go2 power supply port, after convincing yourself that you did in fact not reverse the polarity.
 
 <!-- TOC --><a name="example-power-budget-calculation"></a>
 ### 3.3 Example Power Budget Calculation
@@ -253,7 +253,9 @@ For reliable and stable performance **you must use powered USB hubs**. We recomm
 
 This hub can provide 20W total power, or 900 mA per port. Provide 5V via the barrel jack connector; you can obtain 5V via a MATEKSYS BEC 12S (or equivalent). The MATEKSYS BEC 12S can provide Continuous 5A output Peak 9A output. 
 
-Better Options: **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection but this can be hard to source. This part accepts 7 to 14V, making it easier to use compared to the 5V version ("Coolgear 3.2 Gen 1 USB Hub 5V"). The best solution is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub w/ ESD Surge Protection & Power Adapter</ins>** https://www.usbgear.com/cg-u3micro4ph.html. This is the enclosed version of the CG-817X4AX1C-PD-PCBA, so it comes with a 12V power supply and an enclosure. It accepts 7 to 14V DC Input via a barrel jack.
+Better Options: **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection but this can be hard to source. This part accepts 7 to 14V, making it easier to use compared to the 5V version ("Coolgear 3.2 Gen 1 USB Hub 5V"). 
+
+The best solution is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub w/ ESD Surge Protection & Power Adapter</ins>** https://www.usbgear.com/cg-u3micro4ph.html. This is the enclosed version of the CG-817X4AX1C-PD-PCBA, so it comes with a 12V power supply (which you can discard) and an enclosure (which you can remove). It accepts 7 to 14V DC Input via a barrel jack. The cg-u3micro4ph can be easier to find compared to the CG-817X4AX1C-PD-PCBA.
 
 <!-- TOC --><a name="reliable-networking"></a>
 ## 4. Reliable Networking
