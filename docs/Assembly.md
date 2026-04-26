@@ -43,7 +43,7 @@ The BrainPack is designed for Human-Robot interaction research and pilot testing
 
 Regardless of movement platform (Unitree G1, Unitree Go2, LimX Tron 1) the system consists of (1) an Nvidia Thor mounted to the robot via a 3D printed adapter, and (2) a face unit. The "face" combines a screen, microphone, speakers and other electronics. Users may add additional sensors such as a wide field RBG camera or a sunlight resistant laser scan unit. 
 
-The face is is most difficult to assemble. Once assembled, the face is connected directly to the robots (such as for the Unitree G1) or to the "head", which also serves to house cables and provide support for additional sensors. 
+The face is the most difficult part to assemble. Once assembled, the face is either connected directly to the robot (such as for the Unitree G1) or it is connected to the "head", which also serves to house cables and provide support for additional sensors. 
 
 <!-- TOC --><a name="31-face"></a>
 ### 3.1. Face
