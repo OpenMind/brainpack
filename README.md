@@ -9,7 +9,7 @@ The **BrainPack** provides an easy to use, modular compute-and-development platf
 
 Included is a full-suite of sensors that allow your robot to understand and react to its environment, and interact with humans. The BrainPack with [Nvidia Thor](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/) can connect to OpenMind cloud endpoints for voice, spatial navigation, emotion generation, teleops, and other core robot functionality.
 
-## It's Wooftacular!
+## Cross-Platform - It's Wooftacular!
 
 <img src="./docs/images/brainpack_go2.png" alt="BrainPack OverView" width="500">
 
