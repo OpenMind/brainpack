@@ -39,9 +39,9 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 **Potential Solution**: use an inline **USB Voltage Current Power Tester Multimeter** (such as the [FNB58USB Voltage/Current/Power tester/monitor](https://www.fnirsi.com/products/fnb58)) to measure the actual power draw of your sensors and other electronics payload. If needed, change how you are powering your computers and sensors, such as by moving loads to other power buses, providing powered USB hubs, or adding external batteries (but see [below](#danger-robot-stability)).
 
-**Example 2**: The robot performs flawlessly in an air conditioned lab, but falls over frequently when deployed in a hot sunny environment. In this case, different joint are probably overheating, switching the system to emergency damp mode, resulting in a fall and damage to the robot. 
+**Example 2**: The robot performs flawlessly in an air conditioned lab, but falls over frequently when deployed in a hot sunny environment. In this case, different joints are probably overheating, switching the system to emergency damp mode, resulting in a fall and subsequent damage to the robot. 
 
-**Potential Solution**: ensure that your software is monitoring the temperature and currents of all joints. If your software detects operation near the thermal limits, warn bystanders and perform a safe sink-to-floor action with an audible alarm and flashing light alarm.   
+**Potential Solution**: ensure that your software monitors the temperature and power draw of all joints. If your software detects operation near the thermal limits, warn human and robot bystanders and train your small-brain subsystem to then perform a safe sink-to-floor action with an audible alarm and flashing light alarm. A better long term solution is for the robot to autonomusly seek shade or an air conditioned room prior to overheating.     
 
 <!-- TOC --><a name="danger-robot-stability"></a>
 ### 1.2 DANGER: Robot Stability
