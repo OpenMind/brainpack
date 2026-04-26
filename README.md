@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The **BrainPack** provides an easy to use, modular compute-and-development platform for robotics, seamlessly integrated with the LimX Tron 1, Unitree G1, and Unitree Go2 (and move movement platforms, coming soon). 
+The **BrainPack** provides an easy to use, modular compute-and-development platform for robotics, seamlessly integrated with the LimX Tron 1, Unitree G1, and Unitree Go2 (and many other movement platforms, coming soon). 
 
 Included is a full-suite of sensors that allow your robot to understand and react to its environment, and interact with people. The BrainPack with Nvidia Thor can connect to OpenMind cloud endpoints for voice, spatial navigation, emotion generation, teleops, and other core robot functionality.
 
@@ -12,13 +12,10 @@ Included is a full-suite of sensors that allow your robot to understand and reac
 
 <img src="./docs/images/brainpack_go2.png" alt="BrainPack OverView" width="500">
 
-
-https://github.com/OpenMind/brainpack/blob/main/docs/images/brainpack_go2.png
-
 ## Features
 
-- **Powered by OM1** - Full suite of OM1 functionalities built-in.
-- **Human in the Loop** - Connect and control your robot remotely, or request help from a professional whenever you need (via portal.openmind.com)
+- **Powered by OM1** - Full suite of OM1 functionaly built-in.
+- **Human in the Loop** - Connect and control your robot remotely, or request help from a professional biological computer (human) whenever you need (via portal.openmind.com).
 - **Developer Friendly** - Modular design with multiple connections and ports for easy hardware integration.
 
 ## Documentation
@@ -35,7 +32,7 @@ PRISM/
 ├── docs/
 │   ├── Materials.md       # Bill of Materials
 │   └── Assembly.md        # Assembly Instructions
-├── cad/
+├── CAD/
     └──                    # STL files for 3D printing
 ```
 
