@@ -22,10 +22,10 @@
 - [4. Reliable Networking](#reliable-networking)
 <!-- TOC end -->
 
-<!-- TOC --><a name="brainpack"></a>
-# BrainPack
+<!-- TOC --><a name="brainpack-materials"></a>
+# BrainPack Materials
 
-<!-- TOC --><a name="brainpack"></a>
+<!-- TOC --><a name="safety"></a>
 ## 1. Safety
 
 <!-- TOC --><a name="danger-power-budget-and-thermal-limits"></a>

@@ -17,7 +17,7 @@
 <!-- TOC --><a name="1-introduction"></a>
 ## 1. Introduction
 
-The BrainPack is a module that can be attached to various robots (such as the Unitree G1 and Go2, ad well as the LimX Tron 1). As long as your robot provides power and ability for external computers to interface with it, most typically via an Ethernet cable, then the BrainPack should work for your robot. The BrainPack expects developer access to the robot and therefore will not work with toy/entertainment versions of the above robots (such as the Unitree Go2 Air).  
+The BrainPack is a module that can be attached to various robots (such as the Unitree G1 and Go2, as well as the LimX Tron 1). As long as your robot provides power and ability for external computers to interface with it, most typically via an Ethernet cable, then the BrainPack should work for your robot. The BrainPack expects developer access to the robot and therefore will not work with toy/entertainment versions of the above robots (such as the Unitree Go2 Air).  
 
 The BrainPack is designed for Human-Robot interaction research and pilot testing. The BrainPack also allows yo to rapidly test new combinations of advanced compute, new types of sensors, and new types of outputs and actuators. 
 
@@ -91,7 +91,7 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 3. Connect the Comica directional microphone to the face back via the SMALLRIG cold shoe. Connect the 3.5mm TRS cable to the directional microphone. The right-angled end of the TRS cable goes into the back of the microphone. The straight connector will subsequently be plugged into the DAC.
 
-4. Use 4 ea. M3x20 cap screws to secure the face back to the 3D printed head. Use washers and nylon lock nuts to ensure that the face back does not separate from the head. 
+4. Use 4 ea. M3x20mm cap screws to secure the face back to the 3D printed head. Use washers and nylon lock nuts to ensure that the face back does not separate from the head. 
 
 5. Thread all five cables from the face through the face back aperture into the head. Use 5 ea. M3x8mm cap screws to secure the face to the face back.
 
@@ -133,8 +133,16 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 5. We recommend using removing the Unitree LiDAR unit underneath the chin of the Unitree Go2. This LiDAR unit is heavy, loud, and has a low frame rate.  You can fill the resulting hole underneath the chin of the dog with a 3D printed adapter, for example a hook or a simple gripper that allows the dog to grab small objects and bags, helping to solve the last mile delivery problem.
 
 <!-- TOC --><a name="36-attaching-the-head"></a>
-### 3.6. Attaching the Head.
+### 3.6. Attaching the Head
 
-1. Use hot glue to attach the head to the front top of the dog. Do not drill into the Go2's head since this is where the WiFi antenna is located. 
+1. Use hot glue to attach the head to the front top of the dog. Do not drill into the Go2's head since this is where the WiFi antenna is located.
+
+## 4. Other Robots
+
+### 4.1. LimX Tron 1
+
+(this needs to be edited).
+
+The assembly of the brain pack for the Lynne X Tron one is almost identical to the process for the Unitree go to the main exceptions or changes in the power delivery system since the Lim X provides 24 V also in the case of the Lim ask the Tron the four compute unit is placed directly on top of the Tron one and a special 3-D printed adapter is used to subsequently mount the head and the display to the Tron one. For the Unitree G one a special face back is used to directly mount the face to the front of the Unitree G one disassemble the front of the Unitree G1 and drill two holes through the chest plate and then secure the face to the chest of the Unitree G1 with 2M6 bolts with nylon lock nuts you will need to remove small amounts of the foam on the inside the chest of the Unitree G one to provide space for the nylon lock bolts. 
 
 **Congratulations, you have finished your BrainPack assembly and installation!**
