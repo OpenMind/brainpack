@@ -8,6 +8,10 @@ The **BrainPack** provides an easy to use, modular compute-and-development platf
 
 Included is a full-suite of sensors that allow your robot to understand and react to its environment, and interact with people. The BrainPack with Nvidia Thor can connect to OpenMind cloud endpoints for voice, spatial navigation, emotion generation, teleops, and other core robot functionality.
 
+## It's Wooftacular!
+
+<img src="../docs/images/brainpack_go2.png" alt="BrainPack OverView" width="500">
+
 ## Features
 
 - **Powered by OM1** - Full suite of OM1 functionalities built-in.

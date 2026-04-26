@@ -56,7 +56,7 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="display-unit-face"></a>
 ### 2.1 Display Unit ("Face")
 
-<img src="../docs/images/face.png" alt="Front view of Univeral Face" width="500">
+<img src="../docs/images/face.png" alt="Front view of Universal Face" width="500">
 <img src="../docs/images/face_back.png" alt="Back view of Universal Face" width="500">
 
 | Name | Quantity | Fab | Link | 
@@ -253,7 +253,7 @@ For reliable and stable performance **you must use powered USB hubs**. We recomm
 
 This hub can provide 20W total power, or 900 mA per port. Provide 5V via the barrel jack connector; you can obtain 5V via a MATEKSYS BEC 12S (or equivalent). The MATEKSYS BEC 12S can provide Continuous 5A output Peak 9A output. 
 
-Better Options: **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection but this can be hard to source. This part accepts +7~14V, making it easier to use compared to the 5V version ("Coolgear 3.2 Gen 1 USB Hub 5V"). The best solution is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub w/ ESD Surge Protection & Power Adapter</ins>** https://www.usbgear.com/cg-u3micro4ph.html. This is the enclosed version of the CG-817X4AX1C-PD-PCBA, so it comes with a 12V power supply and an enclosure. It accepts +7~14V DC Input via a barrel jack.
+Better Options: **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection but this can be hard to source. This part accepts 7 to 14V, making it easier to use compared to the 5V version ("Coolgear 3.2 Gen 1 USB Hub 5V"). The best solution is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub w/ ESD Surge Protection & Power Adapter</ins>** https://www.usbgear.com/cg-u3micro4ph.html. This is the enclosed version of the CG-817X4AX1C-PD-PCBA, so it comes with a 12V power supply and an enclosure. It accepts 7 to 14V DC Input via a barrel jack.
 
 <!-- TOC --><a name="reliable-networking"></a>
 ## 4. Reliable Networking
