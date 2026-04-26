@@ -56,8 +56,8 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="display-unit-face"></a>
 ### 2.1 Display Unit ("Face")
 
-<img src="../docs/images/face.png" alt="Front view of Univeral Face" width="600">
-<img src="../docs/images/face_back.png" alt="Back view of Universal Face" width="600">
+<img src="../docs/images/face.png" alt="Front view of Univeral Face" width="500">
+<img src="../docs/images/face_back.png" alt="Back view of Universal Face" width="500">
 
 | Name | Quantity | Fab | Link | 
 |:------|:---:|----------|----------|
@@ -108,8 +108,8 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="face-mounting"></a>
 ### 2.2 Face and Sensor Carrier ("Head"); LiDAR
 
-<img src="../docs/images/go2_head.png" alt="Unitree Go2 Head" width="600">
-<img src="../docs/images/tron1_overview.png" alt="Tron 1 Head Carrier" width="600">
+<img src="../docs/images/go2_head.png" alt="Unitree Go2 Head" width="500">
+<img src="../docs/images/tron1_overview.png" alt="Tron 1 Head Carrier" width="500">
 
 | Robot  | Name | Quantity | Link |
 |--------|------| --- |----------|
@@ -136,7 +136,7 @@ Once all the electronics/wiring has been completed, close the head with the lid.
 <!-- TOC --><a name="thor-mounts"></a>
 ### 2.3 Thor Mounts
 
-<img src="../docs/images/g1_overview.png" alt="Side view of BrainPack for G1 with Thor and Thor cradle" width="600">
+<img src="../docs/images/g1_overview.png" alt="Side view of BrainPack for G1 with Thor and Thor cradle" width="500">
 
 | Robot  | Name | Quantity | Fab | Link | Picture |
 |--------|------| --- |----------|----------|---------|
@@ -258,4 +258,4 @@ Better Options: **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chip
 <!-- TOC --><a name="reliable-networking"></a>
 ## 4. Reliable Networking
 
-The Nvidia Thor dev kit contains a Wi-Fi 6E module (AzureWave AW-XB560NF IEEE 802.11ax (Wi-Fi 6/6E) and Bluetooth 5.3/5.4 combo module). The two antennas are located inside the dev kit, and the antennas can be occluded depending on how the dev kit is mounted on your robot. We recommend adding an omnidirectional WiFi antenna to your robot, and then connecting it to the AW-XB560NF via custom I-PEX MHF4 terminated coax. This can be somewhat involved and exceeds the scope of this writeup. 
+The Nvidia Thor dev kit contains a Wi-Fi 6E module (AzureWave AW-XB560NF IEEE 802.11ax (Wi-Fi 6/6E) and Bluetooth 5.3/5.4 combo module). The two antennas are located inside the dev kit, and the antennas can be occluded depending on how the dev kit is mounted on your robot. We recommend adding an omnidirectional WiFi antenna to your robot, and then connecting it to the AW-XB560NF via custom I-PEX MHF4 terminated coax. This can be somewhat involved and exceeds the scope of this write up. 

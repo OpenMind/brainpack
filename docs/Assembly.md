@@ -130,7 +130,7 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 4. Snap the two side plates into the Thor mount. Note these side plates are not identical, but there is a left side plate and right side plate inspect the curvature of the back and then snap in the side plate that fits conformally. These side plates can be used to more securely hold the Nvidia Thor. We sometimes leave them off when we need extra space between the head and the Thor to adjust or check cables, for example.  
 
-5. We recommend using removing the Unitree LiDAR unit underneath the chin of the Unitree Go2. This LiDAR unit is heavy, loud, and has a low frame rate.  You can fill the resulting hole underneath the chin of the dog with a 3D printed adapter, for example a hook or a simple gripper that allows the dog to grab small objects and bags, helping to solve the last mile delivery problem.
+5. We recommend removing the Unitree LiDAR unit underneath the dog's chin. This standard LiDAR is heavy, loud, and has a low frame rate.  You can fill the resulting hole under the chin of the dog with a 3D printed adapter, for example a hook or a simple gripper that allows the dog to grab small objects and bags, helping to solve the last mile delivery problem.
 
 <!-- TOC --><a name="36-attaching-the-head"></a>
 ### 3.6. Attaching the Head
@@ -141,8 +141,10 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 ### 4.1. LimX Tron 1
 
-(this needs to be edited).
+The assembly of the BrainPack for the LimX Tron 1 is almost identical to the process for the Unitree Go2. The main exceptions consist of the power delivery system since the LimX provides 24V. Change you power harness as needed/desired. Also in the case of the LimX Tron 1 the Thor compute unit is placed directly on top of the Tron 1 and a custom 3D printed adapter is used to subsequently mount the head to the Tron 1. 
 
-The assembly of the brain pack for the Lynne X Tron one is almost identical to the process for the Unitree go to the main exceptions or changes in the power delivery system since the Lim X provides 24 V also in the case of the Lim ask the Tron the four compute unit is placed directly on top of the Tron one and a special 3-D printed adapter is used to subsequently mount the head and the display to the Tron one. For the Unitree G one a special face back is used to directly mount the face to the front of the Unitree G one disassemble the front of the Unitree G1 and drill two holes through the chest plate and then secure the face to the chest of the Unitree G1 with 2M6 bolts with nylon lock nuts you will need to remove small amounts of the foam on the inside the chest of the Unitree G one to provide space for the nylon lock bolts. 
+### 4.1. Unitree G1
+
+For the Unitree G1 a special face back is used to directly mount the face to the front of the G1. Disassemble the front of the G1 and drill two holes through the plastic chest plate. Then secure the face to the chest plate with 2ea. M6 bolts (with nylon lock nuts). You will need to remove small amounts of foam with a hobby knife from the front of the G1, once you have removed the plastic chest cover, to provide space for the nylon lock bolts. 
 
 **Congratulations, you have finished your BrainPack assembly and installation!**
