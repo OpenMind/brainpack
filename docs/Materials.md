@@ -59,6 +59,8 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 ![Face](../docs/images/face.png){height=300}
 ![Face Back (for dog)](../docs/images/face_back.png){height=300}
 
+<img src="../docs/images/face.png" alt="Univeral Face" width="300" height="200">
+
 | Name | Quantity | Fab | Link | 
 |:------|:---:|----------|----------|
 | Face Bezel                            | 1 | 3D printed | [face](../CAD/Universal_Face/UniFace.stl) | 
