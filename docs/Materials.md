@@ -139,7 +139,7 @@ Once all the electronics/wiring has been completed, close the head with the lid.
 <img src="./images/g1_overview.png" alt="Side view of BrainPack for G1 with Thor and Thor cradle" width="500">
 
 | Robot | Name | Quantity | Link |
-|-------|------| --- |----------|-
+|-------|------|---|----------|
 | Unitree G1  | Cradle with holdplates | 1 | [stl](../CAD/Unitree_G1) |
 | Unitree Go2 | Cradle with holdplates | 1 | [stl](../CAD/Unitree_Go2) |
 
