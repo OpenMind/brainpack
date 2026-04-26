@@ -41,7 +41,7 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 **Example 2**: The robot performs flawlessly in an air conditioned lab, but falls over frequently when deployed in a hot sunny environment. In this case, different joints are probably overheating, switching the system to emergency damp mode, resulting in a fall and subsequent damage to the robot. 
 
-**Potential Solution**: ensure that your software monitors the temperature and power draw of all joints. If your software detects operation near the thermal limits, warn human and robot bystanders and train your small-brain subsystem to then perform a safe sink-to-floor action with an audible alarm and flashing light alarm. A better long term solution is for the robot to autonomusly seek shade or an air conditioned room prior to overheating.     
+**Potential Solution**: ensure that your software monitors the temperature and power draw of all joints. If your software detects operation near the thermal limits, warn human and robot bystanders and train your small-brain subsystem to then perform a safe sink-to-floor action with an audible alarm and flashing light alarm. A better long term solution is for the robot to autonomously seek shade or an air conditioned room prior to overheating.     
 
 <!-- TOC --><a name="danger-robot-stability"></a>
 ### 1.2 DANGER: Robot Stability
