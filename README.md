@@ -1,5 +1,5 @@
 
-<img src="./docs/images/social_intelligence.png" alt="OpenMind Scoial Intelligence" width="500">
+<img src="./docs/images/social_intelligence.png" alt="OpenMind Scoial Intelligence" width="800">
 
 # BrainPack for Unitree G1, Unitree Go2, and LimX Tron 1
 
