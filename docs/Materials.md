@@ -56,12 +56,16 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="display-unit-face"></a>
 ### 2.1 Display Unit ("Face")
 
-| Name | Quantity | Fab | Link | Picture |
-|:------|:---:|----------|----------|-----|
-| Face Bezel                            | 1 | 3D printed | STL file goes here | picture |
-| Face Back (Unitree Go2, LimX Tron 1)  | 1 | 3D printed | STL file goes here | picture |
-| Face Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
-| Widefield Camera Box                  | 1 | 3D printed | STL file goes here | picture |
+![Face](../images/face.png)
+![Face Back (for dog)](../images/face_back.png)
+
+| Name | Quantity | Fab | Link | 
+|:------|:---:|----------|----------|
+| Face Bezel                            | 1 | 3D printed | [face](../CAD/Universal_Face/UniFace.stl) | 
+| Face Back (Unitree Go2, LimX Tron 1)  | 1 | 3D printed | [back](../CAD/Universal_Face/FaceBack.stl) |
+| Face Back (Unitree G1)                | 1 | 3D printed | [back](../CAD/Universal_Face/FaceBack_G1.stl) | 
+| Widefield Camera Box                  | 1 | 3D printed | [box](../CAD/ArduCam_FishEye/CameraEnclosure.stl),[lid](../CAD/ArduCam_FishEye/CameraLid.stl) |
+
 
 **<ins>1 ea. Flexible HDMI to HDMI Cable</ins>** This is used to connect the Thor to the LCD screen. Suggested part: Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz
 - For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY
