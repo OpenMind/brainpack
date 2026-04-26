@@ -117,20 +117,20 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 3. For powering the 12S power converter inside the face, connect the two power cables to your custom power cabling according to your own preference. We generally recommend not to solder any connections, but to use butt crimp connections and mil spec heat shrink tubing with internal adhesive. Minimize the length of any cabling and maximize the AWG of the cable to achieve a mechanically robust and safe power harness.
 
-4. This power harness should also provide power to the Nvidia Thor. Consult the Nvidia developer documentation to determine which wires of the four pin Thor power connector to connected to your custom power harness.
+4. This power harness should also provide power to the Nvidia Thor. Consult the Nvidia developer documentation to determine which wires of the four pin Thor power connector to connect to your custom power harness.
 
 <!-- TOC --><a name="35-thor-attachment"></a>
 ### 3.5. Thor Attachment
 
-1. Remove the secondary compute module from the back of the Go2 EDU. Remove the Unitree black and white power cable, which we recommend replacing it in its entirety with a custom power cable with the correct length. Retain the short Ethernet cable.
+1. Remove the secondary compute module from the back of the Go2 EDU. Remove the Unitree black and white power cable, which we recommend replacing in its entirety with a custom power cable with the correct length. However, retain the short Ethernet cable.
 
-2. Use the two M3x35mm cap screws with washers to secure the FRONT of the 3D printed Thor mount to the back of the Unitree. Use the two M3x50mm cap screws with washers to secure the BACK of the Thor mount to the back of the Unitree Go2.
+2. Use the two M3x35mm cap screws with washers to secure the FRONT of the 3D printed Thor cradle to the back of the Unitree. Use the two M3x50mm cap screws with washers to secure the BACK of the Thor cradle to the back of the Unitree Go2.
 
-3. Thread a nylon holding strap through the provided apertures of the Thor mount.
+3. Thread a nylon holding strap through the two provided apertures of the Thor cradle.
 
-4. Snap the two side plates into the Thor mount. Note these side plates are not identical, but there is a left side plate and right side plate inspect the curvature of the back and then snap in the side plate that fits conformally. These side plates can be used to more securely hold the Nvidia Thor. We sometimes leave them off when we need extra space between the head and the Thor to adjust or check cables, for example.  
+4. Snap the two side plates into the Thor cradle. Note these side plates are not identical, but there is a left side plate and right side plate. Inspect the curvature of the Go2's back and then snap in the side plate that fits conformally. These side plates can be used to more securely hold the Nvidia Thor. We sometimes leave them off when we need extra space between the head and the Thor to adjust or check cables, for example.  
 
-5. We recommend removing the Unitree LiDAR unit underneath the dog's chin. This standard LiDAR is heavy, loud, and has a low frame rate.  You can fill the resulting hole under the chin of the dog with a 3D printed adapter, for example a hook or a simple gripper that allows the dog to grab small objects and bags, helping to solve the last mile delivery problem.
+5. We recommend removing the Unitree LiDAR underneath the dog's chin. This standard LiDAR is heavy, loud, and has a low frame rate.  You can fill the resulting hole under the chin of the dog with a 3D printed adapter, for example a hook or a simple gripper that allows the dog to grab small objects, bones, and bags, helping to solve the last mile delivery problem.
 
 <!-- TOC --><a name="36-attaching-the-head"></a>
 ### 3.6. Attaching the Head
@@ -141,7 +141,7 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 ### 4.1. LimX Tron 1
 
-The assembly of the BrainPack for the LimX Tron 1 is almost identical to the process for the Unitree Go2. The main exceptions consist of the power delivery system since the LimX provides 24V. Change your power harness as needed/desired. Also, with the LimX Tron 1 the Thor compute unit is placed directly on top of the Tron 1 and a custom 3D printed adapter with  M5 T-Slot nuts and bolts are used to subsequently mount the head to the Tron 1. 
+The assembly of the BrainPack for the LimX Tron 1 is almost identical to the process for the Unitree Go2. The main exceptions consist of the power delivery system since the LimX provides 24V. Change your power harness as needed/desired. Also, with the LimX Tron 1 the Thor compute unit is placed directly on top of the Tron 1 and a custom 3D printed adapter with M5 T-Slot nuts and bolts is used to support the head. 
 
 ### 4.1. Unitree G1
 
