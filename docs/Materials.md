@@ -56,8 +56,8 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="display-unit-face"></a>
 ### 2.1 Display Unit ("Face")
 
-![Face](../images/face.png)
-![Face Back (for dog)](../images/face_back.png)
+![Face](../docs/images/face.png)
+![Face Back (for dog)](../docs/images/face_back.png)
 
 | Name | Quantity | Fab | Link | 
 |:------|:---:|----------|----------|
