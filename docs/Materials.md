@@ -56,18 +56,15 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="display-unit-face"></a>
 ### 2.1 Display Unit ("Face")
 
-![Face](../docs/images/face.png){height=300}
-![Face Back (for dog)](../docs/images/face_back.png){height=300}
-
-<img src="../docs/images/face.png" alt="Univeral Face" width="600">
+<img src="../docs/images/face.png" alt="Front view of Univeral Face" width="600">
+<img src="../docs/images/face_back.png" alt="Back view of Universal Face" width="600">
 
 | Name | Quantity | Fab | Link | 
 |:------|:---:|----------|----------|
-| Face Bezel                            | 1 | 3D printed | [face](../CAD/Universal_Face/UniFace.stl) | 
-| Face Back (Unitree Go2, LimX Tron 1)  | 1 | 3D printed | [back](../CAD/Universal_Face/FaceBack.stl) |
-| Face Back (Unitree G1)                | 1 | 3D printed | [back](../CAD/Universal_Face/FaceBack_G1.stl) | 
-| Widefield Camera Box                  | 1 | 3D printed | [box](../CAD/ArduCam_FishEye/CameraEnclosure.stl),[lid](../CAD/ArduCam_FishEye/CameraLid.stl) |
-
+| Face Bezel                           | 1 | 3D printed | [face](../CAD/Universal_Face/UniFace.stl) | 
+| Face Back (Unitree Go2, LimX Tron 1) | 1 | 3D printed | [back](../CAD/Universal_Face/FaceBack.stl) |
+| Face Back (Unitree G1)               | 1 | 3D printed | [back](../CAD/Universal_Face/FaceBack_G1.stl) | 
+| Widefield Camera Box                 | 1 | 3D printed | [box](../CAD/ArduCam_FishEye/CameraEnclosure.stl),[lid](../CAD/ArduCam_FishEye/CameraLid.stl) |
 
 **<ins>1 ea. Flexible HDMI to HDMI Cable</ins>** This is used to connect the Thor to the LCD screen. Suggested part: Twozoh Flexible HDMI to HDMI Cable Right Angled 90° 1FT Ultra Thin and Slim HDMI Cord Support 3D/4K@60Hz
 - For Unitree G1 and Go2: 1FT length: https://www.amazon.com/dp/B09XHYH4KY
@@ -110,12 +107,14 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="face-mounting"></a>
 ### 2.2 Face and Sensor Carrier ("Head"); LiDAR
 
-| Robot  | Name | Quantity | Fab | Link | Picture |
-|--------|------| --- |----------|----------|---------|
-| Unitree G1               | Face Back | 1 | 3D printed | STL file goes here | picture |
-| Unitree Go2, LimX Tron 1 | Face Back | 1 | 3D printed | STL file goes here | picture |
-| Unitree Go2, LimX Tron 1 | Face and Sensor Carrier ("Head") | 1 | 3D printed | STL file goes here | picture |
-| Unitree Go2, LimX Tron 1 | Face and Sensor Carrier, Lid | 1 | 3D printed | STL file goes here | picture |
+<img src="../docs/images/go2_head.png" alt="Unitree Go2 Head" width="600">
+<img src="../docs/images/tron1_overview.png" alt="Tron 1 Head Carrier" width="600">
+
+| Robot  | Name | Quantity | Link |
+|--------|------| --- |----------|
+| Unitree Go2, LimX Tron 1 | Face and Sensor Carrier ("Head") | 1 | [3D printed](../CAD/Universal_Face/Head.stl) |
+| Unitree Go2, LimX Tron 1 | Face and Sensor Carrier, Lid     | 1 | [3D printed](../CAD/Universal_Face/HeadLid.stl) |
+| LimX Tron 1 | Head Mount | 1 | [3D printed](../CAD/LimX_Tron1/HeadMount_withThorCutout.stl) |
 
 <!-- TOC --><a name="unitree-g1"></a>
 #### Unitree G1
@@ -140,7 +139,7 @@ Once all the electronics/wiring has been completed, close the head with the lid.
 |--------|------| --- |----------|----------|---------|
 | Unitree G1  | Mount with sideplates | 1 | 3D printed | STL file goes here | picture |
 | Unitree Go2 | Mount with sideplates | 1 | 3D printed | STL file goes here | picture |
-| LimX Tron 1 | Head Mount | 1 | 3D printed | STL file goes here | picture |
+
 
 <!-- TOC --><a name="limx-tron-1"></a>
 #### LimX Tron 1
