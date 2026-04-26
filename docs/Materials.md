@@ -58,7 +58,7 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 | Name | Quantity | Fab | Link | Picture |
 |:------|:---:|----------|----------|-----|
-| Face Frame                            | 1 | 3D printed | STL file goes here | picture |
+| Face Bezel                            | 1 | 3D printed | STL file goes here | picture |
 | Face Back (Unitree Go2, LimX Tron 1)  | 1 | 3D printed | STL file goes here | picture |
 | Face Back (Unitree G1)                | 1 | 3D printed | STL file goes here | picture |
 | Widefield Camera Box                  | 1 | 3D printed | STL file goes here | picture |
@@ -252,5 +252,3 @@ Better Options: **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chip
 ## 4. Reliable Networking
 
 The Nvidia Thor dev kit contains a Wi-Fi 6E module (AzureWave AW-XB560NF IEEE 802.11ax (Wi-Fi 6/6E) and Bluetooth 5.3/5.4 combo module). The two antennas are located inside the dev kit, and the antennas can be occluded depending on how the dev kit is mounted on your robot. We recommend adding an omnidirectional WiFi antenna to your robot, and then connecting it to the AW-XB560NF via custom I-PEX MHF4 terminated coax. This can be somewhat involved and exceeds the scope of this writeup. 
-
-
