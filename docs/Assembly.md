@@ -141,10 +141,10 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 ### 4.1. LimX Tron 1
 
-The assembly of the BrainPack for the LimX Tron 1 is almost identical to the process for the Unitree Go2. The main exceptions consist of the power delivery system since the LimX provides 24V. Change you power harness as needed/desired. Also in the case of the LimX Tron 1 the Thor compute unit is placed directly on top of the Tron 1 and a custom 3D printed adapter is used to subsequently mount the head to the Tron 1. 
+The assembly of the BrainPack for the LimX Tron 1 is almost identical to the process for the Unitree Go2. The main exceptions consist of the power delivery system since the LimX provides 24V. Change your power harness as needed/desired. Also, with the LimX Tron 1 the Thor compute unit is placed directly on top of the Tron 1 and a custom 3D printed adapter with  M5 T-Slot nuts and bolts are used to subsequently mount the head to the Tron 1. 
 
 ### 4.1. Unitree G1
 
-For the Unitree G1 a special face back is used to directly mount the face to the front of the G1. Disassemble the front of the G1 and drill two holes through the plastic chest plate. Then secure the face to the chest plate with 2ea. M6 bolts (with nylon lock nuts). You will need to remove small amounts of foam with a hobby knife from the front of the G1, once you have removed the plastic chest cover, to provide space for the nylon lock bolts. 
+For the Unitree G1 a special face back is used to directly mount the face to the front of the G1. Remove the Velcro-secured G1 plastic cheast plate and drill two holes through the plastic chest plate. Then secure the face to the chest plate with 2ea. M6 bolts with nylon lock nuts. You will need to remove small amounts of foam with a hobby knife from the G1's front plate backing foam to provide space for the nylon lock bolts. 
 
 **Congratulations, you have finished your BrainPack assembly and installation!**
