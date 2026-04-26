@@ -3,7 +3,7 @@
    * [1. Introduction](#1-introduction)
    * [2. Prerequisites](#2-prerequisites)
    * [3. Assembly](#3-assembly)
-      + [3.1 Face](#31-face)
+      + [3.1. Face](#31-face)
       + [3.2. Face Back](#32-face-back)
       + [3.3. Widefield Camera](#33-widefield-camera)
       + [3.4. Internal Cabling](#34-internal-cabling)
@@ -46,7 +46,7 @@ Regardless of movement platform (Unitree G1, Unitree Go2, LimX Tron 1) the syste
 The face is is most difficult to assemble. Once assembled, the face is connected directly to the robots (such as for the Unitree G1) or to the "head", which also serves to house cables and provide support for additional sensors. 
 
 <!-- TOC --><a name="31-face"></a>
-### 3.1 Face
+### 3.1. Face
 
 The face unit is composed of two 3D printed parts (the face bezel and the face back) and a variety of printed circuit board sensors speakers and other electronics. The face unit is easy to open and close through M3 cap screws.
 
