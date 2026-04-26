@@ -10,7 +10,10 @@ Included is a full-suite of sensors that allow your robot to understand and reac
 
 ## It's Wooftacular!
 
-<img src="../docs/images/brainpack_go2.png" alt="BrainPack OverView" width="500">
+<img src="./docs/images/brainpack_go2.png" alt="BrainPack OverView" width="500">
+
+
+https://github.com/OpenMind/brainpack/blob/main/docs/images/brainpack_go2.png
 
 ## Features
 
