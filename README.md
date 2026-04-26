@@ -1,12 +1,13 @@
-![BrainPack](https://github.com/user-attachments/assets/f3defe3e-7c6b-4db6-a260-7e872cf4ac9a)
 
-# BrainPack for LimX Tron 1, Unitree G1, and Unitree Go2
+<img src="./docs/images/social_intelligence.png" alt="OpenMind Scoial Intelligence" width="500">
+
+# BrainPack for Unitree G1, Unitree Go2, and LimX Tron 1
 
 ## Introduction
 
 The **BrainPack** provides an easy to use, modular compute-and-development platform for robotics, seamlessly integrated with the LimX Tron 1, Unitree G1, and Unitree Go2 (and many other movement platforms, coming soon). 
 
-Included is a full-suite of sensors that allow your robot to understand and react to its environment, and interact with humans. The BrainPack with Nvidia Thor can connect to OpenMind cloud endpoints for voice, spatial navigation, emotion generation, teleops, and other core robot functionality.
+Included is a full-suite of sensors that allow your robot to understand and react to its environment, and interact with humans. The BrainPack with [Nvidia Thor](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/) can connect to OpenMind cloud endpoints for voice, spatial navigation, emotion generation, teleops, and other core robot functionality.
 
 ## It's Wooftacular!
 
