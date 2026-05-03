@@ -21,11 +21,11 @@ Currently, many robotics platforms are limited to pure academic research, single
 
 ### Hardware Limitations 
 
-Common pain points include inadequate human-robot interfaces  (e.g. very weak or unadjustable speakers, lack of touchscreens, unsuitable microphones) and outdated or poorly documented secondary computing modules. For researchers and companies, this means that even when purchasing a powerful mobility platform, such as Unitree G1, substantial time and efforts must be spent building custom hardware including specialized cabling, 3D-printed parts, and add-on sensors, simply to conduct basic experiments and product development.
+Common pain points include inadequate human-robot interfaces (e.g. very weak or unadjustable speakers, lack of touchscreens, unsuitable microphones) and outdated or poorly documented secondary computing modules. For researchers and companies, this means that even when purchasing a powerful mobility platform, such as Unitree G1, substantial time and efforts must be spent building custom hardware including specialized cabling, 3D-printed parts, and add-on sensors, simply to conduct basic experiments and product development.
 
 ### Fragmentation and Scalability
 
-The robotics landscape is massive and highly fragmented. With over 400 active companies developing diverse robotic platforms and form factors, one impediment is the lack of global standards. Currently, there are no standards for integrating or swapping key components — whether that involves sensors, computing power, or power dostribution.
+The robotics landscape is massive and highly fragmented. With over 400 active companies developing diverse robotic platforms and form factors, one impediment is the lack of global standards. Currently, there are no standards for integrating or swapping key components — whether that involves sensors, computing power, or power distribution.
 
 This forces developers into a prohibitive cycle: when a product is built, it cannot be easily deployed across dozens, or even hundreds, of different robot brands and physical forms. This inefficiency means development efforts are tied to single-brand and single form factor platforms.
 
