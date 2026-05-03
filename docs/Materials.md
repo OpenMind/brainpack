@@ -180,8 +180,8 @@ The Nvidia Thor is typically powered with:
 
 The different robots have different power plugs:
 
-* Unitree G1 - 24V/5A plug, XT30 connector - can be used for the audio amplifier directly (which accepts anything below 26V). You can use the XT30UPB-F 12V 12V/5A power output to power a USB Hub. 
-* Tron 1 - 24V, XT60 connector - can be used for the audio amplifier directly (which accepts anything below 26V) **AND** the Nvidia Thor. You will need a MATEKSYS BEC 12S to generate 12V to power the 
+* Unitree G1 - 24V/5A plug, XT30 connector - can be used for the audio amplifier directly (which accepts anything below 26V). You can use the XT30UPB-F 12V 12V/5A power output to power a USB hub. 
+* Tron 1 - 24V, XT60 connector - can be used for the audio amplifier directly (which accepts anything below 26V) **AND** the Nvidia Thor. You will need a MATEKSYS BEC 12S to generate 12V to power the USB hubs.
 * Unitree Go2 - 28 to 33.6V, XT30 connector - can be used for the Nvidia Thor **AND** via a step-down (buck) regulator, the audio amplifier and the powered USB hubs.
 
 **NOTE: In general, you will need to design, fabricate, and assemble a custom step-down regulator which (1) takes 24 to 34V and (2) provides 12-17V for the audio amplifier and 5V 2A for the LCD screen back-lighting. In an emergency, you can use 2 ea. MATEKSYS BEC 12S Pro Synchronous switching step-down regulators, or equivalent, but this is probably not ideal.**
