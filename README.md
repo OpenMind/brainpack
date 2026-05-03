@@ -5,7 +5,7 @@
 
 ## Introduction
 
-The **BrainPack** provides an easy to use, modular compute-and-development platform for robotics, seamlessly integrated with the LimX Tron 1, Unitree G1, and Unitree Go2 (and many other movement platforms, coming soon). 
+The **BrainPack** provides an easy to use, modular compute-and-development platform for robotics, seamlessly integrated with the Unitree G1, Unitree Go2, and LimX Tron 1 (and many other movement platforms, coming soon). 
 
 Included is a full-suite of sensors that allow your robot to understand and react to its environment, and interact with humans. The BrainPack with [Nvidia Thor](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/) can connect to OpenMind cloud endpoints for voice, spatial navigation, emotion generation, teleops, and other rudimentary robot functionality. 
 
