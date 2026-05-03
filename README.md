@@ -15,11 +15,21 @@ The overall purpose of the BrainPack is to empower rapid iteration. It enables d
 
 <img src="./docs/images/brainpack_go2.png" alt="BrainPack OverView" width="500">
 
-## The Challenge in Robotics Development and Deployment
+## The Challenges in Robotics Development and Deployment
 
 Currently, many robotics platforms are limited to pure academic research, single industrial problems, or for use as toys. When organizations attempt to deploy these robots into more complex and more realistic environments, significant limitations quickly become apparent.
 
+### Hardware Limitations 
+
 Common pain points include inadequate human-robot interfaces  (e.g. very weak or unadjustable speakers, lack of touchscreens, unsuitable microphones) and outdated or poorly documented secondary computing modules. For researchers and companies, this means that even when purchasing a powerful mobility platform, such as Unitree G1, substantial time and efforts must be spent building custom hardware including specialized cabling, 3D-printed parts, and add-on sensors, simply to conduct basic experiments and product development.
+
+### Fragmentation and Scalability
+
+The robotics landscape is massive and highly fragmented. With over 400 active companies developing diverse robotic platforms and form factors, one impediment is the lack of global standards. Currently, there are no standards for integrating or swapping key components — whether that involves sensors, computing power, or power dostribution.
+
+This forces developers into a prohibitive cycle: when a product is built, it cannot be easily deployed across dozens, or even hundreds, of different robot brands and physical forms. This inefficiency means development efforts are tied to single-brand and single form factor platforms.
+
+Developers should ideally be able to focus solely on creating advanced "robot skills" (intelligence), confident that those capabilities can be deployed across brands and form factors. The BrainPack solves this foundational problem. It provides a standardized interface, establishing a universal layer of capability that allows our software and intelligence to run across diverse robotic hardware platforms.
 
 ### Data Security and Privacy
 
