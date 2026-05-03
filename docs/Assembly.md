@@ -17,13 +17,13 @@
 <!-- TOC --><a name="1-introduction"></a>
 ## 1. Introduction
 
-The BrainPack is a module that can be attached to various robots (such as the Unitree G1 and Go2, as well as the LimX Tron 1). As long as your robot provides power and ability for external computers to interface with it, most typically via an Ethernet cable, then the BrainPack should work for your robot. The BrainPack expects developer access to the robot and therefore will not work with toy/entertainment versions of the above robots (such as the Unitree Go2 Air).  
+The BrainPack is a module that can be attached to various robots (such as the Unitree G1 and Go2, as well as the LimX Tron 1). As long as your robot provides power and can interface with external computers, most typically via an Ethernet cable, then the BrainPack should work for your robot. The BrainPack expects developer access to the robot and therefore will not work with toy/entertainment versions of the above robots (such as the Unitree Go2 Air).  
 
-The BrainPack is designed for Human-Robot interaction research and pilot testing. The BrainPack also allows yo to rapidly test new combinations of advanced compute, new types of sensors, and new types of outputs and actuators. 
+The BrainPack is designed for Human-Robot interaction research and pilot testing. The BrainPack allows you to rapidly test new combinations of advanced compute, new types of sensors, and new types of outputs and actuators. 
 
 **NOTE: The correct assembly of, and safe use of, this research tool requires a fully equipped electronics test and assembly space with all the needed tools and equipment, such as soldering irons, hot glue guns, PCB reflow, crimp tools, multimeters, lab power supplies, thermal imaging (to monitor thermals), and other generic electronics and robotics test and assembly infrastructure.**
 
-**NOTE: this write up is a high-level summary of the central steps required to assemble and use the BrainPack. We assume advanced familiarity with robotics hardware, associated actuators, batteries, and sensors, 3-D printing, and related capabilities. The overall assembly process involves more than 300 specific steps. We only provide the most important ones in this write up. Most robotics engineers should be able to follow along with minimal difficulty. If you have any questions please reach out to our engineers.**
+**NOTE: this write up is a high-level summary of the central steps required to assemble and use the BrainPack. We assume advanced familiarity with robotics hardware, associated actuators, batteries, and sensors, 3D printing, and related capabilities. The overall assembly process involves more than 300 specific steps. We only provide the most important ones in this write up. Robotics engineers will be able to follow along with minimal difficulty. If you have any questions please reach out to our engineers.**
 
 [Materials](../docs/Materials.md)
 
@@ -48,7 +48,7 @@ The face is the most difficult part to assemble. Once assembled, the face is eit
 <!-- TOC --><a name="31-face"></a>
 ### 3.1. Face
 
-The face unit is composed of two 3D printed parts (the face bezel and the face back) and a variety of printed circuit board sensors speakers and other electronics. The face unit is easy to open and close through M3 cap screws.
+The face unit is composed of two 3D printed parts (the face bezel and the face back) and a variety of printed circuit boards, sensors, speakers, and other electronics. The face unit is easy to open and close through M3 cap screws.
 
 1. Start with the 3D printed face bezel. 
 
@@ -60,7 +60,7 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 5. Connect the two cables coming from the LCD display (touch and HDMI) to a computer, so that the screen turns on. Use the LCD screen configuration buttons (on the right side of the screen) to navigate to the brightness menu and adjust the brightness to 100%. These buttons will soon be inaccessible. We generally leave the screen at maximum brightness. Unplug the LCD screen and place it into the face bezel. Use hot glue to secure the LCD screen to the face bezel.
 
-6. Use hot glue to secure the two speakers in the face bezel. Make sure to choose a good angle for the plus and minus speaker hook up lugs. In general, the speaker hook up lugs should point towards the middle of the face bezel for subsequent good soldering access for the speaker hook up wires.
+6. Use hot glue to secure the two speakers into the face bezel. Make sure to choose a good angle for the plus and minus speaker hook up lugs. In general, the speaker hook up lugs should point towards the middle of the face bezel for subsequent good soldering access for the speaker hook up wires.
 
 7. Use hot glue to secure the RealSense 435 camera into the face unit. Connect the 3.1 USB-C to USB-A cable to the RealSense. Use a dab of hot glue to provide strain relief to the USB cable.
 
@@ -70,7 +70,7 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 10. Turn over the audio amplifier, remove the volume knob, nut, and washer, snap the PCB in place with the volume adjuster projecting through the side of the bezel, and then mechanically secure the PCB to the bezel with the volume knob nut and a washer. At this point you should be looking at the back of the PCB of the audio amplifier. Now, directly solder connections (1) from the 12V power IN of the audio amplifier to the 12V OUT of the buck converter, and (2) from the signal out of the audio amplifier (left GND and +, and right GND and +) to the two speakers. **CAUTION: ensure that wires are routed in the flattest possible manner and make sure that the wires are not shorted by protruding pins**. Use hot glue and fabric electrical tape to secure the wires; press the fabric electrical tape into the still soft hot glue to generate securely mounted wires that will resist vibrations and strain.
 
-11. Connect the right-angled side of the stereo audio cable to the 3.5 mm jack of the audio amplifier.
+11. Connect the right-angled side of the stereo audio cable to the 3.5mm jack of the audio amplifier.
 
 12. At this point, the face bezel will have five cables coming from it:
 
@@ -104,7 +104,7 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 2. Use hot glue to secure the Arducam PCB into the 3D printed enclosure. Manually build a replacement USB cable to connect the Arducam to a USB-A hub. The cable that comes with the camera is typically far too long. Use hot glue to firmly connect the camera cable to the camera enclosure to provide strain relief.
 
-3. Use permanent gorilla double sided sticky tape to mount the Arducam to the top right of the face unit. If you would like to change the angle of the Arducam, 3D print a small wedge and insert that between the camera and the face unit. 
+3. Use permanent Gorilla double sided sticky tape to mount the Arducam to the top left of the face unit. If you would like to change the angle of the Arducam, 3D print a small wedge and insert that between the camera and the face unit. 
 
 4. Finally thread the camera USB cable through the large hole on the side of the head.
 
@@ -130,7 +130,7 @@ The face unit is composed of two 3D printed parts (the face bezel and the face b
 
 4. Snap the two side plates into the Thor cradle. Note these side plates are not identical, but there is a left side plate and right side plate. Inspect the curvature of the Go2's back and then snap in the side plate that fits conformally. These side plates can be used to more securely hold the Nvidia Thor. We sometimes leave them off when we need extra space between the head and the Thor to adjust or check cables, for example.  
 
-5. We recommend removing the Unitree LiDAR underneath the dog's chin. This standard LiDAR is heavy, loud, and has a low frame rate.  You can fill the resulting hole under the chin of the dog with a 3D printed adapter, for example a hook or a simple gripper that allows the dog to grab small objects, bones, and bags, helping to solve the last mile delivery problem.
+5. We recommend removing the Unitree LiDAR underneath the dog's chin. This standard LiDAR is heavy, loud, and has a low frame rate.  You can fill the resulting hole under the chin of the dog with a 3D printed adapter, for example a hook or a simple gripper that allows the dog to carry small objects, bones, and bags, helping to solve the last mile delivery problem.
 
 <!-- TOC --><a name="36-attaching-the-head"></a>
 ### 3.6. Attaching the Head
@@ -145,6 +145,6 @@ The assembly of the BrainPack for the LimX Tron 1 is almost identical to the pro
 
 ### 4.1. Unitree G1
 
-For the Unitree G1 a special face back is used to directly mount the face to the front of the G1. Remove the Velcro-secured G1 plastic cheast plate and drill two holes through the plastic chest plate. Then secure the face to the chest plate with 2ea. M6 bolts with nylon lock nuts. You will need to remove small amounts of foam with a hobby knife from the G1's front plate backing foam to provide space for the nylon lock bolts. 
+For the Unitree G1 a special face back is used to directly mount the face to the front of the G1. Remove the Velcro-secured G1 plastic chest plate and drill two holes through the plastic chest plate. Then secure the face to the chest plate with 2 M6 bolts with nylon lock nuts. You will need to remove small amounts of foam with a hobby knife from the G1's front plate backing foam to provide space for the nylon lock bolts. 
 
 **Congratulations, you have finished your BrainPack assembly and installation!**

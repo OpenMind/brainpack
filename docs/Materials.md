@@ -17,10 +17,9 @@
       + [LimX Tron 1 Custom Power Cable](#limx-tron-1-custom-power-cable)
       + [Unitree G1 Custom Power Cable](#unitree-g1-custom-power-cable)
       + [Unitree Go2 Custom Power Cable](#unitree-go2-custom-power-cable)
-   * [3.3 Example Power Budget Calculation](#example-power-budget-calculation)
-   * [3.4 Powered USB Hubs](#powered-usb-hubs)
-- [4. Reliable Networking](#reliable-networking)
-<!-- TOC end -->
+   * [3.3 Power Budget](#power-budget)
+      + [Powered USB Hubs](#powered-usb-hubs)
+      + [Example Power Calculation for Entire System](#power-budget-total)
 
 <!-- TOC --><a name="brainpack-materials"></a>
 # BrainPack Materials
@@ -31,24 +30,22 @@
 <!-- TOC --><a name="danger-power-budget-and-thermal-limits"></a>
 ### 1.1 DANGER: Power Budget and Thermal Limits
 
-**It is easy to operate a robot above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. external air temperature), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
+**It is easy to operate a robot above its design power budget. For safe use, you must carefully consider the robot's intended use, average and peak power requirements, the robot's physical environment (e.g. external air temperature, exposure to direct sun), and the power/thermal interplay of simultaneous movement, sensing, and compute.** 
 
 Unless you get this right, you may experience fast battery drain, intermittent faults and resets, electrical shorts and fires, overheating, poor sensor performance and many other possible problems. 
 
-**Example 1**: when a robot tries to speak (at max volume) and walk at the same time, while also running multiple large policies, this could overload (and reset) the power system. The humanoid will then suddenly crash to the floor. Testing individual robot subsystems will not predict this problem, which only occurs when the robot wishes to move, think, and speak at the same time.
+**Example 1**: when a robot tries to speak (at max volume) and walk at the same time, while also running multiple large policies, this could overload (and reset) the power system. The humanoid will then suddenly crash to the floor. Testing individual robot subsystems in isolation will not surface this problem, which only occurs when the robot wishes to move, think, and speak at the same time.
 
 **Potential Solution**: use an inline **USB Voltage Current Power Tester Multimeter** (such as the [FNB58USB Voltage/Current/Power tester/monitor](https://www.fnirsi.com/products/fnb58)) to measure the actual power draw of your sensors and other electronics payload. If needed, change how you are powering your computers and sensors, such as by moving loads to other power buses, providing powered USB hubs, or adding external batteries (but see [below](#danger-robot-stability)).
 
 **Example 2**: The robot performs flawlessly in an air conditioned lab, but falls over frequently when deployed in a hot sunny environment. In this case, different joints are probably overheating, switching the system to emergency damp mode, resulting in a fall and subsequent damage to the robot. 
 
-**Potential Solution**: ensure that your software monitors the temperature and power draw of all joints. If your software detects operation near the thermal limits, warn human and robot bystanders and train your small-brain subsystem to then perform a safe sink-to-floor action with an audible alarm and flashing light alarm. A better long term solution is for the robot to autonomously seek shade or an air conditioned room prior to overheating.     
+**Potential Solution**: ensure that your software monitors the temperature and power draw of all joints. If your software detects operation near the thermal limits, warn human and robot bystanders and train your small-brain subsystem to then perform a safe sink-to-floor action with an audible alarm and flashing light. A better long term solution is for the robot to autonomously seek shade or an air conditioned room prior to overheating.
 
 <!-- TOC --><a name="danger-robot-stability"></a>
 ### 1.2 DANGER: Robot Stability
 
-**CAUTION: adding extra mass (such as external computers, sensors, grippers, and batteries) to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. You may for example observe the robot swaying back and forth while simply trying to stand.**
-
-**Potential Solution**: train custom motion policies for your robot in its final mass configuration.
+**CAUTION: adding extra mass (such as external computers, sensors, grippers, and batteries) to the robot will affect your motion policies and the robot's stability and ability to navigate terrain. You may for example observe the robot swaying back and forth while simply trying to stand. Solution: train custom motion policies for your robot in its final mass configuration.**
 
 <!-- TOC --><a name="materials"></a>
 ## 2. Materials
@@ -77,11 +74,7 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 **<ins>1 ea. USB Cable for RealSense</ins>** Generic part, many suppliers. Suggested part: SUNGUY 10Gbps Android Auto USB Cable 1FT, 3A USB C 3.1 Gen2 Cable Data Transfer https://www.amazon.com/dp/B0B28ZCV2Y
 
-**<ins>2 ea. Powered USB Hub</ins>** Coolgear 3.2 Gen 1 USB Hub - 4 Port USB Hub with 5Gbps Data Transfers, Mountable Metal Housing, 5V Power Adapter, ESD Surge Protection, Bus or Self Powered https://www.amazon.com/dp/B07G7GP15C. 
-
-**Design Note 1**: A better part is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection but this can be hard to source. This part accepts +7~14V, making it easier to use compared to the 5V version ("Coolgear 3.2 Gen 1 USB Hub 5V"). 
-
-**Design Note 2**: Another alternative is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub w/ ESD Surge Protection & Power Adapter</ins>** https://www.usbgear.com/cg-u3micro4ph.html. This is the enclosed version of the CG-817X4AX1C-PD-PCBA, so it comes with a 12V power supply and an enclosure. It accepts +7~14V DC Input via a barrel jack.
+**<ins>2 ea. Powered USB Hub</ins>** 4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA) https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection. This hub accepts 7 to 14V via a 2.5mm barrel jack. 
 
 **<ins>2 ea. Barrel Power Jack, Male</ins>** Generic part, many suppliers. Suggested part: SDTC Tech 3 Sets 5.5 x 2.5 MM 10A DC Power Jack Socket Threaded Female Mount Connector Adapter & 12V Male DC Power Pigtail Cable with Dustproof Plug https://www.amazon.com/dp/B0B6FFN4V5 
 
@@ -172,14 +165,14 @@ Once all the electronics/wiring has been completed, close the head with the lid.
 The Nvidia Thor is typically powered with:
 
 * 4S 14.8V external LiPo (Unitree G1)
-* 28V to 33.6V main robot power bus (Unitree Go2)
+* 28 to 33.6V main robot power bus (Unitree Go2)
 * 24V main robot power bus (LimX Tron 1)
 
 The different robots have different power plugs:
 
-* Unitree G1 - 24V/5A plug - can be used for the audio amplifier directly (which accepts anything below 26V)
-* Tron 1 - 24V via XT60 plug - can be used for the audio amplifier directly (which accepts anything below 26V) **AND** the Nvidia Thor
-* Unitree Go2 - 28V to 33.6V via XT30 - can be used for the Nvidia Thor **AND** via a step-down (buck) regulator, the audio amplifier.
+* Unitree G1 - 24V/5A plug, XT30 connector - can be used for the audio amplifier directly (which accepts anything below 26V). You can use the XT30UPB-F 12V 12V/5A power output to power a USB Hub. 
+* Tron 1 - 24V, XT60 connector - can be used for the audio amplifier directly (which accepts anything below 26V) **AND** the Nvidia Thor. You will need a MATEKSYS BEC 12S to generate 12V to power the 
+* Unitree Go2 - 28 to 33.6V, XT30 connector - can be used for the Nvidia Thor **AND** via a step-down (buck) regulator, the audio amplifier and the powered USB hubs.
 
 **NOTE: In general, you will need to design, fabricate, and assemble a custom step-down regulator which (1) takes 24 to 34V and (2) provides 12-17V for the audio amplifier, and 5V 2A for the LCD screen back-lighting. In an emergency, you can use 2 ea. MATEKSYS BEC 12S Pro Synchronous switching step-down regulators, or equivalent, but this is probably not ideal.**
 
@@ -199,6 +192,7 @@ https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 | All | Mil-spec hookup wire, M22759/16-20 Mil-Spec Tefzel Hi-Temp Stranded Wire 20AWG Gauge, Black |
 | All | Mil-spec hookup wire, M22759/16-20 Mil-Spec Tefzel Hi-Temp Stranded Wire 20AWG Gauge, Red |
 | All | Crimp butt connectors, heat shrink, associated tooling |
+| All | 2.5 mm Barrel Jack connectors |
 | Unitree Go2 and G1 | Male XT30 connector with wire leads |
 | Unitree Go2 | MATEKSYS BEC 12S Pro 9-55V to 5/8/12V-5A Synchronous switching step-down (buck) regulator | 
 | Tron 1 | Male XT60 connector with wire leads |
@@ -209,30 +203,34 @@ https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 <!-- TOC --><a name="limx-tron-1-custom-power-cable"></a>
 #### LimX Tron 1 Custom Power Cable
 
-The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor. Use crimp butt connectors to connect the male XT60 plug to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input to the audio amplifier. **You will damage the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
+The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor, but does need a MATEKSYS BEC 12S to provide 12V to the USB Hubs. Add a drop of solder to short the 12V config pins of the BEC 12S so that it provides 12V rather than the default 5.2V. Use crimp butt connectors to connect the male XT60 plug to the MICRO-FIT3.0 (for the Thor), the MATEKSYS BEC 12S, and the power input to the audio amplifier. **You will damage the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
 
 <!-- TOC --><a name="unitree-g1-custom-power-cable"></a>
 #### Unitree G1 Custom Power Cable
 
-The Unitree G1 **does not** provide sufficient power for both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor. The G1 just powers the audio amplifier via the G1's 24V/5A plug. **WARNING: Do not plug in the XT30 connector into the G1's 5V or 55V connectors. The 24V connector is the one in the middle.**
+The Unitree G1 **does not** provide sufficient power for both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor. The G1 just powers the audio amplifier (via the 24V/5A XT30) and the powered USB hub (via the G1's 12V/5A plug).
 
 1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to the audio amplifier cables (red, black) from the face unit. Plug the XT30 plug into the **MIDDLE** G1 power supply, which provides 24V/5A. **You will damage the audio amplifier, the G1, or both, if you get this wrong. Do not reverse the polarity!** 
 
-2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to determine the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity! WARNING FIRE HAZARD: Do not short the 120S 14.8V 10000 mAh LiPo battery!**  
+2. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to the barrel jack connector which will power the USB hub. Plug the XT30 plug into the **RIGHT** power port, which provides 12V/5A. **You will damage the hub, the G1, or both, if you get this wrong. Do not reverse the polarity!** 
 
-3. Use the second Velcro nylon strap to attach the LiPo battery to the Thor cradle. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. **WARNING BATTERY DAMAGE: Do not fully drain the LiPo battery. The Thor will try to drain the battery to below 12V, which will destroy it. Replace the battery when it has discharged to about 14V.**
+3. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a Male EC5 connector to the MICRO-FIT3.0 R-S Thor power connector. This connector has 4 wires, two of which will be used for ground, and two of which will be used for 14.8V. Consult the Thor technical documentation to determine the correct wiring. **You will damage the Thor if you get this wrong. Do not reverse the polarity! WARNING FIRE HAZARD: Do not short the 120S 14.8V 10000 mAh LiPo battery!**  
+
+4. Use a second Velcro nylon strap to attach the LiPo battery to the Thor cradle. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. **WARNING BATTERY DAMAGE: Do not fully drain the LiPo battery. The Thor will try to drain the battery below 13.6V, which will damage it and prevent further charging. Recharge the battery when it has discharged to 13.6V.**
 
 <!-- TOC --><a name="unitree-go2-custom-power-cable"></a>
 #### Unitree Go2 Custom Power Cable
 
-The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier. Solution: use an MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator to provide 12V to the audio amplifier. 
+The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier and the powered USB hubs. Solution: use a MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator to provide 12V to the audio amplifier and USB hubs. 
 
-1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input of the MATEKSYS BEC 12S power buck. Add a drop of solder to short the 12V config pins of the MATEKSYS BEC 12S so that it provides 12V rather than the default 5.2V. Connect the outputs of the MATEKSYS BEC 12S to the red/black wires from the audio amplifier in the face unit. **You will damage the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!** 
+1. Connect (using crimp butt connectors, cover with mil-spec glue coated heat shrink) a male XT30 connector to **BOTH** the MICRO-FIT3.0 (for the Thor) and the power input of the MATEKSYS BEC 12S power buck. Add a drop of solder to short the 12V config pins of the BEC 12S so that it provides 12V rather than the default 5.2V. Connect the outputs of the BEC 12S to the red/black wires from the audio amplifier in the face unit and the barrel jack connectors for the powered USB hubs. **You will damage the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!** 
 
 2. Plug the XT30 plug into the 33.6V Go2 power supply port, after convincing yourself that you did in fact not reverse the polarity.
 
-<!-- TOC --><a name="example-power-budget-calculation"></a>
-### 3.3 Example Power Budget Calculation
+**WARNING HIGH CURRENTS: Assuming you are operating the Thor at its "MAX" setting and using a full set of sensors, the payload could use as much as 300W. The current rating for the Go2 power ("Output power interface DC28.8V") is not publicly documented (if you know what it is, please let us know). However, we have been able to draw 8A.**   
+
+<!-- TOC --><a name="power-budget"></a>
+### 3.3 Power Budget
 
 We recommend a [FNB58USB Voltage/Current/Power tester/monitor](https://www.fnirsi.com/products/fnb58) to measure actual power draw.
 
@@ -247,15 +245,20 @@ USB-C RealSense - peak 700 mA - USB 3.1 critical - 60mA sleep, 130mA RGB only<br
 USB-A Widefield Camera - normal video data rates - USB 2.0 ok - actual current 210mA<br>
 
 <!-- TOC --><a name="powered-usb-hubs"></a>
-### 3.4 Powered USB Hubs
+#### Powered USB Hubs
 
-For reliable and stable performance **you must use powered USB hubs**. We recommend the Coolgear 3.2 Gen 1 USB Hub - 4 Port USB Hub with 5Gbps Data Transfers, Mountable Metal Housing, 5V Power Adapter, ESD Surge Protection, Bus or Self Powered https://www.amazon.com/dp/B07G7GP15C. 
+For reliable and stable performance **you must use powered USB hubs**. We recommend **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection. This hub accepts 7 to 14V via a barrel jack connector: DC Barrel 2.5mm ID × 5.5mm OD, Center Pin Positive. This hub can provide 20W total power or 900 mA per port. You can obtain 12V from a MATEKSYS BEC 12S (or equivalent). The MATEKSYS BEC 12S can provide 5A continuous 9A peak output. 
 
-This hub can provide 20W total power, or 900 mA per port. Provide 5V via the barrel jack connector; you can obtain 5V via a MATEKSYS BEC 12S (or equivalent). The MATEKSYS BEC 12S can provide Continuous 5A output Peak 9A output. 
+<!-- TOC --><a name="power-budget-total"></a>
+#### Example Power Calculation for Entire System
 
-Better Options: **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA)</ins>** https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection but this can be hard to source. This part accepts 7 to 14V, making it easier to use compared to the 5V version ("Coolgear 3.2 Gen 1 USB Hub 5V"). 
+**Audio** Assume you are powering the audio amplifier with 12V and have connected 2 8W speakers. Assuming auto limiting to 15W per side, aka (12V/15W =) 1.25 A per channel, the combined max power draw is limited to 1.25 + 1.25 = 2.5A, with overhead that works out to 3A. 
 
-The best solution is the **<ins>4 Port USB 3.2 Gen 1 Micro Powered Hub w/ ESD Surge Protection & Power Adapter</ins>** https://www.usbgear.com/cg-u3micro4ph.html. This is the enclosed version of the CG-817X4AX1C-PD-PCBA, so it comes with a 12V power supply (which you can discard) and an enclosure (which you can remove). It accepts 7 to 14V DC Input via a barrel jack. The cg-u3micro4ph can be easier to find compared to the CG-817X4AX1C-PD-PCBA.
+**Powered USB Hub 1** 1.2 amp draw
+
+**Powered USB Hub 2** 0.9 amp draw
+
+Assuming you are powering the USB hubs with 12V, then assume 2.1A total draw. With the 12V audio system, that gives 2.1 + 3 = 5.1A worst case draw, which (just barely) can be handled by one BEC 12 (which is rated for continuous output current of up to 5A, peak current of 9A). 
 
 <!-- TOC --><a name="reliable-networking"></a>
 ## 4. Reliable Networking
