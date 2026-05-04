@@ -21,13 +21,13 @@ Currently, many robotics platforms are limited to academic research, single indu
 
 ### Hardware Limitations 
 
-Common pain points include weak loudspeakers, lack of USB ports for additional sensors, lack of a touchscreen, lack of directional microphones, and outdated secondary computing modules. This means that even when purchasing a sophisticated robot such as Unitree G1, substantial time and efforts must be spent on specialized cabling, 3D-printed parts, and add-on sensors, simply to conduct basic experiments and product development.
+Common pain points include weak loudspeakers, lack of USB ports for additional sensors, lack of a touchscreen, lack of directional microphones, and outdated secondary computing modules. This means that even when purchasing a sophisticated robot such as Unitree G1, to conduct basic experiments and product development substantial time and effort must be spent on specialized cabling, 3D-printed parts, and add-on sensors.
 
 ### Fragmentation and Scalability
 
-The robotics landscape is massive and highly fragmented. With over 400 active companies developing diverse robotic platforms and form factors, one impediment is the lack of global standards. Currently, there are no standards for integrating or swapping key components — whether that involves sensors, computing power, or power distribution.
+The robotics landscape is massive and highly fragmented. With over 400 active companies developing diverse robotic platforms and form factors, one impediment is the lack of hardware standards for integrating or swapping key components — whether that involves sensors, computing power, or power distribution. Imagine if your desktop PC were composed entirely of custom parts and you could not assemble the computer from standardized parts to fit your unique needs.
 
-This forces developers into a difficult cycle: when a solution product is built, it cannot be easily deployed across dozens of different robot brands and physical forms. This inefficiency means development efforts are tied to single-brand and single form factor platforms. The BrainPack provides a standardized interface, establishing a common layer of capability that allows software and intelligence to run across multiple robot hardware platforms.
+This forces developers into a difficult cycle: when a solution is built, it cannot be easily deployed across different robot brands and physical forms. This inefficiency means development efforts are tied to single-brand and single form factors. The BrainPack provides a standardized interface, establishing a common layer of capability that allows software and intelligence to run across multiple robot hardware platforms.
 
 ### Data Security and Privacy
 
@@ -35,11 +35,11 @@ For real world use of robots, it is important that humans feel comfortable in th
 
 ### Our Solution: The BrainPack
 
-We developed the BrainPack to address these roadblocks. This modular system provides deployment flexibility by providing one architecture that makes it easy to integrate, adapt, and explore diverse use cases. 
+We developed the BrainPack to address these blocks. This modular system provides deployment flexibility by providing one architecture that makes it easy to integrate, adapt, and explore diverse use cases. 
 
 ## Features
 
-- **Powered by OM1** - Full suite of OM1 functionality built-in.
+- **Designed for OM1** - Optimized for running OM1.
 - **Human in the Loop** - Teleops - control your robot remotely or request help from another human whenever you need (via portal.openmind.com).
 - **Developer Friendly** - Modular design with multiple connections and ports for easy hardware integration.
 
