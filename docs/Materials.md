@@ -14,9 +14,9 @@
 - [3. Cables and Power](#cables-and-power)
    * [3.1 Thor Power Harness](#thor-power-harness)
    * [3.2 Power Electronics](#power-electronics)
-      + [LimX Tron 1 Custom Power Cable](#limx-tron-1-custom-power-cable)
-      + [Unitree G1 Custom Power Cable](#unitree-g1-custom-power-cable)
-      + [Unitree Go2 Custom Power Cable](#unitree-go2-custom-power-cable)
+      + [LimX Tron 1 Power Cable](#limx-tron-1-power-cable)
+      + [Unitree G1 Power Cable](#unitree-g1-power-cable)
+      + [Unitree Go2 Power Cable](#unitree-go2-power-cable)
    * [3.3 Power Budget](#power-budget)
       + [Powered USB Hubs](#powered-usb-hubs)
       + [Example Power Calculation for Entire System](#power-budget-total)
@@ -122,14 +122,18 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 <!-- TOC --><a name="unitree-g1"></a>
 #### 2.2.1 Unitree G1
 
-**2 ea. M6 x 25mm Cap Screws** with nylon lock nut. Generic part, many suppliers. These are used to secure the face back to the front of the Unitree G1.
+To mount the face to the Unitree G1, you will need M6 cap screws and lock nuts.
 
-The Unitree G1 is supplied with an internal [Livox Mid360](https://www.livoxtech.com/mid-360). Please refer to the Unitree and Livox documentation.  
+**2 ea. M6 x 25mm Cap Screws** with nylon lock nut. Generic part, many suppliers.
+
+The Unitree G1 is supplied with an internal [Livox Mid360](https://www.livoxtech.com/mid-360). Please refer to the Unitree and Livox documentation for information on the Mid360.  
 
 <!-- TOC --><a name="unitree-go2-and-limx-tron-1"></a>
 #### 2.2.2 Unitree Go2 and LimX Tron 1
 
-**4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers. Generic part, many suppliers. These are used to secure the face back to the front of the **Face and Sensor Carrier ("Head")**.
+To mount the face to the **Face and Sensor Carrier ("Head")**, which is what mounts to the Unitree Go2 and the LimX Tron 1, you will need M3 cap screws and lock nuts.
+
+**4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers. Generic part, many suppliers. 
 
 **1 ea. RPLidar S2 - ToF LiDAR** 360 Degree Laser Range Scanner, 2D, 30-meter range, sunlight resistant, 10Hz (600rpm), 32kHz sample rate (angular resolution is 0.1125°). https://www.slamtec.com/en/s2
 
@@ -210,13 +214,13 @@ https://www.digikey.com/en/products/detail/molex/2147561043/12180337<br>
 | Unitree G1 | 120S 14.8V 10000 mAh LiPo battery with female EC5 connector and LiPo charger |
 | Unitree G1 | CAMWAY 5PCS 2 in 1 1-8s LiPo Battery Low Voltage Buzzer Alarm |
 
-<!-- TOC --><a name="limx-tron-1-custom-power-cable"></a>
-#### LimX Tron 1 Custom Power Cable
+<!-- TOC --><a name="limx-tron-1-power-cable"></a>
+#### LimX Tron 1 Power Cable
 
 The Tron 1 provides 24V through an XT60 jack. The Tron 1 does not need a power converter to power the audio amplifier or the Thor, but does need a MATEKSYS BEC 12S to provide 12V to the USB Hubs. Add a drop of solder to short the 12V config pins of the BEC 12S so that it provides 12V rather than the default 5.2V. Use crimp butt connectors to connect the male XT60 plug to the MICRO-FIT3.0 (for the Thor), the MATEKSYS BEC 12S, and the power input to the audio amplifier. **You will damage the audio amplifier, the Thor, the robot, or all three, if you get this wrong. Do not reverse the polarity!**  
 
-<!-- TOC --><a name="unitree-g1-custom-power-cable"></a>
-#### Unitree G1 Custom Power Cable
+<!-- TOC --><a name="unitree-g1-power-cable"></a>
+#### Unitree G1 Power Cable
 
 The Unitree G1 **does not** provide sufficient power for both the Thor and the audio amplifier. Therefore, an external LiPo battery is needed to power the Thor. The G1 just powers the audio amplifier (via the 24V/5A XT30) and the powered USB hub (via the G1's 12V/5A XT30).
 
@@ -228,8 +232,8 @@ The Unitree G1 **does not** provide sufficient power for both the Thor and the a
 
 4. Use a second Velcro nylon strap to attach the LiPo battery to the Thor cradle. Connect the _Lipo Battery Low Voltage Buzzer Alarm_ to the balance port of the LiPo battery to avoid damaging the LiPo battery due to over-discharge. **WARNING BATTERY DAMAGE: Do not fully drain the LiPo battery. The Thor will try to drain the battery below 13.6V, which will damage it and prevent further charging. Recharge the battery when it has discharged to 13.6V.**
 
-<!-- TOC --><a name="unitree-go2-custom-power-cable"></a>
-#### Unitree Go2 Custom Power Cable
+<!-- TOC --><a name="unitree-go2-power-cable"></a>
+#### Unitree Go2 Power Cable
 
 The Unitree Go2 provides 28 to 33.6V, which is too much for the audio amplifier and the powered USB hubs. Solution: use a MATEKSYS BEC 12S Pro Synchronous switching step-down (buck) regulator to provide 12V to the audio amplifier and USB hubs. 
 
