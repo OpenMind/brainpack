@@ -74,7 +74,7 @@ Unless you get this right, you may experience fast battery drain, intermittent f
 
 **<ins>1 ea. Fisheye RGB Camera</ins>** Suggested part: Arducam 1080P Low Light WDR Ultra Wide Angle USB Camera Module 2MP CMOS IMX291 160 Degree Fisheye Mini UVC USB2.0 SKU: B0202 [Purchasing link](https://www.arducam.com/arducam-1080p-low-light-wdr-ultra-wide-angle-usb-camera-module-for-computer-2mp-cmos-imx291-160-degree-fisheye-mini-uvc-usb2-0-spy-webcam-board-with-microphone-3-3ft-cable-for-windows-linux-mac-os.html)
 
-**<ins>1 ea. RealSense Depth Camera (i435)</ins>** Intel RealSense Depth Camera D435i, Silver 1080p Video Capture Resolution (82635D435IDK5P) https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
+**<ins>1 ea. RealSense Depth Camera (D435i)</ins>** Intel RealSense Depth Camera D435i, Silver 1080p Video Capture Resolution (82635D435IDK5P) https://www.amazon.com/Intel-RealSense-Depth-Camera-D435i/dp/B07MWR2YJB
 
 **<ins>2 ea. Powered USB Hub</ins>** 4 Port USB 3.2 Gen 1 Micro Powered Hub PCBA w/ VL817 Chipset & ESD Surge Protection (CG-817X4AX1C-PD-PCBA) https://www.coolgear.com/product/4-port-usb-3-2-gen-1-micro-powered-hub-pcba-w-esd-surge-protection. This hub accepts 7 to 14V via a 2.5mm barrel jack. 
 
@@ -131,13 +131,13 @@ The Unitree G1 is supplied with an internal [Livox Mid360](https://www.livoxtech
 <!-- TOC --><a name="unitree-go2-and-limx-tron-1"></a>
 #### 2.2.2 Unitree Go2 and LimX Tron 1
 
-To mount the face to the **Face and Sensor Carrier ("Head")**, which is what mounts to the Unitree Go2 and the LimX Tron 1, you will need M3 cap screws and lock nuts.
+To mount the face to the **Face and Sensor Carrier ("Head")**, which is what mounts to the Unitree Go2 and the LimX Tron 1, you will need M3x16mm cap screws and M3 lock nuts.
 
-**4 ea. M3 x 20mm Cap Screws** with nylon lock nuts and washers. Generic part, many suppliers. 
+**4 ea. M3 x 16mm Cap Screws** with nylon lock nuts and washers. Generic part, many suppliers. 
 
 **1 ea. RPLidar S2 - ToF LiDAR** 360 Degree Laser Range Scanner, 2D, 30-meter range, sunlight resistant, 10Hz (600rpm), 32kHz sample rate (angular resolution is 0.1125°). https://www.slamtec.com/en/s2
 
-Once all the electronics/wiring has been completed, close the head with the lid. The lid also serves as the base of the [RPLidar S2 - ToF LiDAR](https://www.slamtec.com/en/s2). 
+Once all the electronics/wiring has been completed, close the head with the lid. The lid also serves as the base of the [RPLidar S2 - ToF LiDAR](https://www.slamtec.com/en/s2). The RPLidar is mounted to the lid with 4ea. M3 x 8mm cap screws - the same ones that are used to connect the face unit to the face back.
 
 <!-- TOC --><a name="thor-cradles"></a>
 ### 2.3 Thor Cradles
