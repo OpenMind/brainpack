@@ -61,7 +61,7 @@ PRISM/
     └──                    # STL files for 3D printing
 ```
 
-## License
+## NonCommercial Use License
 
 The industrial design files in this repository — including the CAD models, STL files, technical drawings, bill of materials, and assembly instructions for the OpenMind robot head — are released by OpenMind, Inc. under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0): https://creativecommons.org/licenses/by-nc/4.0/
 
