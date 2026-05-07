@@ -63,8 +63,14 @@ PRISM/
 
 ## License
 
-This project is licensed under the terms of the **MIT License**, which is a permissive free software license that allows users to freely use, modify, and distribute the software. 
+The industrial design files in this repository — including the CAD models, STL files, technical drawings, bill of materials, and assembly instructions for the OpenMind robot head — are released by OpenMind, Inc. under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0): https://creativecommons.org/licenses/by-nc/4.0/
 
-The MIT License is a widely used and well-established license that is known for its simplicity and flexibility. By using the MIT License, this project aims to encourage collaboration, modification, and distribution of the software.
+You are free to download, study, modify, fabricate for personal use, and share these materials for non-commercial purposes — including personal, educational, and academic-research use — provided you give appropriate credit to OpenMind, Inc., link to the license, and indicate any changes you have made.
+
+Any commercial use is expressly reserved and requires a separate written license from OpenMind, Inc. "Commercial use" includes, without limitation: manufacturing the design (or any derivative of it) for sale; incorporating the design into a product, service, or system offered for sale or used commercially; using the design in connection with paid services; and distributing the design as part of any commercial offering.
+
+No trademark rights in "OpenMind" or any associated marks are granted by this license. No patent rights are granted, whether express or implied. OpenMind, Inc. retains all rights not expressly granted herein.
+
+For commercial licensing inquiries, please contact hello@openmind.com.
 
 ---
