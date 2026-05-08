@@ -24,6 +24,9 @@
 <!-- TOC --><a name="brainpack-materials"></a>
 # BrainPack Materials
 
+> NOTE: Refer to the Bill of Materials with approximate build cost [here](https://docs.google.com/spreadsheets/d/1YjTzyw0XH3A2SuCKs4Oi_q3m2KCcntqwOuZ239gBQtQ).
+> Prices can vary based on supplier, region, availability, and where generic items are purchased.
+
 <!-- TOC --><a name="safety"></a>
 ## 1. Safety
 
