@@ -24,6 +24,8 @@
 <!-- TOC --><a name="brainpack-materials"></a>
 # BrainPack Materials
 
+> NOTE: Refer to the Bill of Materials with approximate build cost [here](https://docs.google.com/spreadsheets/d/1YjTzyw0XH3A2SuCKs4Oi_q3m2KCcntqwOuZ239gBQtQ/edit?gid=0#gid=0).
+
 <!-- TOC --><a name="safety"></a>
 ## 1. Safety
 
